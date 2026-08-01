@@ -1,30 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
   {% include head.html %}
-
-    <body id="page-top" class="index">
-
-    {% include header.html %}
-    {% include why.html %}
-    {% include premios.html %}
-    {% include services.html %}
-    {% include portfolio_grid.html %}
-    {% include about.html %}
-    {% include faq.html %}
-    {% include download.html %}
-    {% include boletines.html %}
-    {% include team.html %}
-    {% include clients.html %}
-    {% include past_competitions.html %}
-    {% include contact.html %}
-    {% include footer.html %}
-    {% include modals.html %}
-
-    {{ content }}
-
-    {% include js.html %}
-
-
-    </body>
+</head>
+<body>
+  {{ content }}
+  <footer style="text-align:center; margin-top:60px; padding-top:20px; border-top:1px solid #e0e0e0; color:#999; font-size:0.9rem;">
+    <p>© {{ site.time | date: "%Y" }} ISLP Bolivia - Competencia Boliviana de Posters Estadísticos</p>
+  </footer>
+</body>
 </html>
