@@ -1079,9 +1079,45 @@ img {
 
 .islp-hero-actions {
   display: flex;
-  gap: 1rem;
+  gap: 1.15rem;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.islp-hero-banner .islp-btn-outline,
+.islp-hero-actions .islp-btn-outline {
+  background: rgba(30, 205, 200, 0.14);
+  color: #ffffff !important;
+  border: 1.5px solid var(--cbpe-cyan, #1ecdc8);
+  backdrop-filter: blur(8px);
+  font-weight: 600;
+}
+
+.islp-hero-banner .islp-btn-outline:hover,
+.islp-hero-actions .islp-btn-outline:hover {
+  background: var(--cbpe-cyan, #1ecdc8);
+  border-color: var(--cbpe-cyan, #1ecdc8);
+  color: var(--cbpe-blue-midnight, #13154a) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 205, 200, 0.45);
+}
+
+.islp-hero-banner .islp-btn-ghost,
+.islp-hero-actions .islp-btn-ghost {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  font-weight: 600;
+}
+
+.islp-hero-banner .islp-btn-ghost:hover,
+.islp-hero-actions .islp-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #ffffff;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
 }
 
 .islp-pill-badge {
