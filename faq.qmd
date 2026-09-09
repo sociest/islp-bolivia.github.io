@@ -1,0 +1,69 @@
+---
+title: "Preguntas Frecuentes (FAQ)"
+subtitle: "Todo lo que necesitas saber para participar en ISLP Bolivia"
+---
+
+::: {.callout-note}
+### ¿Tienes una duda específica que no encuentras aquí?
+Escríbenos directamente a `islp.bolivia@gmail.com` o a través de nuestra [página de Facebook](https://www.facebook.com/islpBolivia/){target="_blank"}.
+:::
+
+---
+
+## Sobre la Inscripción y Equipos
+
+::: {.callout-tip collapse="true"}
+### ¿Tiene algún costo participar en la competencia?
+**No. La inscripción es 100% gratuita y libre.** ISLP Bolivia es un proyecto sin fines de lucro respaldado por la Fundación ARU, la Carrera de Estadística de la UMSA y el International Statistical Institute (ISI) para promover la alfabetización estadística en todo el país.
+:::
+
+::: {.callout-tip collapse="true"}
+### ¿Cuántos estudiantes deben conformar un equipo?
+Los equipos deben tener entre **2 y 5 estudiantes**, más **un docente o tutor guía**. No se aceptan trabajos individuales ni de más de 5 estudiantes.
+:::
+
+::: {.callout-tip collapse="true"}
+### ¿Quién puede ser el tutor o guía del equipo?
+Cualquier profesor de colegio (de matemáticas, ciencias sociales, física, etc.), docente universitario, investigador o especialista educativo. Un mismo tutor puede orientar a varios equipos distintos.
+:::
+
+::: {.callout-tip collapse="true"}
+### ¿Pueden los integrantes de un equipo pertenecer a cursos distintos?
+Sí, siempre y cuando todos los miembros del equipo cumplan con el rango de edad correspondiente a la categoría en la que postulan.
+:::
+
+---
+
+## Sobre el Póster y el Diseño
+
+::: {.callout-tip collapse="true"}
+### ¿El tema de investigación es libre o asignado?
+**El tema de investigación es completamente libre.** Pueden investigar temas de salud, medio ambiente, deportes, rendimiento académico, redes sociales, transporte, economía o cualquier fenómeno de su comunidad que pueda medirse con datos.
+:::
+
+::: {.callout-tip collapse="true"}
+### ¿Qué dimensiones exactas debe tener el póster?
+El póster debe ser en formato estándar **A1 (841 mm x 594 mm)**, en una sola hoja (unilateral). El archivo digital (PDF o imagen PNG/JPG) no debe superar los **10 MB**.
+:::
+
+::: {.callout-tip collapse="true"}
+### ¿Podemos usar datos ya publicados en internet o debemos hacer encuestas propias?
+Ambas opciones son válidas. Pueden aplicar su propia encuesta o utilizar bases de datos públicas reconocidas (como el INE, UDAPE, CEPAL o Banco Mundial). Lo fundamental es que **siempre citen la fuente de los datos** en cada gráfico.
+:::
+
+::: {.callout-tip collapse="true"}
+### ¿Por qué el póster no debe llevar el nombre del colegio ni de los alumnos?
+Para garantizar que la evaluación del jurado sea **completamente anónima y a ciegas**. Todos los datos del equipo se registran únicamente en el formulario digital.
+:::
+
+---
+
+## Sobre la Evaluación y Premios
+
+::: {.callout-tip collapse="true"}
+### ¿Qué premios se otorgan a los ganadores?
+* **1.er Lugar por Categoría:** Trofeo oficial, diplomas de honor para estudiantes y tutor, y mención destacada.
+* **2.do y 3.er Lugar por Categoría:** Diplomas oficiales de reconocimiento.
+* **Premio Mayor ISLP:** El trabajo más sobresaliente representará a Bolivia en el certamen mundial del International Statistical Literacy Project.
+* **Todos los participantes:** Recibirán certificado digital oficial de participación.
+:::

@@ -1,0 +1,50 @@
+---
+title: "Checklist de Verificación del Póster"
+subtitle: "Autoevaluación Interactiva Antes de Realizar tu Envío"
+---
+
+Antes de enviar tu archivo al jurado calificador, marca cada uno de los siguientes puntos junto a tu equipo y tutor. ¡Asegúrate de completar el 100%!
+
+::: {.islp-checklist-card}
+
+```{=html}
+<div class="islp-chk-progress-wrap">
+  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+    <strong style="color: #0b192e; font-size: 1.1rem;">Progreso de tu póster:</strong>
+    <span id="islp-chk-count" style="font-size: 0.9rem; font-weight: 700; color: #1d4ed8;">0 de 8 requisitos completados (0%)</span>
+  </div>
+  <div class="islp-chk-bar-bg">
+    <div id="islp-chk-fill" class="islp-chk-bar-fill"></div>
+  </div>
+</div>
+```
+
+### Formato y Especificaciones Técnicas
+
+{{< checklist-item id="chk1" texto="El póster es de una sola página y unilateral (no tríptico, no dos hojas)." ayuda="Regla obligatoria: tamaño estándar A1 (841 x 594 mm)." >}}
+
+{{< checklist-item id="chk2" texto="El tamaño del archivo no supera los 10 MB." ayuda="Exporta en PDF o JPG a 300 DPI con compresión optimizada." >}}
+
+{{< checklist-item id="chk3" texto="La tipografía es legible a 2 metros de distancia." ayuda="Títulos entre 60 y 80 pt, subtítulos entre 36 y 48 pt, texto base entre 18 y 24 pt." >}}
+
+### Anonimato y Datos del Equipo
+
+{{< checklist-item id="chk4" texto="NO aparecen los nombres de los estudiantes ni del colegio en el diseño del póster." ayuda="Esencial para la evaluación a ciegas. Los datos van únicamente en el formulario." >}}
+
+### Contenido Científico y Datos
+
+{{< checklist-item id="chk5" texto="El póster tiene un título claro y formula una pregunta de investigación específica." ayuda="El título debe contar brevemente el hallazgo o la curiosidad principal." >}}
+
+{{< checklist-item id="chk6" texto="Cada gráfico incluye título descriptivo, etiquetas en los ejes y fuente citada al pie." ayuda="Ejemplo: 'Fuente: Encuesta escolar aplicada en La Paz, octubre 2026'." >}}
+
+{{< checklist-item id="chk7" texto="Las conclusiones responden directamente a la pregunta inicial basada en datos." ayuda="Evita opiniones subjetivas que no se desprendan de los números recopilados." >}}
+
+{{< checklist-item id="chk8" texto="El equipo cuenta con entre 2 y 5 estudiantes y un docente guía." ayuda="Verifica que todos los integrantes cumplan con el rango de edad de la categoría." >}}
+
+<div style="margin-top: 2rem; text-align: center;">
+  <a id="islp-chk-submit-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-ghost" style="padding: 0.8rem 2rem; font-size: 1.05rem;">
+    ¡Todo Listo! Ir al Formulario de Inscripción
+  </a>
+</div>
+
+:::

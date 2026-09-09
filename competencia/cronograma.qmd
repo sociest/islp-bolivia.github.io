@@ -1,0 +1,21 @@
+---
+title: "Cronograma de la 5ª Versión (2026-2027)"
+subtitle: "Fechas Clave y Fases del Proceso"
+---
+
+Planifica el trabajo de tu brigada siguiendo el calendario oficial de la competencia:
+
+| Fase | Hito | Fecha | Detalles |
+|---|---|---|---|
+| **Fase 1** | **Lanzamiento Nacional** | Octubre 2026 | Difusión de la convocatoria en colegios y universidades de Bolivia. Apertura de la plataforma y recursos. |
+| **Fase 2** | **Periodo de Registro y Tutorías** | Octubre 2026 — Febrero 2027 | Inscripción de grupos en el formulario digital. Publicación de tutoriales, guías y talleres de orientación virtual. |
+| **Fase 3** | **Cierre Definitivo de Recepción** | Marzo 2027 | Último plazo para el envío del póster en PDF o imagen de alta resolución al correo oficial: `islp.bolivia@gmail.com`. |
+| **Fase 4** | **Jornadas de Evaluación** | Abril 2027 | Deliberación del jurado calificador nacional. Selección de los tres mejores pósters por categoría. |
+| **Fase 5** | **Ceremonia de Premiación** | Mayo 2027 | Acto de clausura, entrega de trofeos y diplomas, y nominación del póster que representará a Bolivia en el certamen mundial del ISLP. |
+
+---
+
+::: {.callout-tip}
+### ¿Necesitas apoyo o un taller para tu colegio?
+Docentes y tutores pueden solicitar sesiones virtuales de orientación para sus estudiantes escribiéndonos a `islp.bolivia@gmail.com` o a través de nuestra página de Facebook.
+:::

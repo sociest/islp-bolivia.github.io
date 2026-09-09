@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Competencia Boliviana de Pósters Estadísticos ISLP Bolivia" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | ISLP Bolivia</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="/_extensions/islp-astro/assets/islp-astro.css" />
+  </head>
+  <body>
+    <slot />
+    <script src="/_extensions/islp-astro/assets/islp-astro.js"></script>
+  </body>
+</html>

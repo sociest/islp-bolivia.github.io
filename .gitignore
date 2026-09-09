@@ -8,3 +8,9 @@
 _site/
 .jekyll-cache/
 .jekyll-metadata
+
+/.quarto/
+**/*.quarto_ipynb
+node_modules/
+dist/
+

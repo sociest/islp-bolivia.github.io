@@ -1,0 +1,46 @@
+---
+title: "Bases de Datos Abiertas de Bolivia"
+subtitle: "Fuentes Confiables para tu Investigación Estadística"
+---
+
+Si tu equipo decide no aplicar una encuesta propia, pueden analizar datos secundarios generados por instituciones oficiales y centros de investigación. Aquí tienes las principales fuentes públicas:
+
+---
+
+## 1. Instituto Nacional de Estadística (INE Bolivia)
+
+El INE es la entidad oficial responsable de las estadísticas públicas del país.
+* **Censos de Población y Vivienda:** Datos sociodemográficos, servicios básicos y migración.
+* **Encuestas de Hogares (EH):** Empleo, ingresos, educación y pobreza.
+* **Portal web:** [https://www.ine.gob.bo/](https://www.ine.gob.bo/){target="_blank" rel="noopener"}
+
+---
+
+## 2. Fundación ARU
+
+Instituto de investigación aplicada especializado en datos cuantitativos y análisis de políticas públicas en Bolivia.
+* **Microdatos y series históricas:** Indicadores de bienestar, empleo informal y educación.
+* **Estudios sectoriales:** Investigaciones y visualizaciones de acceso libre.
+* **Portal web:** [https://www.aru.org.bo/](https://www.aru.org.bo/){target="_blank" rel="noopener"}
+
+---
+
+## 3. UDAPE (Unidad de Análisis de Políticas Sociales y Económicas)
+
+* **Dossier de Estadísticas Sociales y Económicas:** Tabulados organizados sobre salud, educación, demografía y macroeconomía.
+* **Portal web:** [https://www.udape.gob.bo/](https://www.udape.gob.bo/){target="_blank" rel="noopener"}
+
+---
+
+## 4. GEO Bolivia y Datos Espaciales
+
+* Plataforma de datos geoespaciales sobre áreas protegidas, cuencas, mapas territoriales y clima en Bolivia.
+* **Portal web:** [https://geo.gob.bo/](https://geo.gob.bo/){target="_blank" rel="noopener"}
+
+---
+
+## 5. Banco Mundial y CEPAL (Datos sobre Bolivia)
+
+* Indicadores del desarrollo mundial con series históricas para Bolivia desde 1960.
+* [Datos del Banco Mundial - Bolivia](https://datos.bancomundial.org/pais/bolivia){target="_blank" rel="noopener"}
+* [CEPALSTAT - Perfil Estadístico de Bolivia](https://statistics.cepal.org/portal/cepalstat/perfil-nacional.html?pais=BOL){target="_blank" rel="noopener"}

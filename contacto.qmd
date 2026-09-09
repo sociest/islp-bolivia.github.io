@@ -1,0 +1,66 @@
+---
+title: "Contacto y Canales Oficiales"
+subtitle: "Comité Organizador ISLP Bolivia"
+---
+
+¿Tienes consultas sobre las bases, necesitas validar la inscripción de tu equipo o deseas que visitemos tu colegio o universidad? ¡Estamos aquí para ayudarte!
+
+::: {layout-ncol=3}
+::: {.islp-resource-card style="text-align: center;"}
+### 📧 Correo Electrónico
+Consultas generales y recepción de pósters:
+
+[islp.bolivia@gmail.com](mailto:islp.bolivia@gmail.com){style="font-weight: 700; color: #1d4ed8; font-size: 1.05rem;"}
+:::
+
+::: {.islp-resource-card style="text-align: center;"}
+### 👥 Facebook Oficial
+Noticias, fechas y transmisiones en vivo:
+
+[facebook.com/islpBolivia](https://www.facebook.com/islpBolivia/){target="_blank" rel="noopener" .islp-btn .islp-btn-outline .islp-btn-sm style="margin-top: 0.5rem;"}
+:::
+
+::: {.islp-resource-card style="text-align: center;"}
+### 🐦 Red Social X / Twitter
+Actualizaciones cortas de la competencia:
+
+[@IslpBolivia](https://twitter.com/IslpBolivia){target="_blank" rel="noopener" .islp-btn .islp-btn-outline .islp-btn-sm style="margin-top: 0.5rem;"}
+:::
+:::
+
+---
+
+## Formulario de Inscripción en Línea
+
+El registro oficial de los equipos se realiza de manera virtual a través de la plataforma de Google Forms de la coordinación nacional:
+
+<div style="text-align: center; margin: 2rem 0; padding: 2rem; background: #ffffff; border: 2px solid #e2e8f0; border-radius: 16px;">
+  <h3 style="color: #0b192e; margin-bottom: 0.5rem;">🎯 Formulario de Inscripción 2026-2027</h3>
+  <p style="color: #64748b; max-width: 540px; margin: 0 auto 1.5rem;">
+    Asegúrate de tener a mano los nombres completos, edades, fecha de nacimiento de los estudiantes y los datos de contacto del docente tutor.
+  </p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-primary" style="padding: 0.85rem 2rem; font-size: 1.1rem;">
+    Abrir Formulario Oficial de Inscripción
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+  </a>
+</div>
+
+---
+
+## Coordinación Institucional
+
+::: {layout-ncol=2}
+::: {#coord-aru}
+### Fundación ARU
+Instituto de investigación aplicada sin fines de lucro.
+* **Sede:** La Paz, Bolivia
+* **Web:** [www.aru.org.bo](https://www.aru.org.bo/){target="_blank"}
+:::
+
+::: {#coord-umsa}
+### Carrera de Estadística — UMSA
+Facultad de Ciencias Puras y Naturales, Universidad Mayor de San Andrés.
+* **Campus:** Cota Cota, La Paz, Bolivia
+* **Web:** [estadistica.umsa.bo](https://estadistica.umsa.bo/){target="_blank"}
+:::
+:::
