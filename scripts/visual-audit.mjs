@@ -54,6 +54,15 @@ async function runAudit() {
   await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_homepage_desktop.png'), fullPage: false });
   console.log('✅ Saved audit_homepage_desktop.png');
 
+  // Scroll down to Reglas & Cronograma table on homepage
+  const juradoSection = page.locator('#reglas-fundamentales-del-jurado');
+  if (await juradoSection.count() > 0) {
+    await juradoSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(200);
+    await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_homepage_jurado_lists_table.png') });
+    console.log('✅ Saved audit_homepage_jurado_lists_table.png');
+  }
+
   // 2. Recursos Page & Checklist
   console.log('📸 Visiting Recursos Page...');
   await page.goto('http://localhost:4321/recursos', { waitUntil: 'networkidle' });
@@ -75,8 +84,9 @@ async function runAudit() {
   // 3. Blog Page
   console.log('📸 Visiting Blog & Boletines...');
   await page.goto('http://localhost:4321/blog', { waitUntil: 'networkidle' });
-  await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog.png') });
-  console.log('✅ Saved audit_blog.png');
+  await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog_top.png') });
+  await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog_full.png'), fullPage: true });
+  console.log('✅ Saved audit_blog_top.png and audit_blog_full.png');
 
   // 4. Contacto Page
   console.log('📸 Visiting Contacto...');

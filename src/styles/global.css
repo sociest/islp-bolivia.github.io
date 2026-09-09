@@ -109,6 +109,227 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
+p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+  color: var(--islp-text-secondary);
+}
+
+ul, ol {
+  padding-left: 2rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+li {
+  margin-bottom: 0.65rem;
+  line-height: 1.7;
+  color: var(--islp-text-secondary);
+  padding-left: 0.35rem;
+}
+
+ul > li::marker {
+  color: var(--cbpe-aqua-glyph);
+  font-size: 1.15em;
+}
+
+ol > li::marker {
+  color: var(--cbpe-blue-royal);
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+li strong {
+  color: var(--islp-navy-900);
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 0.5rem;
+}
+
+hr {
+  margin: 3.5rem 0;
+  border: none;
+  border-top: 1px solid var(--islp-border);
+  opacity: 0.8;
+}
+
+/* Headings spacing within injected prose */
+.islp-injected-part h2,
+h2 {
+  font-size: 1.85rem;
+  margin-top: 3.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--cbpe-blue-midnight);
+  letter-spacing: -0.02em;
+}
+
+.islp-injected-part h3,
+h3 {
+  font-size: 1.35rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.85rem;
+  color: var(--cbpe-blue-royal);
+}
+
+.islp-injected-part h4,
+h4 {
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--islp-navy-900);
+}
+
+.islp-injected-part section {
+  margin-bottom: 3.5rem;
+}
+
+/* ========================================================
+   Tablas de Datos y Publicaciones (Data & Posts Tables)
+   ======================================================== */
+.islp-table-container,
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.75rem 0 2.75rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 20px rgba(19, 21, 74, 0.07);
+  border: 1px solid var(--islp-border);
+  background: #ffffff;
+}
+
+/* Base table styles for Quarto and Astro */
+table,
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.75rem 0 2.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--islp-border);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(19, 21, 74, 0.07);
+  background: #ffffff;
+}
+
+.islp-table-container > table,
+.table-responsive > table {
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+thead {
+  background: linear-gradient(135deg, var(--cbpe-blue-midnight) 0%, var(--cbpe-blue-royal) 100%);
+  color: #ffffff;
+}
+
+thead tr {
+  border-bottom: 2.5px solid var(--cbpe-aqua-glyph);
+}
+
+th {
+  padding: 1.1rem 1.35rem;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff !important;
+  letter-spacing: 0.02em;
+  border-bottom: 2.5px solid var(--cbpe-aqua-glyph);
+  vertical-align: middle;
+}
+
+th a {
+  color: #ffffff !important;
+}
+
+td {
+  padding: 1.1rem 1.35rem;
+  border-bottom: 1px solid var(--islp-border);
+  font-size: 0.95rem;
+  color: var(--islp-text-secondary);
+  vertical-align: middle;
+  line-height: 1.6;
+  transition: background-color 0.15s ease;
+}
+
+td strong {
+  color: var(--islp-navy-900);
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fbfcfe;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover td {
+  background-color: rgba(30, 205, 200, 0.06);
+}
+
+caption,
+.table caption {
+  caption-side: top;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--cbpe-blue-midnight);
+  padding: 0 0 0.85rem;
+}
+
+/* Badges and elements inside tables */
+.islp-table-tag {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  background: var(--cbpe-blue-ice);
+  color: var(--cbpe-blue-royal);
+  border: 1px solid rgba(46, 49, 147, 0.2);
+  white-space: nowrap;
+}
+
+.islp-table-tag.tag-boletin {
+  background: rgba(30, 205, 200, 0.12);
+  color: #0b7c78;
+  border-color: rgba(30, 205, 200, 0.3);
+}
+
+.islp-table-tag.tag-norma {
+  background: rgba(46, 49, 147, 0.1);
+  color: var(--cbpe-blue-royal);
+  border-color: rgba(46, 49, 147, 0.25);
+}
+
+.islp-table-tag.tag-afiche {
+  background: rgba(252, 236, 42, 0.2);
+  color: #8c7300;
+  border-color: rgba(252, 236, 42, 0.4);
+}
+
+.islp-table-tag.tag-historico {
+  background: rgba(187, 11, 36, 0.1);
+  color: var(--cbpe-red-flag);
+  border-color: rgba(187, 11, 36, 0.25);
+}
+
+.islp-table-date {
+  font-size: 0.85rem;
+  color: var(--islp-text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 a {
   color: var(--islp-blue-600);
   text-decoration: none;
