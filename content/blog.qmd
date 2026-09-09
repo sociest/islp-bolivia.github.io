@@ -1,0 +1,102 @@
+---
+title: "Blog y Boletines Oficiales"
+subtitle: "Actualizaciones, Convocatorias y Memoria Histórica del ISLP Bolivia"
+description: "Consulta las publicaciones periódicas, anuncios de la 5ª edición y archivo histórico de la competencia."
+page-layout: full
+---
+
+# Blog y Publicaciones Oficiales
+
+Mantente al tanto de las novedades de la competencia, cronogramas de talleres y resultados de ediciones previas.
+
+---
+
+## 📰 Documentación Oficial (5ª Edición 2026-2027)
+
+Documentos rectores aprobados por la UMSA, Fundación ARU y el International Statistical Institute:
+
+::: {.islp-blog-grid}
+
+::: {.islp-blog-card}
+[REGLAMENTO]{.islp-badge-tag}
+
+### Normas Oficiales de Participación 2026-2027
+Bases completas, requisitos de conformación de equipos con profesores tutores y criterios de entrega.
+
+[Descargar Normas PDF ↗](/img/Normas_de_participacion.pdf){.islp-btn .islp-btn-sm .islp-btn-primary}
+:::
+
+::: {.islp-blog-card}
+[METODOLOGÍA]{.islp-badge-tag}
+
+### Guía de Elaboración de Pósters Estadísticos
+Recomendaciones metodológicas para plantear preguntas de investigación, seleccionar gráficos y evitar sesgos.
+
+[Descargar Guía PDF ↗](/img/guia_2022_2023.pdf){.islp-btn .islp-btn-sm .islp-btn-primary}
+:::
+
+::: {.islp-blog-card}
+[DIFUSIÓN]{.islp-badge-tag}
+
+### Afiche Imprimible de Convocatoria
+Afiche oficial para pegar en pizarras de colegios, institutos y facultades universitarias de Bolivia.
+
+[Descargar Afiche PDF ↗](/img/afiche2022.pdf){.islp-btn .islp-btn-sm .islp-btn-primary}
+:::
+
+::: {.islp-blog-card}
+[RECONOCIMIENTOS]{.islp-badge-tag}
+
+### Cartilla de Premios e Incentivos
+Detalle de diplomas avalados por la IASE/ISI, medallas de honor, equipamiento escolar y clasificación al Mundial.
+
+[Descargar Premios PDF ↗](/img/Premios.pdf){.islp-btn .islp-btn-sm .islp-btn-primary}
+:::
+
+:::
+
+---
+
+## 📚 Archivo Histórico de Boletines
+
+Publicaciones periódicas con entrevistas a jurados, estadísticas de participación por departamento y crónicas de premiaciones:
+
+::: {.islp-blog-grid}
+
+::: {.islp-blog-card}
+[BOLETÍN Nº 1]{.islp-badge-tag}
+
+### Lanzamiento Nacional y Talleres Docentes
+Capacitación masiva a profesores de matemáticas y ciencias sociales en visualización y narrativa con datos.
+
+[Leer Boletín Nº 1 (PDF) ↗](/img/boletin_1.pdf){.islp-btn .islp-btn-sm .islp-btn-outline}
+:::
+
+::: {.islp-blog-card}
+[BOLETÍN Nº 2]{.islp-badge-tag}
+
+### Evaluación y Rúbricas del Jurado
+Crónica de la deliberación del Comité Evaluador y análisis de los errores estadísticos más frecuentes.
+
+[Leer Boletín Nº 2 (PDF) ↗](/img/poster/ISLP_Bolivia _B2.pdf){.islp-btn .islp-btn-sm .islp-btn-outline}
+:::
+
+::: {.islp-blog-card}
+[BOLETÍN Nº 3]{.islp-badge-tag}
+
+### Gala de Ganadores y Fase Internacional
+Presentación de las delegaciones bolivianas que representaron al país en el certamen mundial del ISI.
+
+[Leer Boletín Nº 3 (PDF) ↗](/img/poster/ISLP_Bolivia_B3.pdf){.islp-btn .islp-btn-sm .islp-btn-outline}
+:::
+
+::: {.islp-blog-card}
+[MEMORIA FINAL]{.islp-badge-tag}
+
+### Clausura y Balance Estadístico Nacional
+Acta oficial de premiación, estadísticas de impacto escolar y reflexiones de la comunidad docente boliviana.
+
+[Leer Memoria Final (PDF) ↗](/img/poster/ISLP_Bolivia_clausura.pdf){.islp-btn .islp-btn-sm .islp-btn-outline}
+:::
+
+:::

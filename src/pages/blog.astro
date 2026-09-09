@@ -1,12 +1,12 @@
 ---
-// src/pages/contacto.astro
+// src/pages/blog.astro
 import Layout from '../layouts/Layout.astro';
 import { getQuartoPage } from '../utils/quarto';
 
-const pageData = getQuartoPage('contacto');
+const pageData = getQuartoPage('blog');
 ---
 
-<Layout title={pageData.title} description={pageData.description} currentPath="/contacto">
+<Layout title={pageData.title} description={pageData.description} currentPath="/blog">
   <div class="islp-quarto-container">
     <div class="container">
       <div class="islp-injected-part" set:html={pageData.htmlContent} />

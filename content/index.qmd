@@ -1,0 +1,239 @@
+---
+title: "Competencia Boliviana de Pósters Estadísticos"
+subtitle: "Quinta Versión 2026 — 2027 | ISLP Bolivia"
+description: "Aprende estadística explorando tu realidad. Forma tu equipo escolar o universitario y representa a Bolivia en el concurso internacional ISLP."
+page-layout: full
+---
+
+::: {.islp-hero-banner}
+::: {.islp-hero-inner}
+[★ QUINTA VERSIÓN · INSCRIPCIONES ABIERTAS 2026-2027]{.islp-pill-badge}
+
+# Tus datos cuentan una historia.  
+Haz que Bolivia y el mundo la escuchen.
+
+La investigación estadística no se queda en el aula. Forma tu equipo de 2 a 5 estudiantes más un docente tutor, investiga un problema real de tu comunidad y compite por representar a Bolivia en la Conferencia Mundial del International Statistical Institute (ISI).
+
+::: {.islp-hero-actions}
+[¡Inscribe a tu Equipo Ahora! ↗](https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform){.islp-btn .islp-btn-gold}
+[Descargar Plantillas A1](/recursos){.islp-btn .islp-btn-outline}
+[Ver Ganadores Anteriores](#galeria){.islp-btn .islp-btn-ghost}
+:::
+:::
+:::
+
+{{< lema "La estadística no es solo calcular números: es la lente con la que descubrimos patrones ocultos en nuestra realidad y aprendemos a contar historias que transforman nuestro país." autor="Comité Científico ISLP Bolivia (UMSA & Fundación ARU)" >}}
+
+---
+
+## 🧭 ¿Cuál es tu Categoría?
+
+Ingresa el año de nacimiento de los estudiantes para identificar al instante los requisitos y el nivel de profundidad requerido por el jurado.
+
+::: {#islp-finder-mount}
+<!-- Interactive Category Finder Island Mounted Here -->
+:::
+
+---
+
+## 🎨 Las 4 Categorías: De lo Lúdico a lo Científico
+
+La competencia crece contigo. El jurado evalúa cada categoría según la madurez metodológica de su grupo etario:
+
+::: {.islp-category-grid}
+
+::: {.islp-cat-card .cat-laplace}
+### 🎈 Categoría Laplace
+**Primaria · 9 a 11 años**  
+*(Nacidos en 2015, 2016 y 2017)*
+
+* **Enfoque:** Curiosidad visual y exploración cotidiana.
+* **Gráficos recomendados:** Pictogramas, conteos de frecuencias, barras simples y tablas sencillas.
+* **Tono del jurado:** Valora el entusiasmo, preguntas de su entorno escolar y conclusiones lógicas.
+:::
+
+::: {.islp-cat-card .cat-bernoulli}
+### 🌿 Categoría Bernoulli
+**Secundaria Menor · 12 a 15 años**  
+*(Nacidos en 2011, 2012, 2013 y 2014)*
+
+* **Enfoque:** Hábitos colectivos, redes sociales, medioambiente y deportes.
+* **Gráficos recomendados:** Histogramas, gráficos de líneas temporales, sectores y porcentajes comparativos.
+* **Tono del jurado:** Valora recolección propia de datos, diseño equilibrado y claridad expositiva.
+:::
+
+::: {.islp-cat-card .cat-poisson}
+### 📊 Categoría Poisson
+**Secundaria Mayor · 16 a 18 años**  
+*(Nacidos en 2008, 2009 y 2010)*
+
+* **Enfoque:** Problemáticas socioeconómicas locales, salud pública y coyuntura nacional.
+* **Gráficos recomendados:** Diagramas de dispersión, correlaciones bivariadas, diagramas de caja (boxplots).
+* **Tono del jurado:** Rigor en fuentes secundarias (INE, BM), muestreo explícito y pensamiento crítico.
+:::
+
+::: {.islp-cat-card .cat-gauss}
+### 🏛️ Categoría Gauss
+**Universidad (Pregrado) · Sin límite de edad**  
+*(Estudiantes matriculados en carreras de pregrado)*
+
+* **Enfoque:** Investigación científica aplicada y ciencia de datos.
+* **Gráficos recomendados:** Modelos de regresión, series temporales, intervalos de confianza al 95%.
+* **Tono del jurado:** Publicación formal, discusión de limitaciones estadísticas y ética de datos.
+:::
+
+:::
+
+---
+
+## 🚀 La Ruta del Póster en 4 Pasos
+
+Participar es 100% gratuito para unidades educativas fiscales, privadas y universidades de los 9 departamentos:
+
+::: {.islp-steps-container}
+
+::: {.islp-step-card}
+#### 1. Forma tu Equipo
+Reúne de 2 a 5 estudiantes del mismo rango etario e invita a un profesor o docente tutor a guiarlos.
+:::
+
+::: {.islp-step-card}
+#### 2. Encuentra una Pregunta
+Formula una hipótesis sobre tu colegio o país: uso del agua, hábitos digitales, nutrición o transporte.
+:::
+
+::: {.islp-step-card}
+#### 3. Analiza y Diseña en A1
+Recolecta tus datos o usa fuentes oficiales abiertas. Diseña en Canva o PowerPoint con tamaño A1 legible a 2 metros.
+:::
+
+::: {.islp-step-card}
+#### 4. Envía y Compite
+Completa el formulario en línea y envía el PDF por correo a `islp.bolivia@gmail.com` antes del cierre de marzo de 2027.
+:::
+
+:::
+
+---
+
+## 🏆 Casos de Estudio y Ganadores Históricos {#galeria}
+
+Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y representaron al país en el Congreso Mundial de Estadística:
+
+::: {.islp-study-grid}
+
+{{< caso-estudio
+  id="caso-laplace"
+  img="/img/arte/Categoria1.png"
+  titulo="Gotas que Cuentan: Hábitos de Consumo de Agua en Nuestra Escuela"
+  lema="Pequeños datos para cuidar grandes caudales."
+  categoria="laplace"
+  catnombre="Categoría Laplace (Primaria)"
+  edicion="4ª Edición"
+  premio="1º Lugar Nacional"
+  depto="Cochabamba"
+  institucion="Unidad Educativa del Valle"
+  leccion="Excelente narrativa cronológica y pictogramas sencillos explicados por niños de 10 años con total fluidez."
+  driveUrl="https://drive.google.com/drive/folders/placeholder-laplace-water"
+>}}
+
+{{< caso-estudio
+  id="caso-bernoulli"
+  img="/img/poster/1_Bernoulli_2020.jpg"
+  titulo="Uso de Redes Sociales y Rendimiento Académico en Pandemia"
+  lema="La pantalla no miente: cuando las horas se vuelven estadísticas."
+  categoria="bernoulli"
+  catnombre="Categoría Bernoulli (Secundaria Menor)"
+  edicion="3ª Edición"
+  premio="1º Lugar Nacional & Clasificado Mundial"
+  depto="La Paz"
+  institucion="Colegio San Ignacio"
+  leccion="Uso impecable de histogramas de frecuencias y correlaciones claras entre horas de pantalla y horas de descanso."
+  driveUrl="https://drive.google.com/drive/folders/placeholder-bernoulli-2020"
+>}}
+
+{{< caso-estudio
+  id="caso-poisson"
+  img="/img/poster/1_Poisson_2020.jpg"
+  titulo="Seguridad Alimentaria y Hábitos de Consumo Familiar"
+  lema="Del mercado a la mesa: los números de nuestra nutrición."
+  categoria="poisson"
+  catnombre="Categoría Poisson (Secundaria Mayor)"
+  edicion="3ª Edición"
+  premio="1º Lugar Nacional"
+  depto="Chuquisaca"
+  institucion="Colegio Bernardo Monteagudo"
+  leccion="Muestreo estratificado bien fundamentado y gráficos de dispersión con líneas de tendencia justificadas."
+  driveUrl="https://drive.google.com/drive/folders/placeholder-poisson-2020"
+>}}
+
+{{< caso-estudio
+  id="caso-gauss"
+  img="/img/poster/1_Gauss_2020.jpg"
+  titulo="Modelamiento Estadístico de Contaminación por Material Particulado"
+  lema="El aire que respiramos medido con precisión científica."
+  categoria="gauss"
+  catnombre="Categoría Gauss (Universitaria)"
+  edicion="3ª Edición"
+  premio="1º Lugar Nacional & Mención ISI"
+  depto="La Paz"
+  institucion="Universidad Mayor de San Andrés (UMSA)"
+  leccion="Estructura de nivel de posgrado: análisis de series de tiempo, intervalos de confianza al 95% y discusión metodológica profunda."
+  driveUrl="https://drive.google.com/drive/folders/placeholder-gauss-2020"
+>}}
+
+:::
+
+---
+
+## 📋 Reglas Fundamentales del Jurado
+
+* **Anonimato total en el póster:** No coloques nombres de autores ni del colegio en la lámina. La evaluación es a ciegas.
+* **Formato A1 obligatorio:** Una sola hoja de 594 × 841 mm (vertical u horizontal). Máximo 10 MB en PDF.
+* **Legibilidad:** El texto principal debe leerse claramente a 2 metros de distancia (títulos grandes, ejes legibles).
+* **Honestidad en los datos:** Cita siempre las fuentes secundarias o describe la muestra si los datos fueron recolectados por ti.
+
+---
+
+## 📅 Cronograma Oficial (5ª Versión 2026-2027)
+
+| Hito | Fechas | Estado |
+| :--- | :--- | :--- |
+| **Inscripciones y talleres docentes** | Octubre 2026 – Febrero 2027 | 🟢 Habilitado |
+| **Cierre de recepción de pósters** | 31 de Marzo de 2027 | 🟡 En curso |
+| **Evaluación del Comité Científico** | Abril de 2027 | ⚪ Próximo |
+| **Gala Nacional y pase al Mundial** | Mayo de 2027 | ⚪ Próximo |
+
+---
+
+## ❓ Preguntas Frecuentes
+
+::: {.islp-faq-section}
+
+::: {.islp-faq-item}
+### ¿La inscripción tiene algún costo?
+No, la participación en la Competencia Boliviana de Pósters Estadísticos es **completamente gratuita** para todas las instituciones educativas del país.
+:::
+
+::: {.islp-faq-item}
+### ¿Un profesor puede guiar a varios equipos?
+Sí, un mismo docente o tutor puede asesorar a múltiples equipos dentro de su colegio o universidad.
+:::
+
+::: {.islp-faq-item}
+### ¿Qué software podemos usar para diseñar el póster?
+Puedes usar Canva, PowerPoint, Adobe Illustrator, Inkscape o LaTeX. Ofrecemos plantillas prediseñadas en la sección de [Recursos](/recursos).
+:::
+
+:::
+
+---
+
+## 🤝 Respaldos Institucionales
+
+La CBPE es coordinada en Bolivia por la **Carrera de Estadística de la UMSA**, la **Fundación ARU** y el **International Statistical Literacy Project (ISLP / IASE / ISI)**.
+
+::: {.islp-cta-box}
+### ¿Listo para investigar y contar tu historia?
+[¡Inscribe a tu Equipo en el Formulario Oficial! ↗](https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform){.islp-btn .islp-btn-gold}
+:::

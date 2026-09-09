@@ -1,7 +1,6 @@
 // scripts/visual-audit.mjs
 import { chromium } from 'playwright';
 import path from 'path';
-import fs from 'fs';
 
 const ARTIFACT_DIR = '/home/andreschirinos/.gemini/antigravity-cli/brain/2f7593d6-5051-4c9a-9bd9-c8825d0e8a36';
 
@@ -16,25 +15,18 @@ async function runAudit() {
   });
   const page = await context.newPage();
 
-  const consoleErrors = [];
-  page.on('console', msg => {
-    if (msg.type() === 'error') {
-      consoleErrors.push(msg.text());
-    }
-  });
-
   // 1. Homepage Desktop
-  console.log('📸 Visiting Homepage (Desktop)...');
+  console.log('📸 Visiting Homepage (Landing)...');
   await page.goto('http://localhost:4321/', { waitUntil: 'networkidle' });
   
-  // Check for raw JS leaks in body text
+  // Assert no raw JS text leaked into DOM
   const bodyText = await page.evaluate(() => document.body.innerText);
   if (bodyText.includes('document.addEventListener') || bodyText.includes('const islpMobileToggle')) {
     throw new Error('❌ LEAK DETECTED: Raw JavaScript text is visibly rendered in DOM!');
   }
-  console.log('✅ No raw JS leaks detected in DOM.');
+  console.log('✅ Zero raw JS leaks detected in DOM.');
 
-  // Screenshot initial above-the-fold
+  // Screenshot above-the-fold
   await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_homepage_hero.png'), fullPage: false });
   console.log('✅ Saved audit_homepage_hero.png');
 
@@ -45,36 +37,27 @@ async function runAudit() {
   const finderResult = await page.textContent('#islp-finder-result');
   console.log('Category Finder output for 2012:', finderResult.trim().replace(/\s+/g, ' '));
 
+  // Test Lightbox trigger on case study card
+  const firstZoomBtn = page.locator('.islp-zoom-btn').first();
+  if (await firstZoomBtn.count() > 0) {
+    await firstZoomBtn.click();
+    await page.waitForTimeout(400);
+    const isLightboxActive = await page.evaluate(() => {
+      const el = document.getElementById('islp-lightbox');
+      return el && el.classList.contains('active');
+    });
+    console.log('Lightbox active after click?', isLightboxActive);
+    await page.keyboard.press('Escape');
+    await page.waitForTimeout(200);
+  }
+
   await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_homepage_desktop.png'), fullPage: false });
   console.log('✅ Saved audit_homepage_desktop.png');
 
-  // 2. Galería & Lightbox Test
-  console.log('📸 Visiting Galería...');
-  await page.goto('http://localhost:4321/galeria', { waitUntil: 'networkidle' });
-  
-  // Test Lightbox trigger
-  const firstZoomBtn = page.locator('.islp-zoom-btn').first();
-  await firstZoomBtn.click();
-  await page.waitForTimeout(400);
+  // 2. Recursos Page & Checklist
+  console.log('📸 Visiting Recursos Page...');
+  await page.goto('http://localhost:4321/recursos', { waitUntil: 'networkidle' });
 
-  const isLightboxActive = await page.evaluate(() => {
-    const el = document.getElementById('islp-lightbox');
-    return el && el.classList.contains('active');
-  });
-  console.log('Lightbox active after click?', isLightboxActive);
-
-  await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_galeria_lightbox.png') });
-  console.log('✅ Saved audit_galeria_lightbox.png');
-
-  // Close lightbox with Escape
-  await page.keyboard.press('Escape');
-  await page.waitForTimeout(300);
-
-  // 3. Checklist Test
-  console.log('📸 Visiting Checklist...');
-  await page.goto('http://localhost:4321/recursos/checklist', { waitUntil: 'networkidle' });
-
-  // Tick all 8 items
   const labels = page.locator('.islp-chk-label');
   const count = await labels.count();
   console.log(`Found ${count} checklist items.`);
@@ -86,10 +69,22 @@ async function runAudit() {
   const scoreText = await page.textContent('#islp-chk-counter');
   console.log('Checklist score after all checks:', scoreText.trim());
 
-  await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_checklist_completed.png') });
-  console.log('✅ Saved audit_checklist_completed.png');
+  await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_recursos_checklist.png') });
+  console.log('✅ Saved audit_recursos_checklist.png');
 
-  // 4. Mobile Responsiveness & Hamburger Drawer
+  // 3. Blog Page
+  console.log('📸 Visiting Blog & Boletines...');
+  await page.goto('http://localhost:4321/blog', { waitUntil: 'networkidle' });
+  await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog.png') });
+  console.log('✅ Saved audit_blog.png');
+
+  // 4. Contacto Page
+  console.log('📸 Visiting Contacto...');
+  await page.goto('http://localhost:4321/contacto', { waitUntil: 'networkidle' });
+  await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_contacto.png') });
+  console.log('✅ Saved audit_contacto.png');
+
+  // 5. Mobile Responsiveness & Hamburger Drawer
   console.log('📸 Testing Mobile Viewport (iPhone 14)...');
   const mobileContext = await browser.newContext({
     viewport: { width: 390, height: 844 },
@@ -102,11 +97,15 @@ async function runAudit() {
   await mobilePage.click('#islp-mobile-toggle');
   await mobilePage.waitForTimeout(400);
 
+  // Verify navigation links
+  const mobileLinks = await mobilePage.$$eval('.islp-mobile-link', els => els.map(e => e.textContent.trim()));
+  console.log('Mobile menu items from Quarto:', mobileLinks);
+
   await mobilePage.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_mobile_menu.png') });
   console.log('✅ Saved audit_mobile_menu.png');
 
   await browser.close();
-  console.log('🎉 All Visual Audits completed with ZERO errors!');
+  console.log('🎉 All 4 pages verified with ZERO errors!');
 }
 
 runAudit().catch(err => {

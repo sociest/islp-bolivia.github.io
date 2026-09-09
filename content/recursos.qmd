@@ -1,0 +1,113 @@
+---
+title: "Kit de Recursos y Herramientas"
+subtitle: "Plantillas A1, Datos Abiertos de Bolivia y Checklist del Jurado"
+description: "Descarga plantillas en Canva y Drive, explora repositorios de datos confiables y evalúa tu póster antes de enviarlo."
+page-layout: full
+---
+
+# Kit del Estudiante e Investigador
+
+Todo lo que necesitas para investigar, analizar datos y diseñar un póster de alto impacto visual y rigor metodológico.
+
+{{< lema "El objetivo de la visualización estadística no es decorar números con colores, sino otorgar claridad a lo que antes era invisible." autor="Comité Científico ISLP Bolivia" >}}
+
+---
+
+## 🎨 Plantillas Oficiales de Póster (A1)
+
+Las plantillas están alojadas en **Google Drive** y enlaces directos de **Canva**, calibradas a la medida oficial **A1 (594 × 841 mm)** con márgenes seguros de impresión y fuentes legibles a 2 metros.
+
+::: {.islp-resource-grid}
+
+{{< drive-download
+  title="Plantilla Canva: Categoría Laplace"
+  sub="Diseño lúdico y visual para Primaria (9 a 11 años)."
+  size="Cloud / A1"
+  url="https://www.canva.com/design/play/laplace-template-placeholder"
+  icon="canva"
+>}}
+
+{{< drive-download
+  title="Plantilla Canva: Categoría Bernoulli"
+  sub="Layout infográfico balanceado para Secundaria Menor (12 a 15 años)."
+  size="Cloud / A1"
+  url="https://www.canva.com/design/play/bernoulli-template-placeholder"
+  icon="canva"
+>}}
+
+{{< drive-download
+  title="Plantilla Canva: Categoría Poisson"
+  sub="Diseño analítico de alto contraste para Secundaria Mayor (16 a 18 años)."
+  size="Cloud / A1"
+  url="https://www.canva.com/design/play/poisson-template-placeholder"
+  icon="canva"
+>}}
+
+{{< drive-download
+  title="Plantilla Canva: Categoría Gauss"
+  sub="Estructura académica de 3 columnas para Universitarios."
+  size="Cloud / A1"
+  url="https://www.canva.com/design/play/gauss-template-placeholder"
+  icon="canva"
+>}}
+
+{{< drive-download
+  title="PowerPoint A1 Vertical (.pptx)"
+  sub="Plantilla con guías de alineación y paleta oficial en Drive."
+  size="2.4 MB · PPTX"
+  url="https://drive.google.com/drive/folders/placeholder-islp-pptx-vertical"
+  icon="drive"
+>}}
+
+{{< drive-download
+  title="Plantilla Vectorial (.SVG)"
+  sub="Base vectorial compatible con Inkscape, Illustrator y CorelDraw."
+  size="1.1 MB · SVG"
+  url="https://drive.google.com/drive/folders/placeholder-islp-vectorial"
+  icon="drive"
+>}}
+
+{{< drive-download
+  title="Plantilla LaTeX BeamerPoster (.tex)"
+  sub="Código LaTeX beamerposter para la categoría Gauss."
+  size="350 KB · ZIP"
+  url="https://drive.google.com/drive/folders/placeholder-islp-latex"
+  icon="drive"
+>}}
+
+:::
+
+---
+
+## 🌐 Repositorios de Datos Abiertos de Bolivia
+
+Un póster estadístico riguroso utiliza datos comprobables y transparentes. Consulta estas fuentes oficiales:
+
+| Entidad | Temáticas Destacadas | Enlace |
+| :--- | :--- | :--- |
+| **INE Bolivia** | Censos, empleo, inflación, demografía departamental | [ine.gob.bo ↗](https://www.ine.gob.bo) |
+| **GeoBolivia** | Capas geográficas, cuencas, mapas y áreas protegidas | [geobolivia.gob.bo ↗](https://geobolivia.gob.bo) |
+| **Datos Abiertos AGETIC** | Portales de gobierno abierto, transporte y servicios | [datos.gob.bo ↗](https://datos.gob.bo) |
+| **SIE Ministerio de Educación** | Cobertura escolar, matrícula y deserción | [sie.minedu.gob.bo ↗](https://sie.minedu.gob.bo) |
+| **Banco Mundial (Bolivia)** | Más de 50 años de series de PIB, clima y conectividad | [worldbank.org ↗](https://databank.worldbank.org/reports.aspx?source=2&country=BOL) |
+| **FAOSTAT (Naciones Unidas)** | Agricultura, precios de alimentos, cultivos andinos | [fao.org/faostat ↗](http://www.fao.org/faostat/es/#country/19) |
+| **UNICEF Data** | Salud infantil, nutrición, agua potable y saneamiento | [data.unicef.org ↗](https://data.unicef.org/country/bol/) |
+
+---
+
+## 🔍 Checklist Oficial de Autoevaluación
+
+Antes de enviar el archivo PDF final, evalúa tu póster con los 8 puntos ciegos más penalizados por el Comité Evaluador:
+
+::: {#islp-checklist-mount}
+<!-- Interactive Checklist Island Mounted Here -->
+:::
+
+::: {.islp-callout-box}
+#### 📬 Protocolo de Envío por Correo Electrónico
+Una vez que alcances el 100% en el checklist, tu profesor tutor debe enviar el trabajo:
+
+* **Para:** `islp.bolivia@gmail.com`
+* **Asunto:** `Póster CBPE 2027 – [Categoría] – [Nombre del Equipo]`
+* **Adjuntos:** Póster en PDF (máximo 10 MB, sin nombres en la lámina) + Formulario de Identificación.
+:::

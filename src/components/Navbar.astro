@@ -1,37 +1,15 @@
 ---
 // src/components/Navbar.astro
+import { getQuartoConfig } from '../utils/quarto';
+
 interface Props {
   currentPath?: string;
 }
 
 const { currentPath = "" } = Astro.props;
-
-const navLinks = [
-  { text: "Inicio", href: "/" },
-  {
-    text: "Competencia",
-    children: [
-      { text: "5ª Versión (2026-2027)", href: "/competencia" },
-      { text: "Categorías y Edades", href: "/competencia/categorias" },
-      { text: "Bases y Reglamento", href: "/competencia/bases" },
-      { text: "Criterios del Jurado", href: "/competencia/criterios" },
-      { text: "Cronograma Oficial", href: "/competencia/cronograma" },
-    ]
-  },
-  {
-    text: "Herramientas",
-    children: [
-      { text: "Kit del Estudiante", href: "/recursos" },
-      { text: "Plantillas (Drive / Canva)", href: "/recursos/plantillas" },
-      { text: "Datos Abiertos de Bolivia", href: "/recursos/datos-bolivia" },
-      { text: "Checklist de Verificación", href: "/recursos/checklist" },
-    ]
-  },
-  { text: "Galería", href: "/galeria" },
-  { text: "Boletines", href: "/boletines" },
-  { text: "FAQ", href: "/faq" },
-  { text: "Contacto", href: "/contacto" },
-];
+const config = getQuartoConfig();
+const navLinks = config.navLinks;
+const ctaLink = config.ctaLink;
 ---
 
 <header class="islp-header">
@@ -72,8 +50,8 @@ const navLinks = [
 
     <!-- Header CTA -->
     <div class="islp-header-actions">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-gold islp-btn-sm islp-nav-cta">
-        ¡Inscríbete!
+      <a href={ctaLink.href} target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-gold islp-btn-sm islp-nav-cta">
+        {ctaLink.text}
       </a>
 
       <!-- Mobile Hamburger Toggle -->
@@ -109,8 +87,8 @@ const navLinks = [
         ))}
       </ul>
       <div style="padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 1rem;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-gold" style="width: 100%;">
-          ¡Inscríbete en Google Forms!
+        <a href={ctaLink.href} target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-gold" style="width: 100%;">
+          {ctaLink.text}
         </a>
       </div>
     </div>

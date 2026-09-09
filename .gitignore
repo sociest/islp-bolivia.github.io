@@ -14,3 +14,4 @@ _site/
 node_modules/
 dist/
 .astro/
+.quarto-build/

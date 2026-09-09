@@ -1,14 +1,8 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: .quarto-build
   render:
-    - "index.qmd"
-    - "competencia/*.qmd"
-    - "recursos/*.qmd"
-    - "galeria/*.qmd"
-    - "boletines/*.qmd"
-    - "faq.qmd"
-    - "contacto.qmd"
+    - "content/*.qmd"
 
 website:
   title: "ISLP Bolivia"
@@ -19,45 +13,20 @@ website:
 
   navbar:
     background: primary
-    search: true
+    search: false
     collapse-below: lg
     left:
       - text: "Inicio"
-        href: index.qmd
-      - text: "Competencia"
-        menu:
-          - text: "5ª Versión (2026-2027)"
-            href: competencia/index.qmd
-          - text: "Categorías y Edades"
-            href: competencia/categorias.qmd
-          - text: "Bases y Reglamento"
-            href: competencia/bases.qmd
-          - text: "Criterios de Evaluación"
-            href: competencia/criterios.qmd
-          - text: "Cronograma"
-            href: competencia/cronograma.qmd
-      - text: "Herramientas"
-        menu:
-          - text: "Kit del Estudiante"
-            href: recursos/index.qmd
-          - text: "Plantillas (Canva / PPT / Quarto)"
-            href: recursos/plantillas.qmd
-          - text: "Bases de Datos de Bolivia"
-            href: recursos/datos-bolivia.qmd
-          - text: "Checklist de Verificación"
-            href: recursos/checklist.qmd
-      - text: "Galería"
-        href: galeria/index.qmd
-      - text: "Boletines"
-        href: boletines/index.qmd
-      - text: "Preguntas Frecuentes"
-        href: faq.qmd
+        href: "/"
+      - text: "Recursos"
+        href: "/recursos"
+      - text: "Blog"
+        href: "/blog"
       - text: "Contacto"
-        href: contacto.qmd
+        href: "/contacto"
     right:
       - text: "¡Inscríbete!"
         href: "https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform"
-        aria-label: "Formulario de Inscripción en Google Forms"
 
 format:
   html:
@@ -65,8 +34,6 @@ format:
       light: [cosmo, custom.scss]
     css:
       - _extensions/islp-astro/assets/islp-astro.css
-    include-after-body:
-      - _extensions/islp-astro/assets/islp-astro.js
     toc: true
     toc-depth: 3
     toc-title: "En esta página"

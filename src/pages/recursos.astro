@@ -1,24 +1,23 @@
 ---
-// src/pages/index.astro
+// src/pages/recursos.astro
 import Layout from '../layouts/Layout.astro';
-import CategoryFinder from '../components/CategoryFinder.astro';
+import Checklist from '../components/Checklist.astro';
 import { getQuartoPage } from '../utils/quarto';
 
-const pageData = getQuartoPage('index');
+const pageData = getQuartoPage('recursos');
 
-// Replace mount point comment with CategoryFinder placeholder or split content
-const parts = pageData.htmlContent.split('<div id="islp-finder-mount">');
+const parts = pageData.htmlContent.split('<div id="islp-checklist-mount">');
 const hasMount = parts.length > 1;
 ---
 
-<Layout title={pageData.title} description={pageData.description} currentPath="/">
+<Layout title={pageData.title} description={pageData.description} currentPath="/recursos">
   <div class="islp-quarto-container">
     <div class="container">
       {hasMount ? (
         <>
           <div class="islp-injected-part" set:html={parts[0]} />
           <div class="islp-island-mount">
-            <CategoryFinder />
+            <Checklist />
           </div>
           <div class="islp-injected-part" set:html={parts[1].replace(/<\/div>/, '')} />
         </>
@@ -34,6 +33,6 @@ const hasMount = parts.length > 1;
     padding: 2rem 0 4rem;
   }
   .islp-island-mount {
-    margin: 1.5rem 0 2.5rem;
+    margin: 2rem 0 3rem;
   }
 </style>

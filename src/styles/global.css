@@ -767,3 +767,164 @@ img {
 .islp-lightbox-close:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+
+/* ==========================================================================
+   Quarto Injected Content Styling
+   ========================================================================== */
+
+.islp-hero-banner {
+  background: radial-gradient(circle at 85% 15%, #1e3a8a 0%, #0b192e 70%, #070f1e 100%);
+  color: #ffffff;
+  padding: 4.5rem 2rem 3.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 2.5rem;
+}
+
+.islp-hero-inner h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 1.25rem 0 1rem;
+  color: #ffffff;
+}
+
+.islp-hero-inner p {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: #cbd5e1;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.islp-hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.islp-pill-badge {
+  display: inline-block;
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid var(--islp-gold);
+  color: #fef08a;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.islp-category-grid,
+.islp-study-grid,
+.islp-resource-grid,
+.islp-blog-grid,
+.islp-contact-grid,
+.islp-institutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.islp-steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.islp-step-card {
+  background: var(--islp-surface);
+  border: 1px solid var(--islp-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.islp-step-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--islp-blue-400);
+}
+
+.islp-step-card h4 {
+  color: var(--islp-navy-950);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.islp-blog-card,
+.islp-contact-card,
+.islp-inst-card {
+  background: var(--islp-surface);
+  border: 1px solid var(--islp-border);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.islp-badge-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--islp-blue-600);
+  background: rgba(37, 99, 235, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  width: fit-content;
+}
+
+.islp-callout-box {
+  background: rgba(245, 158, 11, 0.08);
+  border-left: 4px solid var(--islp-gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1.5rem 1.75rem;
+  margin: 2.5rem 0;
+}
+
+.islp-cta-box {
+  background: var(--islp-navy-950);
+  color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  margin: 3rem 0 1rem;
+}
+
+.islp-cta-box h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.islp-faq-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.islp-faq-item {
+  background: var(--islp-surface);
+  border: 1px solid var(--islp-border);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+}
+
+.islp-faq-item h3 {
+  font-size: 1.15rem;
+  color: var(--islp-navy-950);
+  margin-bottom: 0.5rem;
+}
+
