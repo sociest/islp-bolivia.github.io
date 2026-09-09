@@ -24,6 +24,10 @@ La investigación estadística no se queda en el aula. Forma tu equipo de 2 a 5 
 
 {{< lema "La estadística no es solo calcular números: es la lente con la que descubrimos patrones ocultos en nuestra realidad y aprendemos a contar historias que transforman nuestro país." autor="Comité Científico ISLP Bolivia (UMSA & Fundación ARU)" >}}
 
+::: {.islp-motto-callout}
+![](/img/arte/historia-con-datos.png){.islp-motto-img fig-alt="Recuerda: El objetivo es contar una historia con datos"}
+:::
+
 ---
 
 ## 🧭 ¿Cuál es tu Categoría?
@@ -139,7 +143,7 @@ Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y
 
 {{< caso-estudio
   id="caso-bernoulli"
-  img="/img/poster/1_Bernoulli_2020.jpg"
+  img="/img/arte/categoria-bernoulli-oficial.png"
   titulo="Uso de Redes Sociales y Rendimiento Académico en Pandemia"
   lema="La pantalla no miente: cuando las horas se vuelven estadísticas."
   categoria="bernoulli"

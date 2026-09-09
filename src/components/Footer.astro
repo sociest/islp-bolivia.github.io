@@ -6,7 +6,7 @@
   <div class="container islp-footer-grid">
     <div class="islp-footer-col islp-footer-main">
       <div class="islp-footer-brand">
-        <span class="islp-brand-badge">CBPE</span>
+        <img src="/img/logos/cbpe-logo.png" alt="CBPE Logo" class="islp-footer-brand-logo" width="36" height="36" />
         <h3>ISLP Bolivia</h3>
       </div>
       <p class="islp-footer-desc">
@@ -28,22 +28,22 @@
     <div class="islp-footer-col">
       <h4 class="islp-footer-heading">Competencia</h4>
       <ul class="islp-footer-links">
-        <li><a href="/competencia">5ª Versión (2026-2027)</a></li>
-        <li><a href="/competencia/categorias">Categorías y Edades</a></li>
-        <li><a href="/competencia/bases">Bases y Reglamento</a></li>
-        <li><a href="/competencia/criterios">Criterios del Jurado</a></li>
-        <li><a href="/competencia/cronograma">Cronograma Oficial</a></li>
+        <li><a href="/#categorias">Categorías y Edades</a></li>
+        <li><a href="/#pasos">Ruta en 4 Pasos</a></li>
+        <li><a href="/#galeria">Casos de Estudio</a></li>
+        <li><a href="/#faq">Preguntas Frecuentes</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform" target="_blank" rel="noopener noreferrer">Inscripción Oficial ↗</a></li>
       </ul>
     </div>
 
     <div class="islp-footer-col">
       <h4 class="islp-footer-heading">Herramientas</h4>
       <ul class="islp-footer-links">
-        <li><a href="/recursos/plantillas">Plantillas en Drive & Canva</a></li>
-        <li><a href="/recursos/datos-bolivia">Bases de Datos de Bolivia</a></li>
-        <li><a href="/recursos/checklist">Checklist de Verificación</a></li>
-        <li><a href="/galeria">Galería y Casos de Estudio</a></li>
-        <li><a href="/boletines">Archivo de Boletines</a></li>
+        <li><a href="/recursos#plantillas">Plantillas en Drive & Canva</a></li>
+        <li><a href="/recursos#datos">Bases de Datos de Bolivia</a></li>
+        <li><a href="/recursos#checklist">Checklist del Jurado</a></li>
+        <li><a href="/blog">Boletines y Normas</a></li>
+        <li><a href="/contacto">Contacto y Sedes</a></li>
       </ul>
     </div>
 
@@ -65,11 +65,12 @@
 
 <style>
   .islp-footer {
-    background: var(--islp-navy-950);
+    background: var(--cbpe-blue-midnight, #13154a);
     color: #e2e8f0;
     padding: 4.5rem 0 2rem;
     margin-top: auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 2.5px solid transparent;
+    border-image: linear-gradient(90deg, #bb0b24 0%, #fcec2a 25%, #00662f 50%, #1ecdc8 75%, #2e3193 100%) 1;
   }
 
   .islp-footer-grid {
@@ -94,11 +95,22 @@
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 1rem;
+    font-family: var(--font-brand);
+  }
+
+  .islp-footer-brand-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid rgba(30, 205, 200, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   }
 
   .islp-footer-brand h3 {
     color: #ffffff;
     font-size: 1.4rem;
+    font-family: var(--font-brand);
   }
 
   .islp-footer-desc {
@@ -128,8 +140,8 @@
   }
 
   .islp-social-btn:hover {
-    background: var(--islp-blue-600);
-    color: #ffffff;
+    background: var(--cbpe-cyan, #1ecdc8);
+    color: var(--cbpe-blue-midnight, #13154a) !important;
   }
 
   .islp-footer-heading {
@@ -137,6 +149,7 @@
     font-size: 1.05rem;
     margin-bottom: 1.2rem;
     letter-spacing: -0.01em;
+    font-family: var(--font-heading);
   }
 
   .islp-footer-links {
@@ -154,7 +167,7 @@
   }
 
   .islp-footer-links a:hover {
-    color: var(--islp-blue-400);
+    color: var(--cbpe-cyan, #1ecdc8);
   }
 
   .islp-footer-orgs p {

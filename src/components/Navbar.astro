@@ -15,7 +15,7 @@ const ctaLink = config.ctaLink;
 <header class="islp-header">
   <div class="container islp-nav-container">
     <a href="/" class="islp-brand" aria-label="ISLP Bolivia Inicio">
-      <div class="islp-brand-badge">CBPE</div>
+      <img src="/img/logos/cbpe-logo.png" alt="CBPE Bolivia Logo" class="islp-brand-logo" width="38" height="38" />
       <span class="islp-brand-text">ISLP <strong>Bolivia</strong></span>
     </a>
 
@@ -97,12 +97,13 @@ const ctaLink = config.ctaLink;
 
 <style>
   .islp-header {
-    background: var(--islp-navy-950);
+    background: var(--cbpe-blue-midnight, #13154a);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 2.5px solid transparent;
+    border-image: linear-gradient(90deg, #bb0b24 0%, #fcec2a 25%, #00662f 50%, #1ecdc8 75%, #2e3193 100%) 1;
   }
 
   .islp-nav-container {
@@ -119,20 +120,33 @@ const ctaLink = config.ctaLink;
     color: #ffffff;
     font-size: 1.25rem;
     font-weight: 700;
+    font-family: var(--font-brand);
+  }
+
+  .islp-brand-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid rgba(30, 205, 200, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   }
 
   .islp-brand-badge {
-    background: var(--islp-blue-600);
-    color: #ffffff;
+    background: var(--cbpe-blue-royal);
+    color: var(--cbpe-cyan);
+    border: 1px solid var(--cbpe-cyan);
     padding: 2px 8px;
     border-radius: 6px;
     font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.05em;
+    font-family: var(--font-brand);
   }
 
   .islp-brand-text strong {
-    color: var(--islp-blue-400);
+    color: var(--cbpe-cyan, #1ecdc8);
+    font-weight: 800;
   }
 
   .islp-desktop-nav {
@@ -174,8 +188,14 @@ const ctaLink = config.ctaLink;
 
   .islp-nav-link:hover,
   .islp-dropdown-toggle:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.08);
+    color: var(--cbpe-cyan, #1ecdc8);
+    background: rgba(30, 205, 200, 0.1);
+  }
+
+  .islp-nav-link.active {
+    color: var(--cbpe-cyan, #1ecdc8);
+    font-weight: 700;
+    background: rgba(30, 205, 200, 0.14);
   }
 
   .islp-dropdown-menu {
@@ -183,12 +203,12 @@ const ctaLink = config.ctaLink;
     top: 100%;
     left: 0;
     min-width: 220px;
-    background: #0b192e;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--cbpe-blue-midnight, #13154a);
+    border: 1px solid rgba(30, 205, 200, 0.25);
     border-radius: 10px;
     padding: 0.5rem;
     list-style: none;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
@@ -213,8 +233,8 @@ const ctaLink = config.ctaLink;
   }
 
   .islp-dropdown-link:hover {
-    background: var(--islp-blue-600);
-    color: #ffffff;
+    background: var(--cbpe-blue-royal, #2e3193);
+    color: var(--cbpe-cyan, #1ecdc8);
   }
 
   .islp-header-actions {
