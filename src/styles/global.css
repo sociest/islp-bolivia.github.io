@@ -42,7 +42,7 @@
   --cat-laplace-accent: #1ecdc8;
   --cat-laplace-bg: linear-gradient(180deg, #ffffff 60%, #ecfdfd 100%);
   --cat-laplace-border: #99f6f3;
-  --cat-laplace-pill: #0eaba6;
+  --cat-laplace-pill: #08736f;
 
   /* 2. Bernoulli (Secundaria · 12-15 años) */
   --cat-bernoulli-accent: #008f4c;
@@ -300,9 +300,9 @@ caption,
 }
 
 .islp-table-tag.tag-boletin {
-  background: rgba(30, 205, 200, 0.12);
-  color: #0b7c78;
-  border-color: rgba(30, 205, 200, 0.3);
+  background: rgba(30, 205, 200, 0.14);
+  color: #05615d;
+  border-color: rgba(30, 205, 200, 0.35);
 }
 
 .islp-table-tag.tag-norma {
@@ -312,9 +312,9 @@ caption,
 }
 
 .islp-table-tag.tag-afiche {
-  background: rgba(252, 236, 42, 0.2);
-  color: #8c7300;
-  border-color: rgba(252, 236, 42, 0.4);
+  background: rgba(252, 236, 42, 0.28);
+  color: #5c4a00;
+  border-color: rgba(252, 236, 42, 0.6);
 }
 
 .islp-table-tag.tag-historico {
@@ -325,9 +325,20 @@ caption,
 
 .islp-table-date {
   font-size: 0.85rem;
-  color: var(--islp-text-muted);
+  color: #475569;
   font-weight: 500;
   white-space: nowrap;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: rgba(19, 21, 74, 0.07);
+  color: var(--cbpe-blue-midnight);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid rgba(19, 21, 74, 0.12);
+  font-weight: 600;
 }
 
 a {
@@ -1164,18 +1175,51 @@ img {
 }
 
 .islp-cta-box {
-  background: var(--islp-navy-950);
+  background: radial-gradient(circle at 85% 15%, rgba(30, 205, 200, 0.15) 0%, rgba(46, 49, 147, 0.35) 45%, var(--cbpe-blue-midnight) 100%), linear-gradient(145deg, var(--cbpe-blue-midnight) 0%, #1a1e64 100%);
   color: #ffffff;
-  padding: 3rem 2rem;
+  padding: 3.5rem 2rem;
   border-radius: var(--radius-lg);
   text-align: center;
-  margin: 3rem 0 1rem;
+  margin: 3.5rem 0 1.5rem;
+  border: 1.5px solid rgba(30, 205, 200, 0.3);
+  box-shadow: 0 12px 36px rgba(19, 21, 74, 0.25);
 }
 
-.islp-cta-box h3 {
-  color: #ffffff;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+.islp-cta-box h2,
+.islp-cta-box h3,
+.islp-cta-box h4 {
+  color: #ffffff !important;
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  font-weight: 800;
+  margin-top: 0 !important;
+  margin-bottom: 1.25rem !important;
+  letter-spacing: -0.02em;
+}
+
+.islp-cta-box p {
+  color: #f1f5f9 !important;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  max-width: 720px;
+  margin: 0 auto 2rem !important;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.islp-cta-box strong {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.islp-cta-box a:not(.islp-btn) {
+  color: var(--cbpe-cyan-light, #79ece8) !important;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.islp-cta-box .islp-btn {
+  font-size: 1.05rem;
+  padding: 0.85rem 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .islp-faq-section {

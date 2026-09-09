@@ -86,6 +86,14 @@ async function runAudit() {
   await page.goto('http://localhost:4321/blog', { waitUntil: 'networkidle' });
   await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog_top.png') });
   await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog_full.png'), fullPage: true });
+  
+  const ctaBox = page.locator('.islp-cta-box').first();
+  if (await ctaBox.count() > 0) {
+    await ctaBox.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(200);
+    await ctaBox.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_cta_box_contrast.png') });
+    console.log('✅ Saved audit_cta_box_contrast.png');
+  }
   console.log('✅ Saved audit_blog_top.png and audit_blog_full.png');
 
   // 4. Contacto Page
