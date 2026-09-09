@@ -1,0 +1,181 @@
+---
+// src/components/Footer.astro
+---
+
+<footer class="islp-footer">
+  <div class="container islp-footer-grid">
+    <div class="islp-footer-col islp-footer-main">
+      <div class="islp-footer-brand">
+        <span class="islp-brand-badge">CBPE</span>
+        <h3>ISLP Bolivia</h3>
+      </div>
+      <p class="islp-footer-desc">
+        Competencia Boliviana de Pósters Estadísticos. Promoviendo la alfabetización estadística, el pensamiento crítico y la investigación científica en la juventud boliviana.
+      </p>
+      <div class="islp-footer-social">
+        <a href="https://www.facebook.com/islpBolivia/" target="_blank" rel="noopener noreferrer" aria-label="Facebook ISLP Bolivia" class="islp-social-btn">
+          Facebook
+        </a>
+        <a href="https://twitter.com/IslpBolivia" target="_blank" rel="noopener noreferrer" aria-label="X Twitter ISLP Bolivia" class="islp-social-btn">
+          X / Twitter
+        </a>
+        <a href="mailto:islp.bolivia@gmail.com" aria-label="Email ISLP Bolivia" class="islp-social-btn">
+          Email
+        </a>
+      </div>
+    </div>
+
+    <div class="islp-footer-col">
+      <h4 class="islp-footer-heading">Competencia</h4>
+      <ul class="islp-footer-links">
+        <li><a href="/competencia">5ª Versión (2026-2027)</a></li>
+        <li><a href="/competencia/categorias">Categorías y Edades</a></li>
+        <li><a href="/competencia/bases">Bases y Reglamento</a></li>
+        <li><a href="/competencia/criterios">Criterios del Jurado</a></li>
+        <li><a href="/competencia/cronograma">Cronograma Oficial</a></li>
+      </ul>
+    </div>
+
+    <div class="islp-footer-col">
+      <h4 class="islp-footer-heading">Herramientas</h4>
+      <ul class="islp-footer-links">
+        <li><a href="/recursos/plantillas">Plantillas en Drive & Canva</a></li>
+        <li><a href="/recursos/datos-bolivia">Bases de Datos de Bolivia</a></li>
+        <li><a href="/recursos/checklist">Checklist de Verificación</a></li>
+        <li><a href="/galeria">Galería y Casos de Estudio</a></li>
+        <li><a href="/boletines">Archivo de Boletines</a></li>
+      </ul>
+    </div>
+
+    <div class="islp-footer-col">
+      <h4 class="islp-footer-heading">Coordinación</h4>
+      <div class="islp-footer-orgs">
+        <p><strong>Fundación ARU</strong><br>Investigación Cuantitativa Aplicada</p>
+        <p><strong>Carrera de Estadística — UMSA</strong><br>Universidad Mayor de San Andrés</p>
+        <p><strong>International Statistical Institute</strong><br>ISLP / IASE</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container islp-footer-bottom">
+    <p>© {new Date().getFullYear()} ISLP Bolivia — International Statistical Literacy Project. Todos los derechos reservados.</p>
+    <p>La Paz, Bolivia · Coordinación Nacional</p>
+  </div>
+</footer>
+
+<style>
+  .islp-footer {
+    background: var(--islp-navy-950);
+    color: #e2e8f0;
+    padding: 4.5rem 0 2rem;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .islp-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .islp-footer-main {
+    grid-column: span 1;
+  }
+
+  @media (min-width: 992px) {
+    .islp-footer-main {
+      grid-column: span 1.5;
+    }
+  }
+
+  .islp-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .islp-footer-brand h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+  }
+
+  .islp-footer-desc {
+    color: #94a3b8;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    max-width: 380px;
+  }
+
+  .islp-footer-social {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .islp-social-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .islp-social-btn:hover {
+    background: var(--islp-blue-600);
+    color: #ffffff;
+  }
+
+  .islp-footer-heading {
+    color: #ffffff;
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+  }
+
+  .islp-footer-links {
+    list-style: none;
+  }
+
+  .islp-footer-links li {
+    margin-bottom: 0.65rem;
+  }
+
+  .islp-footer-links a {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    transition: color 0.15s ease;
+  }
+
+  .islp-footer-links a:hover {
+    color: var(--islp-blue-400);
+  }
+
+  .islp-footer-orgs p {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .islp-footer-orgs strong {
+    color: #cbd5e1;
+  }
+
+  .islp-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: #64748b;
+  }
+</style>

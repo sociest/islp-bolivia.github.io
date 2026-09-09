@@ -1,0 +1,93 @@
+---
+// src/components/Checklist.astro
+const items = [
+  { id: "chk1", title: "El póster es de una sola página y unilateral", help: "Formato estándar A1 (841 x 594 mm). No se admiten dípticos ni dos hojas." },
+  { id: "chk2", title: "El tamaño del archivo no supera los 10 MB", help: "Exporta en PDF o imagen de alta resolución (300 DPI)." },
+  { id: "chk3", title: "La tipografía es legible a 2 metros de distancia", help: "Títulos grandes (60-80 pt), subtítulos (36-48 pt) y cuerpo legible (18-24 pt)." },
+  { id: "chk4", title: "NO aparecen nombres de estudiantes ni del colegio en el póster", help: "Requisito obligatorio para evaluación a ciegas por el jurado." },
+  { id: "chk5", title: "Formula una pregunta de investigación clara y específica", help: "Debe plantear un objetivo concreto que los datos resuelven." },
+  { id: "chk6", title: "Cada gráfico incluye título, etiquetas de ejes y fuente al pie", help: "Indica siempre la muestra o la fuente pública consultada." },
+  { id: "chk7", title: "Las conclusiones se apoyan estrictamente en los datos", help: "Evita afirmaciones sin evidencia numérica de respaldo." },
+  { id: "chk8", title: "Equipo conformado por 2 a 5 estudiantes más un docente guía", help: "Verifica que todos cumplan el rango etario de la categoría." },
+];
+---
+
+<div class="islp-checklist-card">
+  <div class="islp-chk-progress-wrap">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+      <strong style="color: var(--islp-navy-950); font-size: 1.1rem;">Progreso de Verificación:</strong>
+      <span id="islp-chk-counter" style="font-size: 0.95rem; font-weight: 700; color: var(--islp-blue-600);">
+        0 de {items.length} requisitos completados (0%)
+      </span>
+    </div>
+    <div class="islp-chk-bar-bg">
+      <div id="islp-chk-progress-fill" class="islp-chk-bar-fill"></div>
+    </div>
+  </div>
+
+  <div class="islp-chk-items">
+    {items.map((item) => (
+      <label class="islp-chk-label" for={item.id}>
+        <input type="checkbox" id={item.id} class="islp-chk-input islp-chk-item" />
+        <span class="islp-chk-box">
+          <svg class="islp-chk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </span>
+        <span class="islp-chk-text-wrap">
+          <span class="islp-chk-text">{item.title}</span>
+          <span class="islp-chk-help">{item.help}</span>
+        </span>
+      </label>
+    ))}
+  </div>
+
+  <div style="margin-top: 2rem; text-align: center; border-top: 1px solid var(--islp-border); padding-top: 1.5rem;">
+    <a
+      id="islp-chk-cta"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="islp-btn islp-btn-ghost"
+      style="padding: 0.85rem 2rem; font-size: 1.05rem;"
+    >
+      ¡Todo Listo! Ir al Formulario de Inscripción →
+    </a>
+  </div>
+</div>
+
+<script>
+  function setupChecklist() {
+    const checkboxes = document.querySelectorAll('.islp-chk-item') as NodeListOf<HTMLInputElement>;
+    const counter = document.getElementById('islp-chk-counter');
+    const fill = document.getElementById('islp-chk-progress-fill');
+    const cta = document.getElementById('islp-chk-cta');
+
+    function update() {
+      if (!checkboxes.length || !counter || !fill || !cta) return;
+      const total = checkboxes.length;
+      let checked = 0;
+      checkboxes.forEach(c => { if (c.checked) checked++; });
+      const percent = Math.round((checked / total) * 100);
+
+      counter.textContent = `${checked} de ${total} requisitos completados (${percent}%)`;
+      fill.style.width = `${percent}%`;
+
+      if (percent === 100) {
+        cta.classList.remove('islp-btn-ghost');
+        cta.classList.add('islp-btn-primary');
+        cta.textContent = '🎉 ¡Póster 100% Verificado! Ir a Inscripción Oficial →';
+      } else {
+        cta.classList.remove('islp-btn-primary');
+        cta.classList.add('islp-btn-ghost');
+        cta.textContent = '¡Todo Listo! Ir al Formulario de Inscripción →';
+      }
+    }
+
+    checkboxes.forEach(c => c.addEventListener('change', update));
+    update();
+  }
+
+  setupChecklist();
+  document.addEventListener('astro:page-load', setupChecklist);
+</script>

@@ -1,0 +1,21 @@
+---
+// src/components/Lema.astro
+interface Props {
+  quote: string;
+  author?: string;
+  context?: string;
+}
+
+const { quote, author, context } = Astro.props;
+---
+
+<blockquote class="islp-lema-quote">
+  <div class="islp-lema-mark">“</div>
+  <p class="islp-lema-text">{quote}</p>
+  {author && (
+    <footer class="islp-lema-author">
+      <span class="islp-lema-dash">—</span> {author}
+      {context && <span class="islp-lema-context">({context})</span>}
+    </footer>
+  )}
+</blockquote>

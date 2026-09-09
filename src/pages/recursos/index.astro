@@ -1,0 +1,154 @@
+---
+// src/pages/recursos/index.astro
+import Layout from '../../layouts/Layout.astro';
+import Lema from '../../components/Lema.astro';
+---
+
+<Layout title="Kit del Estudiante y Recursos" currentPath="/recursos">
+  <!-- Hero Section -->
+  <section class="islp-hero" style="background: radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.18), transparent 60%), linear-gradient(135deg, #070f1e 0%, #0d1b2a 100%);">
+    <div class="container">
+      <span class="islp-badge islp-badge-gold">Centro de Recursos CBPE</span>
+      <h1 class="islp-title islp-title-lg" style="margin-top: 1rem;">
+        Kit del Estudiante e Investigador
+      </h1>
+      <p class="islp-lead" style="max-width: 800px;">
+        Todo lo que necesitas para investigar, analizar datos reales y diseñar un póster estadístico de impacto nacional e internacional.
+      </p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+        <a href="/recursos/plantillas" class="islp-btn islp-btn-gold">Descargar Plantillas</a>
+        <a href="/recursos/checklist" class="islp-btn islp-btn-outline">Checklist de Autoevaluación</a>
+        <a href="/recursos/datos-bolivia" class="islp-btn islp-btn-ghost">Bases de Datos Bolivia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Access Cards -->
+  <section class="islp-section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.75rem;">
+        
+        <div class="islp-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h2 style="font-size: 1.35rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.5rem;">Plantillas de Diseño</h2>
+            <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              Archivos prediseñados en Google Drive y Canva en formato A1 (vertical y horizontal), adaptados con jerarquías visuales óptimas y tipografías legibles a 2 metros.
+            </p>
+          </div>
+          <a href="/recursos/plantillas" class="islp-btn islp-btn-primary islp-btn-sm" style="width: 100%;">
+            Ver Plantillas Drive & Canva →
+          </a>
+        </div>
+
+        <div class="islp-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h2 style="font-size: 1.35rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.5rem;">Datos Abiertos de Bolivia</h2>
+            <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              Repositorios públicos confiables: Instituto Nacional de Estadística (INE), GeoBolivia, AGETIC, Min. Salud, Banco Mundial y UNICEF para fundamentar tu tesis.
+            </p>
+          </div>
+          <a href="/recursos/datos-bolivia" class="islp-btn islp-btn-primary islp-btn-sm" style="width: 100%;">
+            Explorar Repositorios →
+          </a>
+        </div>
+
+        <div class="islp-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2">
+                <path d="M9 11l3 3L22 4"></path>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </div>
+            <h2 style="font-size: 1.35rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.5rem;">Checklist del Jurado</h2>
+            <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              Simulador interactivo con los 8 puntos ciegos más penalizados por el Comité Evaluador ISLP (anonimato, fuentes de datos, conclusiones sin inferencias erróneas).
+            </p>
+          </div>
+          <a href="/recursos/checklist" class="islp-btn islp-btn-primary islp-btn-sm" style="width: 100%;">
+            Comprobar mi Póster →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Guía de Estructura de un Póster -->
+  <section class="islp-section" style="background: rgba(13, 27, 42, 0.4); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+    <div class="container">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <span class="islp-badge islp-badge-gold">Metodología ISLP</span>
+        <h2 class="islp-title islp-title-md" style="margin-top: 0.5rem;">Anatomía de un Póster Estadístico Ganador</h2>
+        <p class="islp-lead" style="margin-bottom: 2.5rem;">
+          Un póster no es un artículo pegado en una pared: es una narrativa visual rápida que cuenta una historia comprensible en 2 minutos.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+          
+          <div class="islp-card" style="border-top: 4px solid #38bdf8;">
+            <div style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 2rem; color: #38bdf8; line-height: 1;">01</div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #f8fafc; margin: 0.75rem 0 0.5rem;">Pregunta Central</h3>
+            <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.5;">
+              Define una hipótesis clara y concreta. Plantea qué problema de tu comunidad o del país buscas responder con datos.
+            </p>
+          </div>
+
+          <div class="islp-card" style="border-top: 4px solid #34d399;">
+            <div style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 2rem; color: #34d399; line-height: 1;">02</div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #f8fafc; margin: 0.75rem 0 0.5rem;">Origen de Datos</h3>
+            <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.5;">
+              Muestra claramente cómo se recolectaron los datos (encuesta propia o fuentes secundarias como INE o BM) y el tamaño muestral (n).
+            </p>
+          </div>
+
+          <div class="islp-card" style="border-top: 4px solid #fbbf24;">
+            <div style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 2rem; color: #fbbf24; line-height: 1;">03</div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #f8fafc; margin: 0.75rem 0 0.5rem;">Gráficos Explicativos</h3>
+            <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.5;">
+              Usa entre 2 y 4 gráficos con títulos descriptivos, ejes etiquetados con unidades y llamados explicativos integrados.
+            </p>
+          </div>
+
+          <div class="islp-card" style="border-top: 4px solid #a855f7;">
+            <div style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 2rem; color: #a855f7; line-height: 1;">04</div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #f8fafc; margin: 0.75rem 0 0.5rem;">Conclusión de Impacto</h3>
+            <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.5;">
+              Interpreta los hallazgos sin generalizar en exceso. Explica qué significa para las personas y qué soluciones se proponen.
+            </p>
+          </div>
+
+        </div>
+
+        <Lema 
+          cita="El objetivo de la visualización estadística no es decorar números con colores, sino otorgar claridad a lo que antes era invisible." 
+          autor="Comité Científico ISLP Bolivia" 
+        />
+
+        <div class="islp-callout islp-callout-info" style="margin-top: 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h4 style="color: #f8fafc; font-weight: 700; margin-bottom: 0.25rem;">Descarga el Reglamento Oficial Completo</h4>
+            <p style="color: #94a3b8; font-size: 0.9rem; margin: 0;">Consulta todas las especificaciones formales y dimensiones en formato PDF.</p>
+          </div>
+          <a href="/img/Normas_de_participacion.pdf" download class="islp-btn islp-btn-outline islp-btn-sm">
+            Descargar Normas PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

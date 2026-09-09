@@ -1,0 +1,124 @@
+---
+// src/pages/contacto.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contacto y Canales Oficiales" currentPath="/contacto">
+  <section class="islp-hero" style="background: radial-gradient(circle at 30% 20%, rgba(245, 158, 11, 0.15), transparent 60%), linear-gradient(135deg, #070f1e 0%, #0d1b2a 100%);">
+    <div class="container" style="text-align: center;">
+      <span class="islp-badge islp-badge-gold">Estamos para Ayudarte</span>
+      <h1 class="islp-title islp-title-lg" style="margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+        Contacto y Soporte CBPE
+      </h1>
+      <p class="islp-lead" style="max-width: 750px; margin-left: auto; margin-right: auto;">
+        Comunícate con el Comité Coordinador Nacional de ISLP Bolivia ante dudas sobre inscripción, validación de equipos o asesoría metodológica para docentes.
+      </p>
+    </div>
+  </section>
+
+  <section class="islp-section">
+    <div class="container">
+      
+      <!-- Canales de comunicación directa -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3.5rem;">
+        
+        <div class="islp-card" style="text-align: center; padding: 2rem 1.5rem;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.2rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.5rem;">Correo Oficial</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+            Para consultas institucionales, acreditación de docentes y recepción de pósters finales.
+          </p>
+          <a href="mailto:islp.bolivia@gmail.com" class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
+            islp.bolivia@gmail.com
+          </a>
+        </div>
+
+        <div class="islp-card" style="text-align: center; padding: 2rem 1.5rem;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(24, 119, 242, 0.15); border: 1px solid rgba(24, 119, 242, 0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.2rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.5rem;">Facebook Oficial</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+            Noticias en tiempo real, transmisiones en vivo de talleres docentes y galerías de fotos.
+          </p>
+          <a href="https://www.facebook.com/islpBolivia/" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
+            facebook.com/islpBolivia ↗
+          </a>
+        </div>
+
+        <div class="islp-card" style="text-align: center; padding: 2rem 1.5rem;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(14, 165, 233, 0.15); border: 1px solid rgba(14, 165, 233, 0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.2rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.5rem;">X / Twitter</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+            Hilos explicativos de datos, recordatorios de fechas límite y menciones académicas globales.
+          </p>
+          <a href="https://twitter.com/IslpBolivia" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
+            @IslpBolivia ↗
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Sede institucional -->
+      <div class="islp-card" style="background: rgba(13, 27, 42, 0.5); border: 1px solid rgba(255, 255, 255, 0.08); padding: 2.5rem;">
+        <h2 style="font-size: 1.4rem; font-weight: 700; color: #f8fafc; margin-bottom: 1.5rem;">
+          Instituciones Organizadoras y Sede Nacional
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+          <div>
+            <h4 style="color: #f59e0b; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem;">Fundación ARU</h4>
+            <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 0.5rem;">
+              Centro de investigación en políticas públicas y análisis cuantitativo de datos.
+            </p>
+            <p style="color: #64748b; font-size: 0.85rem;">
+              Av. 20 de Octubre #2164, Edif. Concor, Piso 2, La Paz - Bolivia.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="color: #60a5fa; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem;">Universidad Mayor de San Andrés (UMSA)</h4>
+            <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 0.5rem;">
+              Carrera de Estadística, Facultad de Ciencias Puras y Naturales.
+            </p>
+            <p style="color: #64748b; font-size: 0.85rem;">
+              Campus Universitario de Cota Cota, Calle 27, La Paz - Bolivia.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="color: #34d399; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem;">IASE / International Statistical Institute</h4>
+            <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 0.5rem;">
+              International Statistical Literacy Project (ISLP).
+            </p>
+            <p style="color: #64748b; font-size: 0.85rem;">
+              Coordinación para América Latina e Iberoamérica.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span style="font-weight: 600; color: #f8fafc;">¿Listo para dar el paso con tu equipo?</span>
+            <span style="color: #94a3b8; margin-left: 0.5rem; font-size: 0.9rem;">El formulario de registro no toma más de 5 minutos.</span>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-gold">
+            Completar Formulario de Inscripción ↗
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</Layout>

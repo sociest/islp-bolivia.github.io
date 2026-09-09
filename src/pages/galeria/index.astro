@@ -1,0 +1,187 @@
+---
+// src/pages/galeria/index.astro
+import Layout from '../../layouts/Layout.astro';
+import StudyCaseCard from '../../components/StudyCaseCard.astro';
+import Carousel from '../../components/Carousel.astro';
+import Lema from '../../components/Lema.astro';
+
+const winners = [
+  {
+    id: "caso-laplace-2024",
+    img: "/img/arte/Categoria1.png",
+    titulo: "Gotas que Cuentan: Hábitos de Consumo de Agua en Nuestra Escuela",
+    lema: "Pequeños datos para cuidar grandes caudales.",
+    categoria: "laplace" as const,
+    catnombre: "Categoría Laplace (Primaria)",
+    edicion: "4ª Edición",
+    premio: "1º Lugar Nacional",
+    depto: "Cochabamba",
+    institucion: "Unidad Educativa del Valle",
+    leccion: "Excelente narrativa cronológica y pictogramas sencillos que niños de 10 años explicaron con total soltura.",
+    driveUrl: "https://drive.google.com/drive/folders/placeholder-laplace-water"
+  },
+  {
+    id: "caso-bernoulli-2020",
+    img: "/img/poster/1_Bernoulli_2020.jpg",
+    titulo: "Uso de Redes Sociales y Rendimiento Académico en Pandemia",
+    lema: "La pantalla no miente: cuando las horas se vuelven estadísticas.",
+    categoria: "bernoulli" as const,
+    catnombre: "Categoría Bernoulli (Secundaria Inicial)",
+    edicion: "3ª Edición",
+    premio: "1º Lugar Nacional & Clasificado Mundial",
+    depto: "La Paz",
+    institucion: "Colegio San Ignacio",
+    leccion: "Uso impecable de histogramas de frecuencias y correlaciones claras entre horas de pantalla y horas de sueño.",
+    driveUrl: "https://drive.google.com/drive/folders/placeholder-bernoulli-2020"
+  },
+  {
+    id: "caso-poisson-2020",
+    img: "/img/poster/1_Poisson_2020.jpg",
+    titulo: "Seguridad Alimentaria y Hábitos de Consumo Familiar",
+    lema: "Del mercado a la mesa: los números de nuestra nutrición.",
+    categoria: "poisson" as const,
+    catnombre: "Categoría Poisson (Secundaria Superior)",
+    edicion: "3ª Edición",
+    premio: "1º Lugar Nacional",
+    depto: "Chuquisaca",
+    institucion: "Colegio Bernardo Monteagudo",
+    leccion: "Muestreo riguroso con encuestas estratificadas y gráficos de dispersión con líneas de tendencia justificadas.",
+    driveUrl: "https://drive.google.com/drive/folders/placeholder-poisson-2020"
+  },
+  {
+    id: "caso-gauss-2020",
+    img: "/img/poster/1_Gauss_2020.jpg",
+    titulo: "Modelamiento Estadístico de Contaminación por Material Particulado",
+    lema: "El aire que respiramos medido con precisión científica.",
+    categoria: "gauss" as const,
+    catnombre: "Categoría Gauss (Universitaria)",
+    edicion: "3ª Edición",
+    premio: "1º Lugar Nacional & Mención ISI",
+    depto: "La Paz",
+    institucion: "Universidad Mayor de San Andrés (UMSA)",
+    leccion: "Estructura académica de nivel de posgrado: análisis de series de tiempo, intervalos de confianza al 95% y discusión metodológica profunda.",
+    driveUrl: "https://drive.google.com/drive/folders/placeholder-gauss-2020"
+  },
+  {
+    id: "caso-bernoulli-alt",
+    img: "/img/poster/bernoulli1.png",
+    titulo: "Percepción Ciudadana y Residuos Sólidos Urbanos",
+    lema: "Transformar basura en datos y datos en conciencia.",
+    categoria: "bernoulli" as const,
+    catnombre: "Categoría Bernoulli",
+    edicion: "2ª Edición",
+    premio: "2º Lugar Nacional",
+    depto: "Santa Cruz",
+    institucion: "Colegio Alemán",
+    leccion: "Gran diseño visual con paleta cromática sobria y tablas de contingencia legibles a 2 metros.",
+    driveUrl: "https://drive.google.com/drive/folders/placeholder-bernoulli-reciclaje"
+  },
+  {
+    id: "caso-poisson-alt",
+    img: "/img/poster/poisson1.jpg",
+    titulo: "Brecha Digital y Conectividad Educativa en Zonas Periurbanas",
+    lema: "Conectar los puntos: la desigualdad vista desde los datos.",
+    categoria: "poisson" as const,
+    catnombre: "Categoría Poisson",
+    edicion: "2ª Edición",
+    premio: "Mención de Honor",
+    depto: "Oruro",
+    institucion: "Unidad Educativa Simón Bolívar",
+    leccion: "Excelente cruce de variables geográficas con datos abiertos de la AGETIC e INE.",
+    driveUrl: "https://drive.google.com/drive/folders/placeholder-poisson-brecha"
+  }
+];
+---
+
+<Layout title="Galería de Pósters y Casos de Estudio" currentPath="/galeria">
+  <!-- Hero Section -->
+  <section class="islp-hero" style="background: radial-gradient(circle at 75% 25%, rgba(245, 158, 11, 0.15), transparent 60%), linear-gradient(135deg, #070f1e 0%, #0d1b2a 100%);">
+    <div class="container">
+      <span class="islp-badge islp-badge-gold">Hall de la Fama CBPE</span>
+      <h1 class="islp-title islp-title-lg" style="margin-top: 1rem;">
+        Galería de Pósters y Casos de Estudio
+      </h1>
+      <p class="islp-lead" style="max-width: 800px;">
+        Descubre los trabajos ganadores de las ediciones bolivianas e internacionales del ISLP. Inspírate con sus lemas, enfoques metodológicos y visualizaciones destacadas por el jurado.
+      </p>
+    </div>
+  </section>
+
+  <!-- Carrusel de Destacados -->
+  <section class="islp-section" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="islp-badge islp-badge-gold">Scroll Horizontal</span>
+          <h2 style="font-size: 1.65rem; font-weight: 700; color: #f8fafc; margin-top: 0.5rem; margin-bottom: 0.25rem;">
+            Pósters Más Premiados de Bolivia
+          </h2>
+          <p style="color: #94a3b8; font-size: 0.95rem; margin: 0;">
+            Desliza para explorar los trabajos que representaron a Bolivia en las conferencias mundiales del ISI.
+          </p>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <span style="color: #64748b; font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.05); border-radius: 20px;">
+            ← Arrastra o desliza →
+          </span>
+        </div>
+      </div>
+
+      <Carousel>
+        {winners.slice(0, 4).map((item) => (
+          <div class="islp-carousel-slide">
+            <StudyCaseCard {...item} />
+          </div>
+        ))}
+      </Carousel>
+    </div>
+  </section>
+
+  <!-- Lema Destacado -->
+  <section style="padding: 2rem 0;">
+    <div class="container" style="max-width: 900px;">
+      <Lema 
+        cita="Cada gráfico cuenta una historia, cada dato protege una verdad. Aprender estadística en el colegio es ganar una armadura contra la desinformación."
+        autor="Comité Organizador ISLP Bolivia · UMSA & Fundación ARU"
+      />
+    </div>
+  </section>
+
+  <!-- Grid Completa de Trabajos -->
+  <section class="islp-section">
+    <div class="container">
+      <div style="margin-bottom: 2rem;">
+        <h2 style="font-size: 1.65rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.5rem;">
+          Colección Histórica de Investigaciones
+        </h2>
+        <p style="color: #94a3b8; font-size: 0.95rem;">
+          Haz clic en cualquier tarjeta para ampliar el póster en alta definición o consultar las carpetas de trabajo.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+        {winners.map((item) => (
+          <StudyCaseCard {...item} />
+        ))}
+      </div>
+
+      <!-- Enlaces a Torneos Mundiales Anteriores -->
+      <div class="islp-card" style="margin-top: 4rem; background: rgba(13, 27, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08);">
+        <h3 style="font-size: 1.3rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.75rem;">
+          Repositorio Internacional de la IASE / ISI
+        </h3>
+        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
+          ¿Quieres ver cómo compiten equipos de Japón, Finlandia, México o Sudáfrica? Explora las galerías mundiales oficiales de las ediciones anteriores:
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="http://iase-web.org/islp/Poster_Competition_2020-2021.php?p=Posters" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-outline islp-btn-sm">
+            Mundial ISLP 2020-2021 ↗
+          </a>
+          <a href="http://iase-web.org/islp/Poster_Competition_2018-2019.php?p=Posters" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-outline islp-btn-sm">
+            Mundial ISLP 2018-2019 ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

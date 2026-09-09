@@ -1,4 +1,4 @@
-name: Quarto Publish
+name: Quarto and Astro Publish
 
 on:
   workflow_dispatch:
@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - master
+      - feature/quarto-astro-redesign
 
 permissions:
   contents: write
@@ -25,14 +26,27 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm ci
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: "1.9.37"
 
-      - name: Render and Publish to GitHub Pages
+      - name: Render Quarto and Astro Site
+        run: npm run build
+
+      - name: Publish to GitHub Pages via Quarto Action
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

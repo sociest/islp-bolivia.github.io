@@ -1,0 +1,46 @@
+---
+// src/pages/recursos/checklist.astro
+import Layout from '../../layouts/Layout.astro';
+import Checklist from '../../components/Checklist.astro';
+---
+
+<Layout title="Checklist Oficial de Autoevaluación" currentPath="/recursos/checklist">
+  <section class="islp-hero" style="background: radial-gradient(circle at 50% 20%, rgba(245, 158, 11, 0.15), transparent 60%), linear-gradient(135deg, #070f1e 0%, #0d1b2a 100%);">
+    <div class="container" style="text-align: center;">
+      <span class="islp-badge islp-badge-gold">Simulador de Control de Calidad</span>
+      <h1 class="islp-title islp-title-lg" style="margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+        ¿Tu póster está listo para el envío oficial?
+      </h1>
+      <p class="islp-lead" style="max-width: 750px; margin-left: auto; margin-right: auto;">
+        El Comité Evaluador del ISLP descalifica o penaliza severamente detalles comunes evitables. Revisa cada uno de los 8 puntos antes de generar el PDF final.
+      </p>
+    </div>
+  </section>
+
+  <section class="islp-section">
+    <div class="container" style="max-width: 850px;">
+      
+      <Checklist />
+
+      <div class="islp-card" style="margin-top: 3rem; background: rgba(13, 27, 42, 0.5); border: 1px solid rgba(255, 255, 255, 0.08);">
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.75rem;">
+          Protocolo de Envío por Correo Electrónico
+        </h3>
+        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.25rem;">
+          Una vez que alcances el 100% en el checklist, tu profesor tutor debe enviar el trabajo siguiendo este estándar:
+        </p>
+        
+        <div style="background: rgba(0, 0, 0, 0.3); border-radius: 8px; padding: 1rem 1.25rem; font-family: monospace; font-size: 0.9rem; color: #38bdf8; margin-bottom: 1.25rem;">
+          <strong>Para:</strong> islp.bolivia@gmail.com<br/>
+          <strong>Asunto:</strong> Póster CBPE 2027 – [Categoría] – [Nombre del Equipo]<br/>
+          <strong>Adjuntos:</strong> Póster en PDF (máximo 10 MB) + Formulario de Identificación (con nombres de estudiantes y colegio)
+        </div>
+
+        <p style="color: #64748b; font-size: 0.85rem; margin: 0;">
+          * Recuerda: El archivo PDF del póster NO debe llevar nombres ni insignias escolares para garantizar evaluación a ciegas.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</Layout>

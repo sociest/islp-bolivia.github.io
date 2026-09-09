@@ -1,0 +1,72 @@
+---
+// src/pages/competencia/bases.astro
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Bases y Reglamento Oficial" currentPath="/competencia/bases">
+  <div class="container" style="padding: 3.5rem 1.5rem;">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 1rem;">
+        Bases y Reglamento Oficial
+      </h1>
+      <p style="font-size: 1.15rem; color: var(--islp-text-secondary); line-height: 1.7; margin-bottom: 2rem;">
+        Normas de participación vigentes para la 5ª Competencia Boliviana de Pósters Estadísticos (2026-2027).
+      </p>
+
+      <div style="background: #eff6ff; border-left: 4px solid var(--islp-blue-600); border-radius: var(--radius-sm); padding: 1.25rem 1.5rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <strong style="color: var(--islp-navy-900); display: block; margin-bottom: 0.25rem;">📄 Documento Oficial Completo</strong>
+          <span style="color: var(--islp-text-secondary); font-size: 0.9rem;">Descarga el PDF original con sellos y normativas de juzgamiento.</span>
+        </div>
+        <a href="/img/Normas_de_participacion.pdf" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-primary islp-btn-sm">
+          Descargar Normas (PDF)
+        </a>
+      </div>
+
+      <article style="background: var(--islp-surface); border: 1px solid var(--islp-border); border-radius: var(--radius-md); padding: 2.5rem 2rem; box-shadow: var(--shadow-sm); line-height: 1.8;">
+        <h2 style="font-size: 1.4rem; color: var(--islp-navy-950); margin-bottom: 1rem;">1. Composición de los Equipos</h2>
+        <ul style="padding-left: 1.5rem; margin-bottom: 2rem;">
+          <li>Los equipos deben estar integrados por <strong>2, 3, 4 o 5 estudiantes</strong>.</li>
+          <li>Cada equipo debe contar obligatoriamente con un <strong>docente o tutor guía</strong> (profesor de colegio, docente universitario o investigador).</li>
+          <li>La participación es <strong>100% gratuita y libre</strong> para todos los establecimientos de Bolivia.</li>
+          <li>Un mismo docente puede guiar a más de un equipo participante.</li>
+        </ul>
+
+        <h2 style="font-size: 1.4rem; color: var(--islp-navy-950); margin-bottom: 1rem;">2. Especificaciones Técnicas del Póster</h2>
+        <ul style="padding-left: 1.5rem; margin-bottom: 2rem;">
+          <li><strong>Formato:</strong> Bidimensional (una sola hoja) y unilateral. No se admiten dípticos, trípticos ni presentaciones en diapositivas múltiples.</li>
+          <li><strong>Dimensiones oficiales:</strong> Tamaño estándar <strong>A1</strong> (841 x 594 mm o 33.1 x 23.4 pulgadas).</li>
+          <li><strong>Límite de archivo:</strong> Máximo <strong>10 MB</strong> en formato digital (PDF vectorial o imagen JPG/PNG a 300 DPI).</li>
+          <li><strong>Legibilidad:</strong> Si el póster se imprimiera en físico, todo el contenido debe ser legible desde <strong>2 metros de distancia</strong>.</li>
+        </ul>
+
+        <div style="background: #fef2f2; border: 1.5px solid #fecaca; border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 2rem;">
+          <h3 style="color: #991b1b; font-size: 1.15rem; margin-bottom: 0.5rem;">🔒 Regla de Anonimato Estricto</h3>
+          <p style="color: #7f1d1d; font-size: 0.95rem; margin: 0; line-height: 1.6;">
+            Para asegurar la total imparcialidad del jurado, <strong>el póster NO debe contener nombres de los estudiantes ni el nombre del colegio o universidad</strong>. Toda la información identificatoria se envía únicamente a través del formulario digital de inscripción.
+          </p>
+        </div>
+
+        <h2 style="font-size: 1.4rem; color: var(--islp-navy-950); margin-bottom: 1rem;">3. Estructura Científica Sugerida</h2>
+        <ol style="padding-left: 1.5rem; margin-bottom: 2rem;">
+          <li><strong>Título directo y llamativo:</strong> Comunica el tema central o el principal hallazgo.</li>
+          <li><strong>Pregunta de investigación y motivación:</strong> ¿Qué problema resuelve el póster?</li>
+          <li><strong>Origen de los datos:</strong> Mencionar si fue encuesta escolar propia o citar la fuente pública (ej. INE, UDAPE).</li>
+          <li><strong>Gráficos estadísticos:</strong> Con títulos numerados, ejes rotulados y fuente al pie.</li>
+          <li><strong>Conclusiones:</strong> Hallazgos concretos sin especulaciones.</li>
+        </ol>
+
+        <h2 style="font-size: 1.4rem; color: var(--islp-navy-950); margin-bottom: 1rem;">4. Envío y Recepción</h2>
+        <p style="color: var(--islp-text-secondary); margin-bottom: 1rem;">
+          El archivo digital del póster debe enviarse al correo oficial <strong><a href="mailto:islp.bolivia@gmail.com">islp.bolivia@gmail.com</a></strong>, previo llenado del <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform" target="_blank" rel="noopener">Formulario Oficial de Inscripción</a>.
+        </p>
+      </article>
+
+      <div style="margin-top: 2.5rem; text-align: center;">
+        <a href="/recursos/checklist" class="islp-btn islp-btn-primary">
+          Verificar Requisitos en el Checklist Interactivo →
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

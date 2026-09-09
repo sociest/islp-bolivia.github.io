@@ -1,0 +1,610 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import Lema from '../components/Lema.astro';
+import CategoryFinder from '../components/CategoryFinder.astro';
+import CategoryCards from '../components/CategoryCards.astro';
+import Carousel from '../components/Carousel.astro';
+import StudyCaseCard from '../components/StudyCaseCard.astro';
+import DriveResourceCard from '../components/DriveResourceCard.astro';
+---
+
+<Layout title="Inicio" currentPath="/">
+  <!-- Hero Section -->
+  <section class="islp-hero-section">
+    <div class="container">
+      <div class="islp-hero-box">
+        <div class="islp-hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+          Quinta Versión · Inscripciones Abiertas 2026-2027
+        </div>
+
+        <h1 class="islp-hero-title">
+          Tus datos cuentan una historia.<br>
+          Haz que Bolivia y el mundo la escuchen.
+        </h1>
+
+        <p class="islp-hero-desc">
+          La investigación estadística no se queda en el aula. Forma tu equipo de 2 a 5 estudiantes, investiga un tema real de tu entorno y compite por representar a Bolivia en el certamen internacional del ISLP.
+        </p>
+
+        <div class="islp-hero-btns">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="islp-btn islp-btn-gold"
+          >
+            ¡Inscribe a tu Equipo Ahora!
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="/recursos/plantillas" class="islp-btn islp-btn-outline" style="color: #ffffff !important; border-color: rgba(255,255,255,0.4);">
+            Descargar Plantillas
+          </a>
+          <a href="#como-funciona" class="islp-btn islp-btn-ghost" style="color: #cbd5e1 !important; border-color: rgba(255,255,255,0.2);">
+            ¿Cómo Funciona?
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lema Principal -->
+  <section class="container" style="margin-top: -1rem;">
+    <Lema
+      quote="La estadística no es solo calcular números: es la lente con la que descubrimos patrones ocultos en nuestra realidad y aprendemos a contar historias que transforman nuestro país."
+      author="Comité Científico ISLP Bolivia"
+      context="5ª Edición Nacional"
+    />
+  </section>
+
+  <!-- Selector Rápido de Categoría -->
+  <section class="container">
+    <CategoryFinder />
+  </section>
+
+  <!-- Categorías de la Competencia (Gradiente de Personalidad) -->
+  <section class="container" style="padding: 2.5rem 1.5rem;">
+    <div style="text-align: center; max-width: 720px; margin: 0 auto 2.5rem;">
+      <h2 style="font-size: 2.2rem; margin-bottom: 0.75rem;">
+        🎨 Categorías: De lo Lúdico a lo Sobrio
+      </h2>
+      <p style="color: var(--islp-text-secondary); font-size: 1.05rem;">
+        A medida que avanzas de edad y nivel educativo, el desafío evoluciona: desde preguntas visuales del recreo en primaria hasta el modelado estadístico avanzado y datos abiertos en la universidad.
+      </p>
+    </div>
+
+    <CategoryCards />
+  </section>
+
+  <!-- La Ruta del Póster en 4 Pasos -->
+  <section id="como-funciona" class="islp-steps-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
+        <h2 style="font-size: 2.2rem; margin-bottom: 0.75rem;">
+          🚀 La Ruta del Póster en 4 Pasos
+        </h2>
+        <p style="color: var(--islp-text-secondary); font-size: 1.05rem;">
+          Participar es un viaje guiado. No necesitas ser un matemático profesional para empezar:
+        </p>
+      </div>
+
+      <div class="islp-steps-grid">
+        <div class="islp-step-card">
+          <div class="islp-step-num">1</div>
+          <h3 class="islp-step-title">Arma tu Brigada</h3>
+          <p class="islp-step-desc">
+            Reúne entre <strong>2 y 5 estudiantes</strong> de tu colegio o universidad y elige a un docente tutor guía.
+          </p>
+        </div>
+
+        <div class="islp-step-card">
+          <div class="islp-step-num">2</div>
+          <h3 class="islp-step-title">Elige tu Pregunta</h3>
+          <p class="islp-step-desc">
+            Formula una curiosidad o problema real: meriendas, clima, transporte, empleo o medio ambiente en Bolivia.
+          </p>
+        </div>
+
+        <div class="islp-step-card">
+          <div class="islp-step-num">3</div>
+          <h3 class="islp-step-title">Diseña con Plantillas</h3>
+          <p class="islp-step-desc">
+            Usa nuestras plantillas oficiales en <strong>Canva</strong>, <strong>PowerPoint</strong> o <strong>Quarto/Typst</strong> en formato A1.
+          </p>
+        </div>
+
+        <div class="islp-step-card">
+          <div class="islp-step-num">4</div>
+          <h3 class="islp-step-title">Envía y Compite</h3>
+          <p class="islp-step-desc">
+            Inscríbete gratis y envía tu archivo digital. ¡Compite por trofeos y el pase al certamen mundial del ISLP!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hall de la Fama: Carrusel con Lemas y Casos de Estudio -->
+  <section class="container" style="padding: 4rem 1.5rem;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+      <div>
+        <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">
+          🏆 Hall de la Fama: Casos de Estudio
+        </h2>
+        <p style="color: var(--islp-text-secondary); font-size: 1.05rem;">
+          Inspírate con los lemas, proyectos y aciertos de estudiantes que ganaron en ediciones anteriores:
+        </p>
+      </div>
+      <a href="/galeria" class="islp-btn islp-btn-outline islp-btn-sm">
+        Ver Galería Completa →
+      </a>
+    </div>
+
+    <Carousel>
+      <div class="islp-carousel-slide">
+        <StudyCaseCard
+          id="caso-4ta"
+          img="/img/cartel_2.jpg"
+          titulo="Póster Destacado Cuarta Edición (2024-2025)"
+          lema="El rigor metodológico transforma la curiosidad en evidencia comprobable"
+          categoria="poisson"
+          catnombre="Categoría Poisson · Bachillerato"
+          edicion="4ª Edición 2024-2025"
+          premio="1.er Lugar Nacional"
+          depto="La Paz"
+          institucion="Unidad Educativa San Calixto"
+          leccion="Formulación precisa de la pregunta, diseño a 3 columnas legible a 2 metros y citas rigurosas."
+          driveUrl="https://drive.google.com/drive/folders/placeholder-caso-4ta"
+        />
+      </div>
+
+      <div class="islp-carousel-slide">
+        <StudyCaseCard
+          id="caso-3ra"
+          img="/img/arte/Categoria3.png"
+          titulo="Modelado Estadístico Universitario y Proyección Global"
+          lema="De las aulas universitarias al World Statistics Congress"
+          categoria="gauss"
+          catnombre="Categoría Gauss · Pregrado"
+          edicion="3ª Edición 2022-2023"
+          premio="Ganador Nacional Categoría Gauss"
+          depto="Cochabamba"
+          institucion="Carreras de Estadística e Informática"
+          leccion="Uso de microdatos abiertos, modelos inferenciales documentados y narrativa para no especialistas."
+          driveUrl="https://drive.google.com/drive/folders/placeholder-caso-3ra"
+        />
+      </div>
+
+      <div class="islp-carousel-slide">
+        <StudyCaseCard
+          id="caso-2da"
+          img="/img/afiche2020_1.jpg"
+          titulo="Resiliencia en Tiempos de Virtualidad"
+          lema="En tiempos desafiantes, los datos iluminan el camino"
+          categoria="bernoulli"
+          catnombre="Categoría Bernoulli · Secundaria"
+          edicion="2ª Edición 2020-2021"
+          premio="Mención a la Creatividad"
+          depto="Santa Cruz"
+          institucion="Participación Escolar Nacional"
+          leccion="Diseño de encuestas virtuales confiables y diagramas de barras con porcentajes claros."
+          driveUrl="https://drive.google.com/drive/folders/placeholder-caso-2da"
+        />
+      </div>
+
+      <div class="islp-carousel-slide">
+        <StudyCaseCard
+          id="caso-1ra"
+          img="/img/header-bg_2018.jpg"
+          titulo="Inauguración de Bolivia en la Red Mundial ISLP"
+          lema="El primer paso de una generación apasionada por los datos"
+          categoria="laplace"
+          catnombre="Categoría Laplace · Primaria"
+          edicion="1ª Edición 2018-2019"
+          premio="Edición Inaugural Histórica"
+          depto="Bolivia"
+          institucion="Pioneros de la Alfabetización Estadística"
+          leccion="Entusiasmo en la observación del entorno cotidiano y gráficos con alta expresividad."
+          driveUrl="https://drive.google.com/drive/folders/placeholder-caso-1ra"
+        />
+      </div>
+    </Carousel>
+  </section>
+
+  <!-- Caja de Herramientas (Drive & Canva) -->
+  <section class="islp-toolkit-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 2.5rem;">
+        <h2 style="font-size: 2.2rem; margin-bottom: 0.75rem;">
+          🧰 Caja de Herramientas para Estudiantes
+        </h2>
+        <p style="color: var(--islp-text-secondary); font-size: 1.05rem;">
+          Descarga plantillas prediseñadas en almacenamiento en la nube para comenzar de inmediato:
+        </p>
+      </div>
+
+      <div class="islp-toolkit-grid">
+        <DriveResourceCard
+          title="Plantilla PowerPoint A1 (.pptx)"
+          subtitle="Medidas oficiales (841 x 594 mm) a escala real con márgenes y guías listas."
+          size="4.2 MB · Google Drive"
+          url="https://drive.google.com/drive/folders/placeholder-plantilla-pptx"
+          icon="drive"
+        />
+        <DriveResourceCard
+          title="Plantilla Duplicable en Canva"
+          subtitle="Abre y duplica en tu navegador web o tableta para diseñar con tu equipo en tiempo real."
+          size="Nube · Canva Link"
+          url="https://canva.com/design/placeholder-islp-bolivia"
+          icon="canva"
+        />
+        <DriveResourceCard
+          title="Plantilla Quarto / Typst / LaTeX"
+          subtitle="Para estudiantes universitarios de Gauss con código reproducible en R o Python."
+          size="GitHub Repo / Gist"
+          url="https://github.com/islp-bolivia/quarto-poster-template-placeholder"
+          icon="code"
+        />
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="/recursos/checklist" class="islp-btn islp-btn-outline">
+          Probar el Checklist Interactivo del Póster →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cronograma Oficial -->
+  <section class="container" style="padding: 4rem 1.5rem;">
+    <div style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
+      <h2 style="font-size: 2.2rem; margin-bottom: 0.75rem;">
+        📅 Cronograma Oficial (5ª Versión 2026-2027)
+      </h2>
+      <p style="color: var(--islp-text-secondary); font-size: 1.05rem;">
+        Conoce los periodos clave para la preparación, envío y premiación de tu trabajo:
+      </p>
+    </div>
+
+    <div class="islp-timeline-table-wrap">
+      <table class="islp-timeline-table">
+        <thead>
+          <tr>
+            <th>Fase</th>
+            <th>Periodo</th>
+            <th>Actividad</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Fase 1</strong></td>
+            <td>Octubre 2026</td>
+            <td>Lanzamiento de la convocatoria nacional y apertura de recursos.</td>
+            <td><span class="islp-badge islp-badge-success">Vigente</span></td>
+          </tr>
+          <tr>
+            <td><strong>Fase 2</strong></td>
+            <td>Octubre 2026 — Febrero 2027</td>
+            <td>Inscripción de brigadas escolares/universitarias y asesoramiento a tutores.</td>
+            <td><span class="islp-badge islp-badge-info">En curso</span></td>
+          </tr>
+          <tr>
+            <td><strong>Fase 3</strong></td>
+            <td>Marzo 2027</td>
+            <td>Cierre de recepción de pósters digitales en el correo oficial.</td>
+            <td><span class="islp-badge islp-badge-warning">Próximo</span></td>
+          </tr>
+          <tr>
+            <td><strong>Fase 4</strong></td>
+            <td>Abril 2027</td>
+            <td>Reunión de la comisión de evaluación y selección de ganadores.</td>
+            <td><span class="islp-badge islp-badge-neutral">Programado</span></td>
+          </tr>
+          <tr>
+            <td><strong>Fase 5</strong></td>
+            <td>Mayo 2027</td>
+            <td>Ceremonia de premiación nacional y nominación para el certamen mundial ISLP.</td>
+            <td><span class="islp-badge islp-badge-neutral">Programado</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Premios y Reconocimientos -->
+  <section class="islp-awards-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
+        <h2 style="font-size: 2.2rem; margin-bottom: 0.75rem;">
+          🎖️ Premios y Reconocimientos
+        </h2>
+        <p style="color: var(--islp-text-secondary); font-size: 1.05rem;">
+          El esfuerzo, la curiosidad y el rigor analítico de estudiantes y tutores tienen su recompensa:
+        </p>
+      </div>
+
+      <div class="islp-awards-grid">
+        <div class="islp-award-card">
+          <div class="islp-award-icon">🥇</div>
+          <h3>1.er Lugar por Categoría</h3>
+          <p>Trofeo oficial, diplomas de honor para integrantes y su tutor guía.</p>
+        </div>
+
+        <div class="islp-award-card">
+          <div class="islp-award-icon">🥈</div>
+          <h3>2.do y 3.er Lugar</h3>
+          <p>Diplomas oficiales de distinción al mérito y kits de investigación.</p>
+        </div>
+
+        <div class="islp-award-card highlight">
+          <div class="islp-award-icon">🌎</div>
+          <h3>Gran Premio ISLP</h3>
+          <p>El póster más destacado representará a Bolivia en el World Statistics Congress.</p>
+        </div>
+
+        <div class="islp-award-card">
+          <div class="islp-award-icon">📜</div>
+          <h3>Todos los Equipos</h3>
+          <p>Certificado digital oficial de participación con código de verificación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Respaldos Institucionales -->
+  <section class="container" style="padding: 4rem 1.5rem;">
+    <div style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
+      <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Respaldos Institucionales</h2>
+      <p style="color: var(--islp-text-secondary);">Organizado por el ISLP Bolivia con el apoyo de entidades de excelencia:</p>
+    </div>
+
+    <div class="islp-orgs-grid">
+      <div class="islp-org-card">
+        <img src="/img/team/arulogo.png" alt="Fundación ARU" class="islp-org-logo" />
+        <h3>Fundación ARU</h3>
+        <p>Instituto de investigación aplicada y generación de evidencia cuantitativa en Bolivia.</p>
+      </div>
+
+      <div class="islp-org-card">
+        <img src="/img/team/stat.png" alt="Carrera de Estadística - UMSA" class="islp-org-logo" />
+        <h3>Carrera de Estadística — UMSA</h3>
+        <p>Principal casa superior de formación estadística científica del Estado Plurinacional.</p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .islp-hero-section {
+    padding: 3.5rem 0 2rem;
+  }
+
+  .islp-hero-box {
+    background: radial-gradient(circle at 85% 15%, #1e3a8a 0%, #0b192e 70%, #070f1e 100%);
+    color: #ffffff;
+    padding: 4.5rem 2rem 3.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .islp-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(245, 158, 11, 0.2);
+    border: 1px solid var(--islp-gold);
+    color: #fef08a;
+    padding: 0.35rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.2rem;
+  }
+
+  .islp-hero-title {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: #ffffff;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.025em;
+  }
+
+  .islp-hero-desc {
+    font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+    color: #e2e8f0;
+    max-width: 760px;
+    line-height: 1.6;
+    margin-bottom: 2.2rem;
+  }
+
+  .islp-hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .islp-steps-section {
+    background: #f1f5f9;
+    padding: 4.5rem 0;
+    margin: 2rem 0;
+  }
+
+  .islp-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .islp-step-card {
+    background: var(--islp-surface);
+    border: 1px solid var(--islp-border);
+    border-radius: var(--radius-md);
+    padding: 2rem 1.5rem;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .islp-step-num {
+    width: 44px;
+    height: 44px;
+    background: var(--islp-blue-600);
+    color: #ffffff;
+    font-family: Outfit, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .islp-step-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .islp-step-desc {
+    font-size: 0.95rem;
+    color: var(--islp-text-secondary);
+    line-height: 1.55;
+  }
+
+  .islp-toolkit-section {
+    background: #ffffff;
+    border-top: 1px solid var(--islp-border);
+    border-bottom: 1px solid var(--islp-border);
+    padding: 4.5rem 0;
+  }
+
+  .islp-toolkit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .islp-timeline-table-wrap {
+    overflow-x: auto;
+    background: var(--islp-surface);
+    border: 1px solid var(--islp-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .islp-timeline-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  .islp-timeline-table th,
+  .islp-timeline-table td {
+    padding: 1.1rem 1.4rem;
+    border-bottom: 1px solid var(--islp-border);
+  }
+
+  .islp-timeline-table th {
+    background: #f8fafc;
+    color: var(--islp-navy-950);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .islp-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .islp-badge-success { background: #dcfce7; color: #15803d; }
+  .islp-badge-info { background: #e0f2fe; color: #0369a1; }
+  .islp-badge-warning { background: #ffedd5; color: #c2410c; }
+  .islp-badge-neutral { background: #f1f5f9; color: #64748b; }
+
+  .islp-awards-section {
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    padding: 4.5rem 0;
+  }
+
+  .islp-awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .islp-award-card {
+    background: var(--islp-surface);
+    border: 1px solid var(--islp-border);
+    border-radius: var(--radius-md);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .islp-award-card.highlight {
+    background: #fffbeb;
+    border-color: #fde68a;
+  }
+
+  .islp-award-icon {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .islp-award-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .islp-award-card p {
+    font-size: 0.92rem;
+    color: var(--islp-text-secondary);
+    line-height: 1.5;
+  }
+
+  .islp-orgs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .islp-org-card {
+    background: var(--islp-surface);
+    border: 1px solid var(--islp-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .islp-org-logo {
+    max-height: 65px;
+    margin: 0 auto 1.2rem;
+  }
+
+  .islp-org-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .islp-org-card p {
+    font-size: 0.92rem;
+    color: var(--islp-text-secondary);
+    line-height: 1.55;
+  }
+</style>
