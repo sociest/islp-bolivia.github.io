@@ -81,12 +81,62 @@ async function runAudit() {
   await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_recursos_checklist.png') });
   console.log('✅ Saved audit_recursos_checklist.png');
 
-  // 3. Blog Page
+  // 3. Blog Page & Interactive Filtering Audit
   console.log('📸 Visiting Blog & Boletines...');
   await page.goto('http://localhost:4321/blog', { waitUntil: 'networkidle' });
   await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog_top.png') });
+
+  // Test 3.1: Individual Table Filter input
+  const convFilterInput = page.locator('#listing-convocatorias input.search');
+  if (await convFilterInput.count() > 0) {
+    console.log('Testing individual table filter...');
+    const initialRows = await page.locator('#listing-convocatorias tbody.list tr').count();
+    await convFilterInput.fill('2022');
+    await page.waitForTimeout(300);
+    const filteredRows = await page.locator('#listing-convocatorias tbody.list tr:visible').count();
+    console.log(`Table filter result for "2022": ${filteredRows} visible rows (initial was ${initialRows})`);
+    if (filteredRows === 0 || filteredRows >= initialRows) {
+      throw new Error(`Filter failed: expected filteredRows < initialRows, got ${filteredRows}`);
+    }
+    // Clear filter
+    await convFilterInput.fill('');
+    await page.waitForTimeout(200);
+  }
+
+  // Test 3.2: Global Search Input
+  const globalSearchInput = page.locator('#islp-global-search');
+  if (await globalSearchInput.count() > 0) {
+    console.log('Testing global search input for "pandemia"...');
+    await globalSearchInput.fill('pandemia');
+    await page.waitForTimeout(300);
+    const visiblePosts = await page.locator('tbody.list tr:visible').count();
+    console.log(`Global search for "pandemia" found ${visiblePosts} visible posts.`);
+    await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog_global_search.png') });
+    console.log('✅ Saved audit_blog_global_search.png');
+    // Clear global search
+    await page.locator('#islp-clear-search').click();
+    await page.waitForTimeout(200);
+  }
+
+  // Test 3.3: Category / Section Pill Filter
+  const casosEstudioPill = page.locator('.islp-pill[data-section="casos-estudio"]');
+  if (await casosEstudioPill.count() > 0) {
+    console.log('Testing category pill [Casos de Estudio]...');
+    await casosEstudioPill.click();
+    await page.waitForTimeout(300);
+    const isCasosVisible = await page.locator('#listing-casos-estudio').isVisible();
+    const isConvHidden = !(await page.locator('#listing-convocatorias').isVisible());
+    console.log(`Casos de estudio visible: ${isCasosVisible}, Convocatorias hidden: ${isConvHidden}`);
+    await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog_casos_estudio_filter.png') });
+    console.log('✅ Saved audit_blog_casos_estudio_filter.png');
+
+    // Reset to all
+    await page.locator('.islp-pill[data-section="all"]').click();
+    await page.waitForTimeout(200);
+  }
+
   await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_blog_full.png'), fullPage: true });
-  
+
   const ctaBox = page.locator('.islp-cta-box').first();
   if (await ctaBox.count() > 0) {
     await ctaBox.scrollIntoViewIfNeeded();
@@ -95,18 +145,19 @@ async function runAudit() {
     console.log('✅ Saved audit_cta_box_contrast.png');
   }
 
-  // Test clicking first post link to verify /posts/[slug] route
-  const firstPostLink = page.locator('.quarto-listing-table a.listing-title').first();
-  if (await firstPostLink.count() > 0) {
-    const postTitle = await firstPostLink.textContent();
-    console.log('Clicking post link:', postTitle);
-    await firstPostLink.click();
+  // Test 3.4: Navigate to a Caso de Estudio post
+  const laplaceLink = page.locator('#listing-casos-estudio a.listing-title').first();
+  if (await laplaceLink.count() > 0) {
+    const postTitle = await laplaceLink.textContent();
+    console.log('Clicking Caso de Estudio link:', postTitle);
+    await laplaceLink.click();
     await page.waitForLoadState('networkidle');
     await page.waitForTimeout(400);
     console.log('Navigated to URL:', page.url());
     await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_single_post_view.png'), fullPage: true });
     console.log('✅ Saved audit_single_post_view.png');
   }
+
 
   // 4. Contacto Page
   console.log('📸 Visiting Contacto...');

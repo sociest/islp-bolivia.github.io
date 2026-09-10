@@ -101,7 +101,11 @@ return {
     local depto = to_str(kwargs["depto"] or "Bolivia")
     local colegio = to_str(kwargs["colegio"] or kwargs["institucion"] or "Unidad Educativa")
     local leccion = to_str(kwargs["leccion"] or "Pregunta clara, datos verificados y narrativa visual de alto impacto.")
-    local drive_url = to_str(kwargs["drive_url"] or "https://drive.google.com/drive/folders/placeholder-islp-bolivia")
+    local post_url = to_str(kwargs["post_url"] or kwargs["post"] or "")
+    local post_btn_html = ""
+    if post_url ~= "" then
+      post_btn_html = string.format([[<a href="%s" class="islp-btn islp-btn-sm islp-btn-primary">Leer Caso Completo →</a>]], escape_html(post_url))
+    end
 
     local html = string.format([[
 <article class="islp-study-card cat-%s" id="%s">
@@ -129,6 +133,7 @@ return {
       <button type="button" class="islp-btn islp-btn-outline islp-btn-sm" onclick="islpOpenLightbox('%s', '%s')">
         Ver Póster HD
       </button>
+      %s
       <a href="%s" target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-ghost islp-btn-sm">
         Ficha en Drive
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -156,6 +161,7 @@ return {
       escape_html(leccion),
       escape_html(img),
       escape_html(titulo),
+      post_btn_html,
       escape_html(drive_url)
     )
 

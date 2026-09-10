@@ -1,0 +1,34 @@
+---
+title: "Caso de Estudio Gauss: Modelamiento Estadístico de Material Particulado PM2.5"
+date: "2021-04-15"
+categories: ["Casos de Estudio", "Gauss", "Ganadores"]
+description: "1º lugar nacional categoría Gauss (Universitaria) y Mención de Honor ISI. Series de tiempo e intervalos de confianza al 95% en La Paz."
+---
+# Caso de Estudio: Modelamiento Estadístico de Contaminación por Material Particulado
+
+> *"El aire que respiramos medido con precisión científica."*
+
+Ficha técnica del proyecto galardonado con el **1.er Lugar Nacional** en la Categoría Gauss (Universitaria / Post-secundaria) y **Mención de Honor en el Congreso Mundial de Estadística ISI**.
+
+::: {.callout-note}
+### Ficha de Identificación del Proyecto
+* **Categoría:** Gauss (Estudiantes Universitarios de Licenciatura o Técnico Superior)
+* **Institución:** Carrera de Estadística — Universidad Mayor de San Andrés (UMSA)
+* **Sede:** La Paz, Bolivia
+* **Premio:** 1.er Lugar Nacional & Mención Especial ISI / IASE en Fase Mundial
+:::
+
+### Resumen de la Investigación
+Investigación cuantitativa longitudinal sobre la evolución horaria y estacional de las concentraciones de partículas finas PM2.5 y PM10 registradas en la cuenca urbana de La Paz. El modelo correlacionó picos de tráfico vehicular y condiciones microclimáticas durante períodos secos y de lluvia.
+
+### Metodología Estadística Aplicada
+1. **Series de tiempo multivariadas:** Descomposición estacional y modelos autoregresivos para proyectar picos críticos de concentración atmosférica.
+2. **Inferencia estadística robusta:** Intervalos de confianza al 95% e intervalos de predicción con remuestreo *bootstrap*.
+3. **Comunicación científica de alto nivel:** Síntesis visual en formato A1 combinando mapas de dispersión geográfica y paneles de densidades de probabilidad.
+
+### ¿Por qué destacó el Jurado Científico?
+El Comité Científico consideró que el póster exhibe un **nivel metodológico equiparable a una publicación de posgrado**. Demostró cómo herramientas avanzadas de modelamiento econométrico y bioestadístico pueden presentarse con claridad estética sin perder rigor matemático ni falsificar escalas.
+
+### Enlaces y Documentos Oficiales
+* [Descargar Lámina Oficial Premiada (PDF 3.4 MB) ↗](/assets/docs/historico/gauss1.pdf){.islp-btn .islp-btn-sm .islp-btn-navy}
+* [Ver Proyecto en el Repositorio Central ↗](/#galeria){.islp-btn .islp-btn-sm .islp-btn-outline}

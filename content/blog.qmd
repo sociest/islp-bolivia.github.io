@@ -46,11 +46,20 @@ listing:
       date: "Fecha"
       title: "Archivo Histórico"
       description: "Descripción y Alcance"
+  - id: casos-estudio
+    contents: "posts/*caso-estudio*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Caso de Estudio / Proyecto"
+      description: "Descripción y Mérito"
 ---
 
 # 📚 Publicaciones y Archivo Histórico
 
-Bienvenido al repositorio central del **ISLP Bolivia** y la **Competencia Boliviana de Pósters Estadísticos**. Aquí se compilan y archivan todas las publicaciones oficiales, convocatorias, normativas y memorias históricas del certamen. Cada post individual mantiene el registro documental completo y permite incorporar nuevas publicaciones periódicas fácilmente.
+Bienvenido al repositorio central del **ISLP Bolivia** y la **Competencia Boliviana de Pósters Estadísticos**. Aquí se compilan y archivan todas las publicaciones oficiales, convocatorias, normativas, casos de estudio y memorias históricas del certamen. Cada post individual mantiene el registro documental completo y permite incorporar nuevas publicaciones periódicas fácilmente.
 
 ---
 
@@ -87,6 +96,16 @@ Compendios de pósters ganadores de versiones anteriores, actas y balances del c
 
 ::: {#historico}
 :::
+
+---
+
+## 🏆 5. Casos de Estudio y Proyectos Ganadores
+
+Fichas técnicas y análisis metodológico de las investigaciones galardonadas con el primer lugar nacional y menciones internacionales:
+
+::: {#casos-estudio}
+:::
+
 
 ---
 

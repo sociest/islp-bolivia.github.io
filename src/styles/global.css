@@ -407,6 +407,119 @@ caption,
   white-space: nowrap;
 }
 
+/* Blog Interactive Toolbar & Category Filter Pills */
+.islp-blog-toolbar {
+  background: #ffffff;
+  border: 1.5px solid var(--islp-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 20px rgba(19, 21, 74, 0.05);
+}
+
+.islp-global-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.islp-global-search-box .islp-search-icon {
+  position: absolute;
+  left: 1.1rem;
+  color: var(--cbpe-blue-royal);
+  pointer-events: none;
+}
+
+.islp-global-input {
+  width: 100%;
+  padding: 0.85rem 2.75rem 0.85rem 3.1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--islp-navy-900);
+  background: #f8fafc;
+  border: 1.5px solid var(--islp-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.islp-global-input:focus {
+  background: #ffffff;
+  border-color: var(--cbpe-blue-royal);
+  box-shadow: 0 0 0 3px rgba(46, 49, 147, 0.12);
+}
+
+.islp-clear-btn {
+  position: absolute;
+  right: 1rem;
+  background: rgba(100, 116, 139, 0.15);
+  border: none;
+  color: var(--islp-text-muted);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.islp-clear-btn:hover {
+  background: var(--cbpe-coral-accent);
+  color: #ffffff;
+}
+
+.islp-category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.islp-pill {
+  border: 1.5px solid var(--islp-border);
+  background: #ffffff;
+  color: var(--islp-text-secondary);
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.islp-pill:hover {
+  border-color: var(--cbpe-blue-royal);
+  color: var(--cbpe-blue-royal);
+  background: rgba(46, 49, 147, 0.04);
+}
+
+.islp-pill.active {
+  background: linear-gradient(135deg, var(--cbpe-blue-midnight) 0%, var(--cbpe-blue-royal) 100%);
+  border-color: var(--cbpe-blue-royal);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(46, 49, 147, 0.25);
+}
+
+.islp-no-results td {
+  text-align: center;
+  padding: 2.25rem 1rem !important;
+  color: var(--islp-text-muted) !important;
+  font-style: italic;
+  background: #f8fafc !important;
+}
+
+.d-none,
+.listing-no-matching {
+  display: none !important;
+}
+
+
+
 
 code {
   font-family: var(--font-mono);

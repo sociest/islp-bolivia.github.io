@@ -1,0 +1,34 @@
+---
+title: "Caso de Estudio Laplace: Gotas que Cuentan — Consumo de Agua Escolar"
+date: "2022-06-15"
+categories: ["Casos de Estudio", "Laplace", "Ganadores"]
+description: "Proyecto ganador del 1º lugar nacional categoría Laplace (Primaria, Cochabamba). Narrativa visual infantil con pictogramas y auditoría de agua."
+---
+# Caso de Estudio: Gotas que Cuentan — Hábitos de Consumo de Agua en Nuestra Escuela
+
+> *"Pequeños datos para cuidar grandes caudales."*
+
+Ficha técnica del proyecto galardonado con el **1.er Lugar Nacional** en la Categoría Laplace (Primaria) durante la 4ª Edición de la Competencia Boliviana de Pósters Estadísticos.
+
+::: {.callout-note}
+### Ficha de Identificación del Proyecto
+* **Categoría:** Laplace (Estudiantes de Primaria de hasta 12 años)
+* **Unidad Educativa:** Unidad Educativa del Valle
+* **Sede:** Cochabamba, Bolivia
+* **Premio:** 1.er Lugar Nacional — Medalla de Oro y Diplomas de Honor
+:::
+
+### Resumen de la Investigación
+El equipo estudiantil realizó una auditoría participativa del uso de agua potable en los grifos, bebederos y servicios sanitarios de su colegio durante 4 semanas continuas. Mediante un cronómetro y botellas calibradas de 1 litro, midieron la tasa de pérdida por goteo en grifos defectuosos y contrastaron los resultados con una encuesta de hábitos aplicada a 120 compañeros de curso.
+
+### Metodología Estadística Aplicada
+1. **Recolección directa:** Medición empírica del caudal de pérdida (gotas por minuto convertidas a litros por día).
+2. **Visualización amigable:** Pictogramas y gráficos de barras a color comprensibles para niños de primaria.
+3. **Cálculo de impacto:** Estimación de 1.840 litros de agua potable desperdiciados al mes únicamente por fugas menores.
+
+### ¿Por qué destacó el Jurado Científico?
+El Comité Evaluador de la UMSA y ARU ponderó la **impecable narrativa cronológica** del póster. Niños de 10 a 11 años formularon una hipótesis sencilla sobre su entorno escolar, recopilaron datos primarios sin mediación excesiva de adultos y propusieron una solución tangible adoptada por la dirección de su unidad educativa.
+
+### Enlaces y Recursos del Caso
+* [Ver Proyecto en el Repositorio Central ↗](/#galeria){.islp-btn .islp-btn-sm .islp-btn-navy}
+* [Consultar Normas de la Categoría Laplace ↗](/posts/2026-09-15-normas-de-participacion){.islp-btn .islp-btn-sm .islp-btn-outline}

@@ -1,0 +1,34 @@
+---
+title: "Caso de Estudio Bernoulli: Redes Sociales y Rendimiento Escolar en Pandemia"
+date: "2021-04-10"
+categories: ["Casos de Estudio", "Bernoulli", "Ganadores"]
+description: "1º lugar nacional y clasificado al certamen mundial ISI. Correlación estadística entre horas de pantalla, sueño y rendimiento escolar en La Paz."
+---
+# Caso de Estudio: Uso de Redes Sociales y Rendimiento Académico en Pandemia
+
+> *"La pantalla no miente: cuando las horas se vuelven estadísticas."*
+
+Ficha técnica del proyecto galardonado con el **1.er Lugar Nacional** en la Categoría Bernoulli (Secundaria Menor) y **Clasificado a la Conferencia Mundial del International Statistical Institute (ISI)**.
+
+::: {.callout-note}
+### Ficha de Identificación del Proyecto
+* **Categoría:** Bernoulli (Secundaria Menor · 12 a 15 años)
+* **Unidad Educativa:** Colegio San Ignacio
+* **Sede:** La Paz, Bolivia
+* **Premio:** 1.er Lugar Nacional & Representante Oficial de Bolivia en el Concurso Mundial ISLP/ISI
+:::
+
+### Resumen de la Investigación
+Durante la transición a clases virtuales por la pandemia de COVID-19, el equipo analizó la relación entre el tiempo diario dedicado a redes sociales (TikTok, Instagram, WhatsApp), las horas efectivas de descanso nocturno y el promedio trimestral de calificaciones en una muestra probabilística de 180 estudiantes de 1º a 3º de secundaria.
+
+### Metodología Estadística Aplicada
+1. **Instrumento calibrado:** Cuestionario digital autoadministrado con control de consistencia de tiempos declarados.
+2. **Análisis descriptivo:** Histogramas de frecuencia bimodal para horas de pantalla en días lectivos vs. fines de semana.
+3. **Inferencia y correlación:** Cálculo del coeficiente de correlación de Pearson ($r = -0.68$) entre horas nocturnas de pantalla y rendimiento académico.
+
+### ¿Por qué destacó el Jurado Científico?
+El jurado destacó el **rigor analítico y honestidad metodológica**. Los autores no saltaron a conclusiones simplistas; exploraron variables intervinientes como el tiempo dedicado a tareas escolares en pantalla y contrastaron la autopercepción con mediciones de bienestar docente.
+
+### Enlaces y Documentos Oficiales
+* [Descargar Lámina Oficial Premiada (PDF 645 KB) ↗](/assets/docs/historico/P25_2Bernoulli.pdf){.islp-btn .islp-btn-sm .islp-btn-navy}
+* [Ver en la Galería de la Portada ↗](/#galeria){.islp-btn .islp-btn-sm .islp-btn-outline}

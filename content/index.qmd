@@ -147,6 +147,7 @@ Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y
   depto="Cochabamba"
   institucion="Unidad Educativa del Valle"
   leccion="Excelente narrativa cronológica y pictogramas sencillos explicados por niños de 10 años con total fluidez."
+  post_url="/posts/2022-06-15-caso-estudio-laplace-gotas-que-cuentan"
   driveUrl="https://drive.google.com/drive/folders/placeholder-laplace-water"
 >}}
 
@@ -162,6 +163,7 @@ Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y
   depto="La Paz"
   institucion="Colegio San Ignacio"
   leccion="Uso impecable de histogramas de frecuencias y correlaciones claras entre horas de pantalla y horas de descanso."
+  post_url="/posts/2021-04-10-caso-estudio-bernoulli-redes-sociales"
   driveUrl="https://drive.google.com/drive/folders/placeholder-bernoulli-2020"
 >}}
 
@@ -177,6 +179,7 @@ Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y
   depto="Chuquisaca"
   institucion="Colegio Bernardo Monteagudo"
   leccion="Muestreo estratificado bien fundamentado y gráficos de dispersión con líneas de tendencia justificadas."
+  post_url="/posts/2021-04-12-caso-estudio-poisson-seguridad-alimentaria"
   driveUrl="https://drive.google.com/drive/folders/placeholder-poisson-2020"
 >}}
 
@@ -192,6 +195,7 @@ Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y
   depto="La Paz"
   institucion="Universidad Mayor de San Andrés (UMSA)"
   leccion="Estructura de nivel de posgrado: análisis de series de tiempo, intervalos de confianza al 95% y discusión metodológica profunda."
+  post_url="/posts/2021-04-15-caso-estudio-gauss-contaminacion-aire"
   driveUrl="https://drive.google.com/drive/folders/placeholder-gauss-2020"
 >}}
 
