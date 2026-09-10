@@ -47,6 +47,15 @@ Registro gratuito de equipos para unidades educativas y universidades de Bolivia
 ::: {.islp-institutions-grid}
 
 ::: {.islp-inst-card}
+### Coordinación Nacional ISLP Bolivia
+Liderazgo del certamen nacional y enlace oficial ante el International Statistical Institute.
+
+* **Coordinador Nacional:** M.Sc. Álvaro Chirino Gutiérrez
+* **Institución:** Carrera de Estadística (UMSA) / Fundación ARU
+* **Correo oficial:** `islp.bolivia@gmail.com`
+:::
+
+::: {.islp-inst-card}
 ### Fundación ARU
 Centro de investigación aplicada en políticas públicas y análisis cuantitativo de datos.
 
@@ -64,9 +73,10 @@ Carrera de Estadística, Facultad de Ciencias Puras y Naturales.
 
 ::: {.islp-inst-card}
 ### International Statistical Institute (ISI / IASE)
-International Statistical Literacy Project — Coordinación América Latina.
+International Statistical Literacy Project — Coordinación Internacional.
 
 * **Organismo mundial:** [iase-web.org/islp ↗](https://iase-web.org/islp/)
 :::
 
 :::
+

@@ -203,12 +203,42 @@ Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y
 
 ---
 
+## 🎁 Premios e Incentivos Oficiales
+
+Reconocimientos al talento, la rigurosidad científica y la creatividad gráfica:
+
+::: {.islp-resource-grid}
+
+::: {.islp-download-card}
+#### 🥇 Fase Nacional (Bolivia)
+* **1.er Lugar por Categoría:** Trofeo oficial, diplomas de honor y Pack Educativo I.
+* **2.do y 3.er Lugar:** Diplomas de honor al mérito para estudiantes y tutor, y Packs Educativos II y III.
+* **Certificación Universal:** Certificado digital de participación emitido por el Comité Nacional e ISI/IASE para todos los equipos que completen su póster.
+
+[Descargar Cartilla de Premios PDF ↗](/posts/2026-08-10-cartilla-premios-incentivos){.islp-btn .islp-btn-sm .islp-btn-outline}
+:::
+
+::: {.islp-download-card}
+#### 🌍 Fase Mundial (ISI / ISLP)
+Los campeones nacionales de cada categoría representarán a Bolivia en el Congreso Mundial del **International Statistical Institute (ISI)**:
+
+* **Categorías Bernoulli y Poisson:** 450 € (1.er lugar), 350 € (2.do lugar), 200 € (3.er lugar).
+* **Categoría Gauss (Universitaria):** 2.000 € al ganador internacional + Mención de Honor JMP de SAS.
+
+[Ver Detalles de la Fase Mundial ↗](https://iase-web.org/islp/){.islp-btn .islp-btn-sm .islp-btn-navy}
+:::
+
+:::
+
+---
+
 ## 📋 Reglas Fundamentales del Jurado
 
 * **Anonimato total en el póster:** No coloques nombres de autores ni del colegio en la lámina. La evaluación es a ciegas.
 * **Formato A1 obligatorio:** Una sola hoja de 594 × 841 mm (vertical u horizontal). Máximo 10 MB en PDF.
 * **Legibilidad:** El texto principal debe leerse claramente a 2 metros de distancia (títulos grandes, ejes legibles).
 * **Honestidad en los datos:** Cita siempre las fuentes secundarias o describe la muestra si los datos fueron recolectados por ti.
+* **Estructura mínima:** Todo póster debe contener introducción/pregunta, metodología, gráficos comentados con fuente y conclusiones claras.
 
 ---
 
@@ -216,6 +246,7 @@ Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y
 
 | Hito | Fechas | Estado |
 | :--- | :--- | :--- |
+| **Lanzamiento oficial de la 5ª Edición** | Octubre 2026 | 🟢 Publicado |
 | **Inscripciones y talleres docentes** | Octubre 2026 – Febrero 2027 | 🟢 Habilitado |
 | **Cierre de recepción de pósters** | 31 de Marzo de 2027 | 🟡 En curso |
 | **Evaluación del Comité Científico** | Abril de 2027 | ⚪ Próximo |
@@ -228,29 +259,57 @@ Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y
 ::: {.islp-faq-section}
 
 ::: {.islp-faq-item}
-### ¿La inscripción tiene algún costo?
-No, la participación en la Competencia Boliviana de Pósters Estadísticos es **completamente gratuita** para todas las instituciones educativas del país.
+### 1. ¿Quién puede participar?
+Pueden participar todos los estudiantes de Bolivia en equipos de 2 a 5 integrantes guiados por un profesor o tutor en una de las cuatro categorías oficiales: **Laplace** (Primaria), **Bernoulli** (Secundaria Menor), **Poisson** (Secundaria Mayor) y **Gauss** (Universitaria de pregrado).
 :::
 
 ::: {.islp-faq-item}
-### ¿Un profesor puede guiar a varios equipos?
-Sí, un mismo docente o tutor puede asesorar a múltiples equipos dentro de su colegio o universidad.
+### 2. ¿Qué es un póster estadístico?
+Es una lámina visual que cuenta una historia a partir de datos reales. No es un afiche publicitario ni una simple infografía: plantea una pregunta de investigación, explica la recolección de datos, presenta gráficos con análisis estadístico y expone conclusiones fundamentadas.
 :::
 
 ::: {.islp-faq-item}
-### ¿Qué software podemos usar para diseñar el póster?
-Puedes usar Canva, PowerPoint, Adobe Illustrator, Inkscape o LaTeX. Ofrecemos plantillas prediseñadas en la sección de [Recursos](/recursos).
+### 3. ¿En qué formato debe enviarse el póster?
+Debe ser una sola hoja bidimensional en formato **A1 (594 × 841 mm)**, vertical u horizontal, en archivo PDF de máximo 10 MB. El tamaño de letra debe ser legible a 2 metros de distancia y no debe incluir nombres de los estudiantes ni del colegio en la lámina (evaluación anónima).
+:::
+
+::: {.islp-faq-item}
+### 4. ¿Cómo evalúa el Comité Científico los pósters?
+Se evalúan cuatro dimensiones: **Calidad y pertinencia estadística (30%)**, **Rigor metodológico y fuentes confiables (30%)**, **Claridad expositiva y diseño visual (25%)** y **Conclusiones e impacto (15%)**.
+:::
+
+::: {.islp-faq-item}
+### 5. ¿Necesito conocimientos avanzados de estadística?
+No. Cada categoría está calibrada al nivel de los participantes: en Laplace se valoran pictogramas y conteos cotidianos; en Bernoulli, frecuencias y promedios; en Poisson, dispersión y muestreo; y en Gauss, inferencia y modelamiento.
+:::
+
+::: {.islp-faq-item}
+### 6. ¿La inscripción tiene algún costo?
+No, la participación en la Competencia Boliviana de Pósters Estadísticos es **100% gratuita** para todas las unidades educativas fiscales, de convenio, privadas y universidades de Bolivia.
+:::
+
+::: {.islp-faq-item}
+### 7. ¿Cómo me inscribo y cuál es el procedimiento de envío?
+Primero, el tutor registra al equipo en el [Formulario en Línea ↗](https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform). Cuando el póster esté concluido, se envía en PDF a `islp.bolivia@gmail.com` con el asunto *"Póster CBPE 2027 – [Categoría] – [Nombre del Equipo]"* antes del 31 de marzo de 2027.
 :::
 
 :::
 
 ---
 
-## 🤝 Respaldos Institucionales
+## 🤝 Respaldos Institucionales y Coordinación
 
-La CBPE es coordinada en Bolivia por la **Carrera de Estadística de la UMSA**, la **Fundación ARU** y el **International Statistical Literacy Project (ISLP / IASE / ISI)**.
+La Competencia Boliviana de Pósters Estadísticos (CBPE) es la fase nacional del certamen del **International Statistical Literacy Project (ISLP)**, coordinada en Bolivia por:
+
+* **Coordinador Nacional:** M.Sc. Álvaro Chirino Gutiérrez (ISLP Bolivia / UMSA).
+* **Comité Científico Evaluador:** Carrera de Estadística — Universidad Mayor de San Andrés (UMSA).
+* **Investigación Cuantitativa Aplicada:** Fundación ARU.
+* **Organismo Global:** International Association for Statistical Education (IASE) y el International Statistical Institute (ISI).
 
 ::: {.islp-cta-box}
-### ¿Listo para investigar y contar tu historia?
+### ¿Listo para investigar y contar tu historia con datos?
+Postula tu equipo de forma gratuita y representa a Bolivia ante la comunidad estadística internacional.
+
 [¡Inscribe a tu Equipo en el Formulario Oficial! ↗](https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform){.islp-btn .islp-btn-gold}
 :::
+

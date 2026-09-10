@@ -111,3 +111,14 @@ Una vez que alcances el 100% en el checklist, tu profesor tutor debe enviar el t
 * **Asunto:** `Póster CBPE 2027 – [Categoría] – [Nombre del Equipo]`
 * **Adjuntos:** Póster en PDF (máximo 10 MB, sin nombres en la lámina) + Formulario de Identificación.
 :::
+
+---
+
+## 🌍 Galerías y Repositorios Mundiales del ISLP
+
+Explora las investigaciones y pósters galardonados en las fases internacionales del **International Statistical Institute (ISI)** en más de 120 países:
+
+* [Galería Internacional ISLP / ISI — Edición 2020-2021 ↗](http://iase-web.org/islp/Poster_Competition_2020-2021.php?p=Posters){.islp-btn .islp-btn-sm .islp-btn-outline}
+* [Galería Internacional ISLP / ISI — Edición 2018-2019 ↗](http://iase-web.org/islp/Poster_Competition_2018-2019.php?p=Posters){.islp-btn .islp-btn-sm .islp-btn-outline}
+* [Portal Central del International Statistical Literacy Project (IASE / ISI) ↗](https://iase-web.org/islp/){.islp-btn .islp-btn-sm .islp-btn-navy}
+
