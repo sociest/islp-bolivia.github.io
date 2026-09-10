@@ -228,30 +228,62 @@ const cleanHtml = pageData.htmlContent
     // Category / Section Pill Filters
     const pills = Array.from(document.querySelectorAll<HTMLButtonElement>('.islp-pill'));
 
+    const applySection = (target: string, shouldScroll: boolean = true) => {
+      pills.forEach(p => {
+        if (p.getAttribute('data-section') === target) {
+          p.classList.add('active');
+        } else {
+          p.classList.remove('active');
+        }
+      });
+
+      listings.forEach(listingEl => {
+        const sectionEl = listingEl.closest<HTMLElement>('section.level2') || listingEl;
+        const listingId = listingEl.id; // e.g. "listing-casos-estudio"
+        const matches = target === 'all' || listingId.includes(target);
+
+        sectionEl.style.display = matches ? '' : 'none';
+      });
+
+      if (target !== 'all' && shouldScroll) {
+        const targetListing = listings.find(l => l.id.includes(target));
+        const targetSection = targetListing?.closest<HTMLElement>('section.level2');
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    };
+
     pills.forEach(pill => {
       pill.addEventListener('click', () => {
-        pills.forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-
         const target = pill.getAttribute('data-section') || 'all';
-
-        listings.forEach(listingEl => {
-          const sectionEl = listingEl.closest<HTMLElement>('section.level2') || listingEl;
-          const listingId = listingEl.id; // e.g. "listing-casos-estudio"
-          const matches = target === 'all' || listingId.includes(target);
-
-          sectionEl.style.display = matches ? '' : 'none';
-        });
-
-        if (target !== 'all') {
-          const targetListing = listings.find(l => l.id.includes(target));
-          const targetSection = targetListing?.closest<HTMLElement>('section.level2');
-          if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
+        applySection(target, true);
+        if (target === 'all') {
+          history.replaceState(null, '', window.location.pathname + window.location.search);
+        } else {
+          history.replaceState(null, '', `#${target}`);
         }
       });
     });
+
+    const checkUrlHash = () => {
+      const hash = window.location.hash.replace('#', '').replace(/^sec-/, '');
+      if (hash) {
+        const matchingPill = pills.find(p => p.getAttribute('data-section') === hash);
+        if (matchingPill) {
+          applySection(hash, true);
+        } else {
+          // If hash matches an element ID directly, scroll to it
+          const el = document.getElementById(hash) || document.getElementById(`sec-${hash}`) || document.getElementById(`listing-${hash}`);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }
+    };
+
+    checkUrlHash();
+    window.addEventListener('hashchange', checkUrlHash);
   }
 
   if (document.readyState === 'loading') {
@@ -259,6 +291,7 @@ const cleanHtml = pageData.htmlContent
   } else {
     initListingsEngine();
   }
+  document.addEventListener('astro:page-load', initListingsEngine);
 </script>
 
 <style>

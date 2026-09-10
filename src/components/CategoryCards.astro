@@ -1,5 +1,6 @@
 ---
 // src/components/CategoryCards.astro
+import { withBase } from '../utils/base';
 ---
 
 <div class="islp-categories-grid">
@@ -15,7 +16,7 @@
       </div>
     </div>
     <div style="margin-top: 1.4rem;">
-      <a href="/competencia/categorias#laplace" class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
+      <a href={withBase('/#laplace')} class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
         Guía y Temas Laplace →
       </a>
     </div>
@@ -33,7 +34,7 @@
       </div>
     </div>
     <div style="margin-top: 1.4rem;">
-      <a href="/competencia/categorias#bernoulli" class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
+      <a href={withBase('/#bernoulli')} class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
         Guía y Temas Bernoulli →
       </a>
     </div>
@@ -51,7 +52,7 @@
       </div>
     </div>
     <div style="margin-top: 1.4rem;">
-      <a href="/competencia/categorias#poisson" class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
+      <a href={withBase('/#poisson')} class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
         Guía y Temas Poisson →
       </a>
     </div>
@@ -69,7 +70,7 @@
       </div>
     </div>
     <div style="margin-top: 1.4rem;">
-      <a href="/competencia/categorias#gauss" class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
+      <a href={withBase('/#gauss')} class="islp-btn islp-btn-outline islp-btn-sm" style="width: 100%;">
         Guía y Temas Gauss →
       </a>
     </div>

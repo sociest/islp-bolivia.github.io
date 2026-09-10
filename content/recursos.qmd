@@ -13,7 +13,7 @@ Todo lo que necesitas para investigar, analizar datos y diseñar un póster de a
 
 ---
 
-## 🎨 Plantillas Oficiales de Póster (A1)
+## 🎨 Plantillas Oficiales de Póster (A1) {#plantillas}
 
 Las plantillas están alojadas en **Google Drive** y enlaces directos de **Canva**, calibradas a la medida oficial **A1 (594 × 841 mm)** con márgenes seguros de impresión y fuentes legibles a 2 metros.
 
@@ -79,7 +79,7 @@ Las plantillas están alojadas en **Google Drive** y enlaces directos de **Canva
 
 ---
 
-## 🌐 Repositorios de Datos Abiertos de Bolivia
+## 🌐 Repositorios de Datos Abiertos de Bolivia {#datos}
 
 Un póster estadístico riguroso utiliza datos comprobables y transparentes. Consulta estas fuentes oficiales:
 
@@ -95,7 +95,7 @@ Un póster estadístico riguroso utiliza datos comprobables y transparentes. Con
 
 ---
 
-## 🔍 Checklist Oficial de Autoevaluación
+## 🔍 Checklist Oficial de Autoevaluación {#checklist}
 
 Antes de enviar el archivo PDF final, evalúa tu póster con los 8 puntos ciegos más penalizados por el Comité Evaluador:
 
@@ -114,7 +114,7 @@ Una vez que alcances el 100% en el checklist, tu profesor tutor debe enviar el t
 
 ---
 
-## 🌍 Galerías y Repositorios Mundiales del ISLP
+## 🌍 Galerías y Repositorios Mundiales del ISLP {#mundial}
 
 Explora las investigaciones y pósters galardonados en las fases internacionales del **International Statistical Institute (ISI)** en más de 120 países:
 

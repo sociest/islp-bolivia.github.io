@@ -106,7 +106,15 @@ html {
   color: var(--islp-text-primary);
   line-height: 1.6;
   scroll-behavior: smooth;
+  scroll-padding-top: 85px;
   -webkit-font-smoothing: antialiased;
+}
+
+:target,
+[id],
+section[id],
+article[id] {
+  scroll-margin-top: 85px;
 }
 
 body {

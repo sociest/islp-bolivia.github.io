@@ -30,7 +30,7 @@ La investigación estadística no se queda en el aula. Forma tu equipo de 2 a 5 
 
 ---
 
-## 🧭 ¿Cuál es tu Categoría?
+## 🧭 ¿Cuál es tu Categoría? {#selector-categoria}
 
 Ingresa el año de nacimiento de los estudiantes para identificar al instante los requisitos y el nivel de profundidad requerido por el jurado.
 
@@ -40,13 +40,13 @@ Ingresa el año de nacimiento de los estudiantes para identificar al instante lo
 
 ---
 
-## 🎨 Las 4 Categorías: De lo Lúdico a lo Científico
+## 🎨 Las 4 Categorías: De lo Lúdico a lo Científico {#categorias}
 
 La competencia crece contigo. El jurado evalúa cada categoría según la madurez metodológica de su grupo etario:
 
 ::: {.islp-category-grid}
 
-::: {.islp-cat-card .cat-laplace}
+::: {.islp-cat-card .cat-laplace #laplace}
 ### 🎈 Categoría Laplace
 **Primaria · 9 a 11 años**  
 
@@ -58,7 +58,7 @@ La competencia crece contigo. El jurado evalúa cada categoría según la madure
 
 :::
 
-::: {.islp-cat-card .cat-bernoulli}
+::: {.islp-cat-card .cat-bernoulli #bernoulli}
 ### 🌿 Categoría Bernoulli
 **Secundaria Menor · 12 a 15 años**  
 
@@ -70,7 +70,7 @@ La competencia crece contigo. El jurado evalúa cada categoría según la madure
 
 :::
 
-::: {.islp-cat-card .cat-poisson}
+::: {.islp-cat-card .cat-poisson #poisson}
 ### 📊 Categoría Poisson
 **Secundaria Mayor · 16 a 18 años**  
 
@@ -82,7 +82,7 @@ La competencia crece contigo. El jurado evalúa cada categoría según la madure
 
 :::
 
-::: {.islp-cat-card .cat-gauss}
+::: {.islp-cat-card .cat-gauss #gauss}
 ### 🏛️ Categoría Gauss
 **Universidad (Pregrado) · Sin límite de edad**  
 *(Estudiantes matriculados en carreras de pregrado)*
@@ -99,7 +99,7 @@ La competencia crece contigo. El jurado evalúa cada categoría según la madure
 
 ---
 
-## 🚀 La Ruta del Póster en 4 Pasos
+## 🚀 La Ruta del Póster en 4 Pasos {#pasos}
 
 Participar es 100% gratuito para unidades educativas fiscales, privadas y universidades de los 9 departamentos:
 
@@ -108,11 +108,15 @@ Participar es 100% gratuito para unidades educativas fiscales, privadas y univer
 ::: {.islp-step-card}
 #### 1. Forma tu Equipo
 Reúne de 2 a 5 estudiantes del mismo rango etario e invita a un profesor o docente tutor a guiarlos.
+
+![](img/cat/0cat.jpg)
 :::
 
 ::: {.islp-step-card}
 #### 2. Encuentra una Pregunta
 Formula una hipótesis sobre tu colegio o país: uso del agua, hábitos digitales, nutrición o transporte.
+
+![](img/arte/paso3.png)
 :::
 
 ::: {.islp-step-card}
@@ -203,7 +207,7 @@ Inspírate con los proyectos bolivianos que triunfaron en el certamen nacional y
 
 ---
 
-## 🎁 Premios e Incentivos Oficiales
+## 🎁 Premios e Incentivos Oficiales {#premios}
 
 Reconocimientos al talento, la rigurosidad científica y la creatividad gráfica:
 
@@ -232,7 +236,7 @@ Los campeones nacionales de cada categoría representarán a Bolivia en el Congr
 
 ---
 
-## 📋 Reglas Fundamentales del Jurado
+## 📋 Reglas Fundamentales del Jurado {#reglas}
 
 * **Anonimato total en el póster:** No coloques nombres de autores ni del colegio en la lámina. La evaluación es a ciegas.
 * **Formato A1 obligatorio:** Una sola hoja de 594 × 841 mm (vertical u horizontal). Máximo 10 MB en PDF.
@@ -242,7 +246,7 @@ Los campeones nacionales de cada categoría representarán a Bolivia en el Congr
 
 ---
 
-## 📅 Cronograma Oficial (5ª Versión 2026-2027)
+## 📅 Cronograma Oficial (5ª Versión 2026-2027) {#cronograma}
 
 | Hito | Fechas | Estado |
 | :--- | :--- | :--- |
@@ -254,7 +258,7 @@ Los campeones nacionales de cada categoría representarán a Bolivia en el Congr
 
 ---
 
-## ❓ Preguntas Frecuentes
+## ❓ Preguntas Frecuentes {#faq}
 
 ::: {.islp-faq-section}
 
@@ -297,7 +301,7 @@ Primero, el tutor registra al equipo en el [Formulario en Línea ↗](https://do
 
 ---
 
-## 🤝 Respaldos Institucionales y Coordinación
+## 🤝 Respaldos Institucionales y Coordinación {#coordinacion}
 
 La Competencia Boliviana de Pósters Estadísticos (CBPE) es la fase nacional del certamen del **International Statistical Literacy Project (ISLP)**, coordinada en Bolivia por:
 

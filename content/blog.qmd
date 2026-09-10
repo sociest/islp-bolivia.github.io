@@ -63,7 +63,8 @@ Bienvenido al repositorio central del **ISLP Bolivia** y la **Competencia Bolivi
 
 ---
 
-## 📢 1. Convocatorias y Material de Difusión
+## 📢 1. Convocatorias y Material de Difusión {#sec-convocatorias}
+<span id="convocatorias"></span>
 
 Convocatorias oficiales, afiches imprimibles y anuncios de la competencia:
 
@@ -72,7 +73,8 @@ Convocatorias oficiales, afiches imprimibles y anuncios de la competencia:
 
 ---
 
-## 📋 2. Normativas y Documentos Rectores
+## 📋 2. Normativas y Documentos Rectores {#sec-normativas}
+<span id="normativas"></span>
 
 Bases reglamentarias, directrices de investigación, rúbricas de evaluación del jurado y cartilla de premios:
 
@@ -81,7 +83,8 @@ Bases reglamentarias, directrices de investigación, rúbricas de evaluación de
 
 ---
 
-## 📰 3. Boletines Informativos Oficiales
+## 📰 3. Boletines Informativos Oficiales {#sec-boletines}
+<span id="boletines"></span>
 
 Publicaciones periódicas elaboradas por el Comité Coordinador Nacional con crónicas de premiaciones y deliberaciones del jurado:
 
@@ -90,7 +93,8 @@ Publicaciones periódicas elaboradas por el Comité Coordinador Nacional con cr�
 
 ---
 
-## 🏛️ 4. Archivo Histórico y Memorias
+## 🏛️ 4. Archivo Histórico y Memorias {#sec-historico}
+<span id="historico"></span>
 
 Compendios de pósters ganadores de versiones anteriores, actas y balances del certamen nacional:
 
@@ -99,7 +103,8 @@ Compendios de pósters ganadores de versiones anteriores, actas y balances del c
 
 ---
 
-## 🏆 5. Casos de Estudio y Proyectos Ganadores
+## 🏆 5. Casos de Estudio y Proyectos Ganadores {#sec-casos-estudio}
+<span id="casos-estudio"></span>
 
 Fichas técnicas y análisis metodológico de las investigaciones galardonadas con el primer lugar nacional y menciones internacionales:
 

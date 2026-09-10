@@ -82,6 +82,17 @@ export function cleanQuartoHtml(rawHtml: string): string {
     return `href="${withBase(`/posts/${slug}${hash || ''}`)}"`;
   });
 
+  // 3b. Rewrite root-relative links (e.g. /#galeria, /recursos#checklist, /blog#..., /posts/...)
+  html = html.replace(/href=["']\/(#[^"']*)["']/g, (_m, hash) => {
+    return `href="${withBase('/' + hash)}"`;
+  });
+  html = html.replace(/href=["']\/(recursos|blog|contacto)(?:\.html)?(#[^"']*)?["']/g, (_m, page, hash) => {
+    return `href="${withBase(`/${page}${hash || ''}`)}"`;
+  });
+  html = html.replace(/href=["']\/posts\/([^"']+?)(?:\.html)?(#[^"']*)?["']/g, (_m, slug, hash) => {
+    return `href="${withBase(`/posts/${slug}${hash || ''}`)}"`;
+  });
+
   // 4. Rewrite relative or root links to assets or images (e.g. ../../img/..., img/..., /img/...)
   html = html.replace(/(href|src)=["'](?:(?:\.\.\/)+|\/)?(assets|img)\/([^"']+)["']/g, (_m, attr, dir, file) => {
     return `${attr}="${withBase(`/${dir}/${file}`)}"`;

@@ -102,6 +102,7 @@ return {
     local colegio = to_str(kwargs["colegio"] or kwargs["institucion"] or "Unidad Educativa")
     local leccion = to_str(kwargs["leccion"] or "Pregunta clara, datos verificados y narrativa visual de alto impacto.")
     local post_url = to_str(kwargs["post_url"] or kwargs["post"] or "")
+    local drive_url = to_str(kwargs["driveUrl"] or kwargs["drive_url"] or kwargs["drive"] or "https://drive.google.com")
     local post_btn_html = ""
     if post_url ~= "" then
       post_btn_html = string.format([[<a href="%s" class="islp-btn islp-btn-sm islp-btn-primary">Leer Caso Completo →</a>]], escape_html(post_url))
