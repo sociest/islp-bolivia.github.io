@@ -1,0 +1,16 @@
+---
+title: "Boletín Nº 1 · Lanzamiento Nacional y Talleres Docentes"
+date: "2022-10-05"
+categories: ["Boletines","Talleres"]
+description: "Convocatoria masiva a profesores y cronograma de talleres virtuales de capacitación en visualización con datos."
+---
+# Boletín Nº 1: Lanzamiento Nacional y Capacitación Docente
+
+Edición inaugural dedicada a la formación continua de los profesores tutores en herramientas contemporáneas de alfabetización estadística.
+
+### Temáticas de los Talleres
+* Cómo formular preguntas investigables en el aula escolar.
+* Introducción a herramientas gráficas: Canva, Excel, GeoGebra y R básico.
+* Ética en la presentación de datos y prevención del sesgo de confirmación.
+
+[Descargar Boletín Nº 1 (PDF 300 KB) ↗](/assets/docs/boletines/boletin_1.pdf){.islp-btn .islp-btn-primary}

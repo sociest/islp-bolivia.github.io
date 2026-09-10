@@ -1,65 +1,92 @@
 ---
-title: "Publicaciones, Boletines y Normativas"
-subtitle: "Repositorio Oficial de Documentos, Convocatorias y Memoria Histórica del ISLP Bolivia"
+title: "Publicaciones, Convocatorias y Archivo Histórico"
+subtitle: "Repositorio Oficial de Documentos, Boletines y Memorias del ISLP Bolivia"
 description: "Consulta las publicaciones periódicas, anuncios de la 5ª edición, reglamentos oficiales y archivo histórico de la competencia clasificados por categoría."
 page-layout: full
+listing:
+  - id: convocatorias
+    contents: "posts/*convocatoria*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Convocatoria / Publicación"
+      description: "Descripción y Alcance"
+  - id: normativas
+    contents:
+      - "posts/*normas*.qmd"
+      - "posts/*guia*.qmd"
+      - "posts/*criterios*.qmd"
+      - "posts/*premios*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Normativa / Documento"
+      description: "Descripción y Alcance"
+  - id: boletines
+    contents: "posts/*boletin*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Boletín Oficial"
+      description: "Descripción y Alcance"
+  - id: historico
+    contents:
+      - "posts/*posters*.qmd"
+      - "posts/*pack*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Archivo Histórico"
+      description: "Descripción y Alcance"
 ---
 
-# 📚 Publicaciones y Documentación Oficial
+# 📚 Publicaciones y Archivo Histórico
 
-Bienvenido al repositorio central del **ISLP Bolivia** y la **Competencia Boliviana de Pósters Estadísticos**. Aquí encontrarás las normas vigentes de la 5ª edición (2026-2027), guías metodológicas, afiches de difusión y el archivo histórico con las memorias de certámenes anteriores.
-
----
-
-## 📰 1. Boletines Informativos Oficiales
-
-Publicaciones periódicas elaboradas por el Comité Coordinador Nacional con entrevistas a jurados, balance de talleres formativos y crónicas de premiaciones:
-
-| Edición / Fecha | Tipo | Título de la Publicación | Síntesis y Temas Destacados | Acceso / Descarga |
-| :--- | :--- | :--- | :--- | :--- |
-| **Boletín Nº 1** <br>`Octubre 2022` | [BOLETÍN]{.islp-table-tag .tag-boletin} | **Lanzamiento Nacional y Talleres Docentes** | Convocatoria masiva a colegios públicos y privados de Bolivia. Capacitación a docentes de matemáticas y ciencias sociales en visualización y narrativa con datos. | [Descargar PDF (300 KB) ↗](/assets/docs/boletines/boletin_1.pdf){.islp-btn .islp-btn-sm .islp-btn-primary} |
-| **Boletín Nº 2** <br>`Noviembre 2022` | [BOLETÍN]{.islp-table-tag .tag-boletin} | **Evaluación y Rúbricas del Jurado** | Sistematización de los criterios evaluativos de la UMSA y Fundación ARU. Análisis de los errores estadísticos más frecuentes en escalas y gráficos. | [Descargar PDF (28.0 MB) ↗](/assets/docs/boletines/ISLP_Bolivia_B2.pdf){.islp-btn .islp-btn-sm .islp-btn-primary} |
-| **Boletín Nº 3** <br>`Diciembre 2022` | [BOLETÍN]{.islp-table-tag .tag-boletin} | **Gala de Ganadores y Fase Internacional** | Cuadro de honor con los equipos ganadores de las categorías Bernoulli, Poisson y Gauss con pase directo al certamen mundial del ISI. | [Descargar PDF (16.5 MB) ↗](/assets/docs/boletines/ISLP_Bolivia_B3.pdf){.islp-btn .islp-btn-sm .islp-btn-primary} |
-| **Edición Especial** <br>`Enero 2023` | [MEMORIA]{.islp-table-tag .tag-boletin} | **Clausura y Balance Estadístico Nacional** | Memoria fotográfica oficial, actas de premiación, tablas de participación por departamento y reflexiones de la comunidad académica boliviana. | [Descargar PDF (23.0 MB) ↗](/assets/docs/boletines/ISLP_Bolivia_clausura.pdf){.islp-btn .islp-btn-sm .islp-btn-outline} |
+Bienvenido al repositorio central del **ISLP Bolivia** y la **Competencia Boliviana de Pósters Estadísticos**. Aquí se compilan y archivan todas las publicaciones oficiales, convocatorias, normativas y memorias históricas del certamen. Cada post individual mantiene el registro documental completo y permite incorporar nuevas publicaciones periódicas fácilmente.
 
 ---
 
-## 📋 2. Normativas y Documentos Rectores (5ª Versión 2026-2027)
+## 📢 1. Convocatorias y Material de Difusión
 
-Bases reglamentarias, directrices de investigación y rúbricas oficiales aprobadas por la Carrera de Estadística (UMSA), Fundación ARU y el International Statistical Institute (ISI):
+Convocatorias oficiales, afiches imprimibles y anuncios de la competencia:
 
-| Vigencia | Tipo | Documento Rector | Alcance, Requisitos y Criterios Clave | Enlace Oficial |
-| :--- | :--- | :--- | :--- | :--- |
-| **2026-2027** <br>`Vigente` | [NORMATIVA]{.islp-table-tag .tag-norma} | **Normas Oficiales de Participación 2026-2027** | Reglamento general vinculante: conformación de equipos (2-3 estudiantes), rol del profesor tutor, estricto anonimato en la lámina y plazos de envío. | [Descargar Normas PDF ↗](/assets/docs/Normas_de_participacion.pdf){.islp-btn .islp-btn-sm .islp-btn-primary} |
-| **2026-2027** <br>`Vigente` | [METODOLOGÍA]{.islp-table-tag .tag-norma} | **Guía de Elaboración de Pósters Estadísticos** | Manual de buenas prácticas: formulación de hipótesis, recolección de datos primarios/secundarios, elección de gráficos pertinentes y cálculo de tasas. | [Descargar Guía PDF ↗](/assets/docs/guia_2022_2023.pdf){.islp-btn .islp-btn-sm .islp-btn-primary} |
-| **2026-2027** <br>`Vigente` | [EVALUACIÓN]{.islp-table-tag .tag-norma} | **Criterios de Evaluación del Comité Científico** | Rúbricas ponderadas del jurado: Calidad de datos (30%), Rigor analítico (30%), Comunicación visual (25%) y Conclusiones lógicas (15%). | [Descargar Criterios PDF ↗](/assets/docs/historico/Criterios_a_Jusgar2022.pdf){.islp-btn .islp-btn-sm .islp-btn-outline} |
-| **2026-2027** <br>`Vigente` | [PREMIOS]{.islp-table-tag .tag-norma} | **Cartilla Oficial de Premios e Incentivos** | Catálogo oficial de reconocimientos: diplomas internacionales ISI/IASE, medallas de honor, tabletas gráficas para colegios y pase al concurso mundial. | [Descargar Premios PDF ↗](/assets/docs/Premios.pdf){.islp-btn .islp-btn-sm .islp-btn-primary} |
+::: {#convocatorias}
+:::
 
 ---
 
-## 📢 3. Convocatorias y Material de Difusión
+## 📋 2. Normativas y Documentos Rectores
 
-Afiches y piezas gráficas oficiales en alta resolución listos para imprimir y colocar en vitrinas, bibliotecas y pizarras de unidades educativas:
+Bases reglamentarias, directrices de investigación, rúbricas de evaluación del jurado y cartilla de premios:
 
-| Edición | Formato | Pieza Gráfica | Recomendación de Impresión y Uso | Descarga / Archivo |
-| :--- | :--- | :--- | :--- | :--- |
-| **5ª Versión (2026-2027)** | [AFICHE]{.islp-table-tag .tag-afiche} | **Afiche Imprimible de Convocatoria Oficial** | Formato afiche en alta definición optimizado para impresión en pliego A3 o A2 en colegios y universidades. | [Descargar Afiche PDF ↗](/assets/docs/afiche2022.pdf){.islp-btn .islp-btn-sm .islp-btn-primary} |
-| **4ª Versión (2022)** | [AFICHE]{.islp-table-tag .tag-afiche} | **Afiche Promocional 4ª Edición Nacional** | Material gráfico histórico con el cronograma y enfoque en objetivos de desarrollo sostenible. | [Descargar PDF (1.1 MB) ↗](/assets/docs/afiche2022.pdf){.islp-btn .islp-btn-sm .islp-btn-outline} |
-| **3ª Versión (2020)** | [AFICHE]{.islp-table-tag .tag-afiche} | **Afiche Convocatoria 3ª Edición Virtual** | Afiche especial adaptado a investigación virtual en contexto de pandemia. | [Descargar PDF (10.4 MB) ↗](/assets/docs/historico/afiche2020.pdf){.islp-btn .islp-btn-sm .islp-btn-outline} |
-| **Institucional** | [CARTEL]{.islp-table-tag .tag-afiche} | **Cartel Informativo para Estudiantes** | Resumen visual de 4 pasos para armar un equipo y elegir la categoría correspondiente según la edad. | [Descargar PDF (2.0 MB) ↗](/assets/docs/historico/cartel2.pdf){.islp-btn .islp-btn-sm .islp-btn-outline} |
+::: {#normativas}
+:::
 
 ---
 
-## 🏛️ 4. Archivo Histórico y Trabajos Ganadores
+## 📰 3. Boletines Informativos Oficiales
 
-Memorias documentales, paquetes de pósters premiados en versiones previas y registros de deliberación de jurados:
+Publicaciones periódicas elaboradas por el Comité Coordinador Nacional con crónicas de premiaciones y deliberaciones del jurado:
 
-| Año / Versión | Tipo | Recurso Histórico | Contenido y Valor Documental | Descarga Directa |
-| :--- | :--- | :--- | :--- | :--- |
-| **2019** <br>`2ª Versión` | [COMPENDIO]{.islp-table-tag .tag-historico} | **Pack Completo de Pósters Ganadores 2019** | Archivo comprimido (RAR de 79.6 MB) con la totalidad de láminas premiadas en los 9 departamentos de Bolivia. | [Descargar Pack RAR (79.6 MB) ↗](/assets/docs/historico/Posters_2019.rar){.islp-btn .islp-btn-sm .islp-btn-primary} |
-| **2020-2021** <br>`3ª Versión` | [PÓSTER GANADOR]{.islp-table-tag .tag-historico} | **Póster P25 - Categoría Bernoulli** | Lámina ganadora del 1º lugar nacional en secundaria por su tratamiento gráfico y muestra comunitaria. | [Descargar Póster PDF ↗](/assets/docs/historico/P25_2Bernoulli.pdf){.islp-btn .islp-btn-sm .islp-btn-outline} |
-| **2020-2021** <br>`3ª Versión` | [PÓSTER GANADOR]{.islp-table-tag .tag-historico} | **Póster Gauss 1 - Categoría Universitaria** | Investigación académica ganadora desarrollada por estudiantes de la UMSA con modelos de series de tiempo. | [Descargar Póster PDF ↗](/assets/docs/historico/gauss1.pdf){.islp-btn .islp-btn-sm .islp-btn-outline} |
-| **2020-2021** <br>`3ª Versión` | [HISTÓRICO]{.islp-table-tag .tag-historico} | **Reglamento y Guía 2020-2021** | Documentación de archivo para docentes e investigadores que analizan la evolución de las rúbricas bolivianas. | [Descargar Reglas PDF ↗](/assets/docs/historico/reglas2020_2021.pdf){.islp-btn .islp-btn-sm .islp-btn-outline} |
+::: {#boletines}
+:::
+
+---
+
+## 🏛️ 4. Archivo Histórico y Memorias
+
+Compendios de pósters ganadores de versiones anteriores, actas y balances del certamen nacional:
+
+::: {#historico}
+:::
 
 ---
 

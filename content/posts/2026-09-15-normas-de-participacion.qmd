@@ -1,0 +1,17 @@
+---
+title: "Normas Oficiales de Participación 2026-2027"
+date: "2026-09-15"
+categories: ["Normativas","Reglamentos"]
+description: "Reglamento oficial: conformación de equipos de 2 a 5 integrantes, docente tutor, anonimato y formato A1."
+---
+# Normas Oficiales de Participación 2026-2027
+
+Documento vinculante que establece las bases reglamentarias para todos los participantes de la 5ª Versión de la Competencia Boliviana de Pósters Estadísticos.
+
+### Requisitos Fundamentales
+1. **Conformación de Equipos:** Equipos integrados por 2 a 5 estudiantes asesorados obligatoriamente por un profesor guía o tutor de su unidad educativa o institución.
+2. **Estricto Anonimato en la Lámina:** El póster no debe incluir nombres de los alumnos, del docente ni de la unidad educativa. Toda la identificación se registra en la ficha de inscripción para garantizar evaluación a ciegas.
+3. **Formato Obligatorio A1:** Una sola hoja plana de 594 × 841 mm (vertical u horizontal), tamaño de archivo inferior a 10 MB en formato PDF.
+4. **Legibilidad:** Tipografía legible desde al menos 2 metros de distancia con gráficos comentados y fuentes citadas.
+
+[Descargar Normas Oficiales Completas (PDF) ↗](/assets/docs/Normas_de_participacion.pdf){.islp-btn .islp-btn-primary}

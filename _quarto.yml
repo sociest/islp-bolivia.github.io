@@ -3,6 +3,7 @@ project:
   output-dir: .quarto-build
   render:
     - "content/*.qmd"
+    - "content/posts/*.qmd"
 
 website:
   title: "ISLP Bolivia"

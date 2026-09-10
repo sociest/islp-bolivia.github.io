@@ -1,0 +1,16 @@
+---
+title: "Compendio Histórico de Pósters Ganadores 2019"
+date: "2019-11-20"
+categories: ["Archivo Histórico","Ganadores"]
+description: "Archivo comprimido (RAR de 79.6 MB) que reúne todas las láminas premiadas en los departamentos de Bolivia."
+---
+# Compendio de Pósters Ganadores de Bolivia 2019
+
+Archivo documental de alto valor pedagógico que reúne los mejores trabajos presentados en la 2ª Versión Nacional de la competencia.
+
+::: {.islp-callout-box}
+#### 📦 Descarga del Archivo Completo
+El archivo contiene láminas en formato digital de alta resolución de las ciudades de La Paz, Cochabamba, Santa Cruz, Sucre, Tarija, Oruro y Potosí.
+:::
+
+[Descargar Archivo RAR (79.6 MB) ↗](/assets/docs/historico/Posters_2019.rar){.islp-btn .islp-btn-primary}

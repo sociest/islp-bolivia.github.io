@@ -94,7 +94,19 @@ async function runAudit() {
     await ctaBox.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_cta_box_contrast.png') });
     console.log('✅ Saved audit_cta_box_contrast.png');
   }
-  console.log('✅ Saved audit_blog_top.png and audit_blog_full.png');
+
+  // Test clicking first post link to verify /posts/[slug] route
+  const firstPostLink = page.locator('.quarto-listing-table a.listing-title').first();
+  if (await firstPostLink.count() > 0) {
+    const postTitle = await firstPostLink.textContent();
+    console.log('Clicking post link:', postTitle);
+    await firstPostLink.click();
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(400);
+    console.log('Navigated to URL:', page.url());
+    await page.screenshot({ path: path.join(ARTIFACT_DIR, 'audit_single_post_view.png'), fullPage: true });
+    console.log('✅ Saved audit_single_post_view.png');
+  }
 
   // 4. Contacto Page
   console.log('📸 Visiting Contacto...');
