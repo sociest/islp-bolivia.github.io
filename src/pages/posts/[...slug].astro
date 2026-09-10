@@ -1,6 +1,8 @@
 ---
 // src/pages/posts/[...slug].astro
 import Layout from '../../layouts/Layout.astro';
+import { cleanQuartoHtml } from '../../utils/quarto';
+import { withBase } from '../../utils/base';
 import fs from 'fs';
 import path from 'path';
 
@@ -15,12 +17,10 @@ export async function getStaticPaths() {
     const rawSlug = file.replace(/\.html$/, '');
     const html = fs.readFileSync(path.join(postsDir, file), 'utf8');
 
-    // Extract main content
+    // Extract main content and clean URLs
     const mainMatch = html.match(/<main[^>]*id="quarto-document-content"[^>]*>([\s\S]*?)<\/main>/i);
-    let content = mainMatch ? mainMatch[1] : html;
-
-    // Remove quarto title-block-header if present
-    content = content.replace(/<header id="title-block-header"[\s\S]*?<\/header>/i, '');
+    const rawContent = mainMatch ? mainMatch[1] : html;
+    const content = cleanQuartoHtml(rawContent);
 
     // Extract metadata
     const titleMatch = html.match(/<title>([\s\S]*?)<\/title>/i) || html.match(/<h1 class="title">([\s\S]*?)<\/h1>/i);
@@ -52,7 +52,7 @@ const { title, description, content, slug } = Astro.props;
   <div class="islp-quarto-container">
     <div class="container">
       <nav class="islp-post-breadcrumb" aria-label="Ruta de navegación">
-        <a href="/blog" class="islp-back-link">
+        <a href={withBase('/blog')} class="islp-back-link">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
           Volver a Publicaciones y Archivo Histórico
         </a>

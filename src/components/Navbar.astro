@@ -1,6 +1,7 @@
 ---
 // src/components/Navbar.astro
 import { getQuartoConfig } from '../utils/quarto';
+import { withBase } from '../utils/base';
 
 interface Props {
   currentPath?: string;
@@ -14,8 +15,8 @@ const ctaLink = config.ctaLink;
 
 <header class="islp-header">
   <div class="container islp-nav-container">
-    <a href="/" class="islp-brand" aria-label="ISLP Bolivia Inicio">
-      <img src="/img/logos/cbpe-logo.png" alt="CBPE Bolivia Logo" class="islp-brand-logo" width="38" height="38" />
+    <a href={withBase('/')} class="islp-brand" aria-label="ISLP Bolivia Inicio">
+      <img src={withBase('/img/logos/cbpe-logo.png')} alt="CBPE Bolivia Logo" class="islp-brand-logo" width="38" height="38" />
       <span class="islp-brand-text">ISLP <strong>Bolivia</strong></span>
     </a>
 
@@ -32,14 +33,14 @@ const ctaLink = config.ctaLink;
               <ul class="islp-dropdown-menu">
                 {item.children.map((sub) => (
                   <li>
-                    <a href={sub.href} class={`islp-dropdown-link ${currentPath === sub.href ? 'active' : ''}`}>
+                    <a href={withBase(sub.href)} class={`islp-dropdown-link ${currentPath === sub.href ? 'active' : ''}`}>
                       {sub.text}
                     </a>
                   </li>
                 ))}
               </ul>
             ) : (
-              <a href={item.href} class={`islp-nav-link ${currentPath === item.href ? 'active' : ''}`}>
+              <a href={withBase(item.href)} class={`islp-nav-link ${currentPath === item.href ? 'active' : ''}`}>
                 {item.text}
               </a>
             )}
@@ -75,13 +76,13 @@ const ctaLink = config.ctaLink;
                 <ul class="islp-mobile-sublist">
                   {item.children.map((sub) => (
                     <li>
-                      <a href={sub.href} class="islp-mobile-sublink">{sub.text}</a>
+                      <a href={withBase(sub.href)} class="islp-mobile-sublink">{sub.text}</a>
                     </li>
                   ))}
                 </ul>
               </div>
             ) : (
-              <a href={item.href} class="islp-mobile-link">{item.text}</a>
+              <a href={withBase(item.href)} class="islp-mobile-link">{item.text}</a>
             )}
           </li>
         ))}

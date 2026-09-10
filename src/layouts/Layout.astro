@@ -3,6 +3,7 @@
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Lightbox from '../components/Lightbox.astro';
+import { withBase } from '../utils/base';
 import '../styles/global.css';
 
 interface Props {
@@ -16,6 +17,9 @@ const {
   description = "Competencia Boliviana de Pósters Estadísticos — 5ª Versión 2026-2027. Alfabetización estadística y ciencia de datos en Bolivia.",
   currentPath = ""
 } = Astro.props;
+
+const logoPath = withBase('/img/logos/cbpe-logo.png');
+const ogImageUrl = Astro.site ? new URL(logoPath, Astro.site).href : logoPath;
 ---
 
 <!DOCTYPE html>
@@ -25,14 +29,14 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | ISLP Bolivia</title>
     <meta name="description" content={description} />
-    <link rel="icon" type="image/png" href="/img/logos/cbpe-logo.png" />
+    <link rel="icon" type="image/png" href={logoPath} />
     <meta name="theme-color" content="#2e3193" />
 
     <!-- Open Graph -->
     <meta property="og:title" content={`${title} | ISLP Bolivia`} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/img/logos/cbpe-logo.png" />
+    <meta property="og:image" content={ogImageUrl} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@IslpBolivia" />
   </head>

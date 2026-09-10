@@ -1,12 +1,13 @@
 ---
 // src/components/Footer.astro
+import { withBase } from '../utils/base';
 ---
 
 <footer class="islp-footer">
   <div class="container islp-footer-grid">
     <div class="islp-footer-col islp-footer-main">
       <div class="islp-footer-brand">
-        <img src="/img/logos/cbpe-logo.png" alt="CBPE Logo" class="islp-footer-brand-logo" width="36" height="36" />
+        <img src={withBase('/img/logos/cbpe-logo.png')} alt="CBPE Logo" class="islp-footer-brand-logo" width="36" height="36" />
         <h3>ISLP Bolivia</h3>
       </div>
       <p class="islp-footer-desc">
@@ -28,10 +29,10 @@
     <div class="islp-footer-col">
       <h4 class="islp-footer-heading">Competencia</h4>
       <ul class="islp-footer-links">
-        <li><a href="/#categorias">Categorías y Edades</a></li>
-        <li><a href="/#pasos">Ruta en 4 Pasos</a></li>
-        <li><a href="/#galeria">Casos de Estudio</a></li>
-        <li><a href="/#faq">Preguntas Frecuentes</a></li>
+        <li><a href={withBase('/#categorias')}>Categorías y Edades</a></li>
+        <li><a href={withBase('/#pasos')}>Ruta en 4 Pasos</a></li>
+        <li><a href={withBase('/#galeria')}>Casos de Estudio</a></li>
+        <li><a href={withBase('/#faq')}>Preguntas Frecuentes</a></li>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform" target="_blank" rel="noopener noreferrer">Inscripción Oficial ↗</a></li>
       </ul>
     </div>
@@ -39,11 +40,11 @@
     <div class="islp-footer-col">
       <h4 class="islp-footer-heading">Herramientas</h4>
       <ul class="islp-footer-links">
-        <li><a href="/recursos#plantillas">Plantillas en Drive & Canva</a></li>
-        <li><a href="/recursos#datos">Bases de Datos de Bolivia</a></li>
-        <li><a href="/recursos#checklist">Checklist del Jurado</a></li>
-        <li><a href="/blog">Boletines y Normas</a></li>
-        <li><a href="/contacto">Contacto y Sedes</a></li>
+        <li><a href={withBase('/recursos#plantillas')}>Plantillas en Drive & Canva</a></li>
+        <li><a href={withBase('/recursos#datos')}>Bases de Datos de Bolivia</a></li>
+        <li><a href={withBase('/recursos#checklist')}>Checklist del Jurado</a></li>
+        <li><a href={withBase('/blog')}>Boletines y Normas</a></li>
+        <li><a href={withBase('/contacto')}>Contacto y Sedes</a></li>
       </ul>
     </div>
 

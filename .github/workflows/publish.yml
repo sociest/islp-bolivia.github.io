@@ -43,10 +43,9 @@ jobs:
       - name: Render Quarto and Astro Site
         run: npm run build
 
-      - name: Publish to GitHub Pages via Quarto Action
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target: gh-pages
-          render: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
