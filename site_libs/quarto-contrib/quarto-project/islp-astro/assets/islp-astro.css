@@ -1,0 +1,767 @@
+/* islp-astro.css - Modern Astro-grade component styles for Quarto */
+
+:root {
+  /* Core brand palette */
+  --islp-navy-950: #070f1e;
+  --islp-navy-900: #0b192e;
+  --islp-navy-800: #132a4a;
+  --islp-blue-600: #1d4ed8;
+  --islp-blue-500: #2563eb;
+  --islp-blue-400: #60a5fa;
+  
+  /* Category Gradient: Vibrante -> Sobrio */
+  /* 1. Laplace (Vibrante / Lúdico) */
+  --cat-laplace-accent: #0284c7;
+  --cat-laplace-glow: rgba(2, 132, 199, 0.18);
+  --cat-laplace-border: #7dd3fc;
+  --cat-laplace-warmth: #f59e0b;
+
+  /* 2. Bernoulli (Curioso / Explorador) */
+  --cat-bernoulli-accent: #10b981;
+  --cat-bernoulli-glow: rgba(16, 185, 129, 0.16);
+  --cat-bernoulli-border: #a7f3d0;
+
+  /* 3. Poisson (Analítico / Reflexivo) */
+  --cat-poisson-accent: #ea580c;
+  --cat-poisson-glow: rgba(234, 88, 12, 0.15);
+  --cat-poisson-border: #fed7aa;
+
+  /* 4. Gauss (Sobrio / Científico / Riguroso) */
+  --cat-gauss-accent: #6d28d9;
+  --cat-gauss-glow: rgba(109, 40, 217, 0.14);
+  --cat-gauss-border: #ddd6fe;
+  --cat-gauss-dark: #0f172a;
+
+  /* Neutral surfaces */
+  --islp-surface-0: #ffffff;
+  --islp-surface-50: #f8fafc;
+  --islp-surface-100: #f1f5f9;
+  --islp-surface-200: #e2e8f0;
+  --islp-text-primary: #0f172a;
+  --islp-text-muted: #475569;
+  --islp-radius-sm: 8px;
+  --islp-radius-md: 14px;
+  --islp-radius-lg: 20px;
+  --islp-shadow-sm: 0 2px 8px -2px rgba(11, 25, 46, 0.06);
+  --islp-shadow-md: 0 10px 25px -5px rgba(11, 25, 46, 0.10);
+  --islp-shadow-lg: 0 20px 35px -8px rgba(11, 25, 46, 0.14);
+}
+
+/* ========================================================
+   1. HERO BANNER & CALLOUTS
+   ======================================================== */
+.islp-hero {
+  background: radial-gradient(circle at 85% 15%, #1e3a8a 0%, #0b192e 70%, #070f1e 100%);
+  color: #ffffff;
+  padding: 4.5rem 1.5rem 3.5rem;
+  border-radius: var(--islp-radius-lg);
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--islp-shadow-lg);
+}
+
+.islp-hero::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.islp-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid #f59e0b;
+  color: #fef08a;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.2rem;
+}
+
+.islp-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.islp-hero p.lead {
+  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+  color: #e2e8f0;
+  max-width: 720px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.islp-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* ========================================================
+   2. CATEGORY PERSONALITY GRADIENT
+   ======================================================== */
+.islp-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.islp-cat-card {
+  background: var(--islp-surface-0);
+  border-radius: var(--islp-radius-md);
+  border: 2px solid var(--islp-surface-200);
+  padding: 1.6rem;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.islp-cat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--islp-shadow-lg);
+}
+
+/* Laplace (Lúdico & Muy Vibrante) */
+.islp-cat-card.cat-laplace {
+  border-color: var(--cat-laplace-border);
+  background: linear-gradient(180deg, #ffffff 65%, #f0f9ff 100%);
+  box-shadow: 0 8px 20px -4px var(--cat-laplace-glow);
+  border-radius: 20px;
+}
+.islp-cat-card.cat-laplace .islp-cat-pill {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+/* Bernoulli (Curioso / Dinámico) */
+.islp-cat-card.cat-bernoulli {
+  border-color: var(--cat-bernoulli-border);
+  background: linear-gradient(180deg, #ffffff 65%, #ecfdf5 100%);
+  box-shadow: 0 8px 20px -4px var(--cat-bernoulli-glow);
+}
+.islp-cat-card.cat-bernoulli .islp-cat-pill {
+  background: #10b981;
+  color: #ffffff;
+}
+
+/* Poisson (Analítico / Reflexivo) */
+.islp-cat-card.cat-poisson {
+  border-color: var(--cat-poisson-border);
+  background: linear-gradient(180deg, #ffffff 65%, #fff7ed 100%);
+  box-shadow: 0 8px 20px -4px var(--cat-poisson-glow);
+}
+.islp-cat-card.cat-poisson .islp-cat-pill {
+  background: #ea580c;
+  color: #ffffff;
+}
+
+/* Gauss (Sobrio / Académico / Rigor) */
+.islp-cat-card.cat-gauss {
+  border-color: var(--cat-gauss-border);
+  background: linear-gradient(180deg, #ffffff 65%, #f5f3ff 100%);
+  box-shadow: 0 8px 20px -4px var(--cat-gauss-glow);
+}
+.islp-cat-card.cat-gauss .islp-cat-pill {
+  background: #6d28d9;
+  color: #ffffff;
+}
+
+.islp-cat-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.8rem;
+}
+
+.islp-cat-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--islp-text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.islp-cat-age {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--islp-text-muted);
+  margin-bottom: 1rem;
+}
+
+.islp-cat-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--islp-text-primary);
+  flex-grow: 1;
+}
+
+.islp-cat-themes {
+  background: var(--islp-surface-100);
+  border-radius: var(--islp-radius-sm);
+  padding: 0.8rem;
+  margin-top: 1rem;
+  font-size: 0.88rem;
+}
+
+/* ========================================================
+   3. LEMAS & CITAS INSPIRADORAS
+   ======================================================== */
+.islp-lema-quote {
+  position: relative;
+  background: linear-gradient(135deg, #0b192e 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 2.2rem 2rem 2rem 3rem;
+  border-radius: var(--islp-radius-md);
+  margin: 2rem 0;
+  border-left: 6px solid #f59e0b;
+  box-shadow: var(--islp-shadow-md);
+}
+
+.islp-lema-mark {
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  font-size: 4rem;
+  color: rgba(245, 158, 11, 0.3);
+  font-family: Georgia, serif;
+  line-height: 1;
+  user-select: none;
+}
+
+.islp-lema-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  color: #f8fafc;
+  margin-bottom: 0.75rem;
+}
+
+.islp-lema-author {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+.islp-lema-dash {
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+.islp-lema-context {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+/* ========================================================
+   4. ESTUDIOS DE CASO & HALL DE LA FAMA
+   ======================================================== */
+.islp-gallery-container {
+  margin: 2.5rem 0;
+}
+
+.islp-study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.islp-study-card {
+  background: var(--islp-surface-0);
+  border: 1px solid var(--islp-surface-200);
+  border-radius: var(--islp-radius-md);
+  overflow: hidden;
+  box-shadow: var(--islp-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.islp-study-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--islp-shadow-lg);
+}
+
+.islp-study-media {
+  position: relative;
+  height: 240px;
+  background: #0b192e;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.islp-study-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+.islp-study-media:hover .islp-study-img {
+  transform: scale(1.05);
+}
+
+.islp-study-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(11, 25, 46, 0.85);
+  backdrop-filter: blur(4px);
+  color: #fef08a;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.islp-zoom-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.islp-zoom-btn:hover {
+  background: #ffffff;
+  color: #1d4ed8;
+}
+
+.islp-study-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.islp-study-pill {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4rem;
+}
+
+.islp-study-lema {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--islp-text-primary);
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+
+.islp-study-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--islp-text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.islp-study-institution {
+  font-size: 0.88rem;
+  color: var(--islp-text-muted);
+  margin-bottom: 1rem;
+}
+
+.islp-study-takeaway {
+  background: #f8fafc;
+  border-left: 3px solid #10b981;
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.88rem;
+}
+
+.islp-takeaway-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 0.3rem;
+}
+
+.islp-takeaway-text {
+  color: #334155;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.islp-study-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+/* ========================================================
+   5. BOTONES Y TARJETAS DE DESCARGA GOOGLE DRIVE / CANVA
+   ======================================================== */
+.islp-resource-card {
+  background: var(--islp-surface-0);
+  border: 1px solid var(--islp-surface-200);
+  border-radius: var(--islp-radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--islp-shadow-sm);
+  position: relative;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 1.2rem;
+}
+
+.islp-resource-card:hover {
+  border-color: #93c5fd;
+  box-shadow: var(--islp-shadow-md);
+}
+
+.islp-resource-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.islp-resource-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.islp-resource-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.islp-card-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.islp-resource-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--islp-text-primary);
+  margin: 0 0 0.25rem 0;
+}
+
+.islp-resource-sub {
+  font-size: 0.88rem;
+  color: var(--islp-text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.islp-resource-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--islp-surface-100);
+  padding-top: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.islp-resource-tag {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Buttons */
+.islp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--islp-radius-sm);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px; /* WCAG 2.2 Target Size */
+}
+
+.islp-btn-primary {
+  background: #1d4ed8;
+  color: #ffffff !important;
+  border: 1px solid #1d4ed8;
+}
+
+.islp-btn-primary:hover {
+  background: #1e40af;
+  border-color: #1e40af;
+  color: #ffffff !important;
+}
+
+.islp-btn-outline {
+  background: transparent;
+  color: #1d4ed8 !important;
+  border: 1.5px solid #1d4ed8;
+}
+
+.islp-btn-outline:hover {
+  background: #eff6ff;
+}
+
+.islp-btn-ghost {
+  background: transparent;
+  color: #475569 !important;
+  border: 1px solid var(--islp-surface-200);
+}
+
+.islp-btn-ghost:hover {
+  background: var(--islp-surface-100);
+  color: #0f172a !important;
+}
+
+.islp-btn-sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.85rem;
+  min-height: 36px;
+}
+
+/* ========================================================
+   6. CHECKLIST INTERACTIVO
+   ======================================================== */
+.islp-checklist-card {
+  background: var(--islp-surface-0);
+  border: 2px solid var(--islp-surface-200);
+  border-radius: var(--islp-radius-md);
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: var(--islp-shadow-sm);
+}
+
+.islp-chk-progress-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.islp-chk-bar-bg {
+  height: 10px;
+  background: var(--islp-surface-200);
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.islp-chk-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #10b981 0%, #06b6d4 100%);
+  transition: width 0.3s ease;
+}
+
+.islp-chk-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--islp-surface-100);
+  cursor: pointer;
+  user-select: none;
+}
+
+.islp-chk-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.islp-chk-box {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #94a3b8;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  margin-top: 2px;
+}
+
+.islp-chk-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #ffffff;
+  display: none;
+}
+
+.islp-chk-input:checked + .islp-chk-box {
+  background: #10b981;
+  border-color: #10b981;
+}
+
+.islp-chk-input:checked + .islp-chk-box .islp-chk-icon {
+  display: block;
+}
+
+.islp-chk-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.islp-chk-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--islp-text-primary);
+}
+
+.islp-chk-help {
+  font-size: 0.85rem;
+  color: var(--islp-text-muted);
+  margin-top: 2px;
+}
+
+/* ========================================================
+   7. LIGHTBOX MODAL PARA PÓSTERS EN ALTA RESOLUCIÓN
+   ======================================================== */
+.islp-lightbox-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(7, 15, 30, 0.92);
+  backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.islp-lightbox-overlay.active {
+  display: flex;
+}
+
+.islp-lightbox-content {
+  position: relative;
+  max-width: 92vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.islp-lightbox-img {
+  max-width: 100%;
+  max-height: 84vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.islp-lightbox-caption {
+  color: #ffffff;
+  margin-top: 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.islp-lightbox-close {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.islp-lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* ========================================================
+   8. CARRUSEL ACCESIBLE DE PÓSTERS
+   ======================================================== */
+.islp-carousel-wrap {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 0;
+  padding: 0.5rem 0;
+}
+
+.islp-carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  padding-bottom: 1rem;
+}
+
+.islp-carousel-track::-webkit-scrollbar {
+  height: 6px;
+}
+.islp-carousel-track::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.islp-carousel-slide {
+  flex: 0 0 320px;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  .islp-carousel-slide {
+    flex: 0 0 380px;
+  }
+}
