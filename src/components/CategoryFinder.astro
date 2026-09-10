@@ -44,36 +44,64 @@
   }
 
   .islp-finder-box {
-    background: var(--islp-surface);
-    border: 2px solid var(--islp-border);
-    border-radius: var(--radius-md);
-    padding: 2rem;
-    margin: 2.5rem 0;
-    box-shadow: var(--shadow-sm);
-    max-width: 680px;
+    background: #ffffff;
+    border: 2.5px solid var(--cbpe-blue-midnight, #13154a);
+    border-radius: var(--radius-md, 14px);
+    padding: 1.5rem 1.75rem;
+    margin: 1.5rem auto 2rem;
+    box-shadow: var(--shadow-comic, 4px 4px 0px #13154a);
+    max-width: 740px;
+    position: relative;
+  }
+
+  .islp-finder-box::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 40px;
+    width: 80px;
+    height: 18px;
+    background: var(--tape-yellow, rgba(254, 240, 138, 0.92));
+    transform: rotate(-2deg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    border-left: 2px dashed rgba(0, 0, 0, 0.1);
+    border-right: 2px dashed rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    pointer-events: none;
   }
 
   .islp-finder-header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.15rem;
   }
 
   .islp-finder-icon {
     font-size: 2.2rem;
     line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #fef08a;
+    border: 2px solid var(--cbpe-blue-midnight, #13154a);
+    border-radius: 12px;
+    box-shadow: 2.5px 2.5px 0 var(--cbpe-blue-midnight, #13154a);
   }
 
   .islp-finder-title {
-    font-size: 1.3rem;
-    margin-bottom: 0.35rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.2rem;
+    font-weight: 800;
   }
 
   .islp-finder-sub {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     color: var(--islp-text-secondary);
-    line-height: 1.5;
+    line-height: 1.4;
+    margin: 0;
   }
 
   .islp-finder-controls {
@@ -89,20 +117,23 @@
 
   .islp-finder-input {
     width: 100%;
-    padding: 0.75rem 1rem;
+    padding: 0.7rem 1rem;
     font-size: 1rem;
+    font-weight: 600;
     font-family: inherit;
-    border: 1.5px solid var(--islp-border);
-    border-radius: var(--radius-sm);
+    border: 2.5px solid var(--cbpe-blue-midnight, #13154a);
+    border-radius: var(--radius-sm, 8px);
     color: var(--islp-text-primary);
-    background: var(--islp-bg);
+    background: var(--islp-bg, #fbf9f4);
+    box-shadow: 2px 2px 0 var(--cbpe-blue-midnight, #13154a);
     outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
 
   .islp-finder-input:focus {
-    border-color: var(--islp-blue-600);
-    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 var(--cbpe-blue-midnight, #13154a);
+    background: #ffffff;
   }
 
   .islp-finder-result:empty {
@@ -110,7 +141,7 @@
   }
 
   .islp-finder-result {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
   }
 </style>
 
@@ -125,7 +156,7 @@
       const year = parseInt(input.value, 10);
       if (isNaN(year) || year < 1920 || year > 2026) {
         resultDiv.innerHTML = `
-          <div style="padding: 0.9rem 1.2rem; border-radius: 8px; background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; font-size: 0.92rem; font-weight: 600;">
+          <div style="padding: 0.75rem 1rem; border-radius: 8px; background: #fee2e2; border: 2px solid #b91c1c; box-shadow: 3px 3px 0 #b91c1c; color: #991b1b; font-size: 0.92rem; font-weight: 700;">
             ⚠️ Por favor ingresa un año de nacimiento válido (ejemplo: 2012).
           </div>
         `;
@@ -135,44 +166,45 @@
       let catName = "";
       let catLevel = "";
       let toneDesc = "";
-      let accentColor = "";
-      let linkUrl = "";
+      let accentBg = "";
+      let accentText = "";
+      let linkUrl = "#categorias";
 
       if (year >= 2015 && year <= 2018) {
         catName = "Categoría Laplace";
         catLevel = "Primaria · 9 a 11 años";
         toneDesc = "¡Tu enfoque es lúdico y divertido! Observa tu entorno escolar, mascotas, juegos y meriendas.";
-        accentColor = "#0369a1";
-        linkUrl = "#categorias";
+        accentBg = "#bae6fd";
+        accentText = "#0369a1";
       } else if (year >= 2011 && year <= 2014) {
         catName = "Categoría Bernoulli";
         catLevel = "Secundaria Menor · 12 a 15 años";
         toneDesc = "¡Pensamiento curioso! Preguntas sobre tu comunidad, deportes, redes sociales y hábitos colectivos.";
-        accentColor = "#047857";
-        linkUrl = "#categorias";
+        accentBg = "#a7f3d0";
+        accentText = "#047857";
       } else if (year >= 2008 && year <= 2010) {
         catName = "Categoría Poisson";
         catLevel = "Bachillerato · 16 a 18 años";
         toneDesc = "¡Pensamiento crítico preuniversitario! Datos del Censo, medio ambiente, empleo o salud pública.";
-        accentColor = "#c2410c";
-        linkUrl = "#categorias";
+        accentBg = "#fed7aa";
+        accentText = "#c2410c";
       } else {
         catName = "Categoría Gauss";
         catLevel = "Pregrado Universitario · Sin límite de edad";
         toneDesc = "¡Rigor metodológico y científico! Modelos econométricos, ciencia de datos e investigación aplicada.";
-        accentColor = "#2e3193";
-        linkUrl = "#categorias";
+        accentBg = "#e0e7ff";
+        accentText = "#2e3193";
       }
 
       resultDiv.innerHTML = `
-        <div style="padding: 1.2rem; border-radius: 10px; background: #f8fafc; border: 2px solid ${accentColor}; display: flex; flex-direction: column; gap: 0.5rem;">
+        <div style="padding: 1rem 1.25rem; border-radius: 12px; background: ${accentBg}; border: 2.5px solid #13154a; box-shadow: 3.5px 3.5px 0 #13154a; display: flex; flex-direction: column; gap: 0.4rem;">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
-            <strong style="color: ${accentColor}; font-size: 1.2rem; font-family: Outfit, sans-serif;">🎯 ${catName}</strong>
-            <span style="background: ${accentColor}; color: #ffffff; padding: 3px 10px; border-radius: 9999px; font-size: 0.78rem; font-weight: 700;">${catLevel}</span>
+            <strong style="color: #13154a; font-size: 1.15rem; font-family: Outfit, sans-serif;">🎯 ${catName}</strong>
+            <span style="background: #ffffff; color: #13154a; border: 1.5px solid #13154a; padding: 2px 10px; border-radius: 9999px; font-size: 0.78rem; font-weight: 800; box-shadow: 1.5px 1.5px 0 #13154a;">${catLevel}</span>
           </div>
-          <p style="margin: 0; font-size: 0.95rem; color: #334155; line-height: 1.5;">${toneDesc}</p>
-          <div style="margin-top: 0.5rem;">
-            <a href="${linkUrl}" class="islp-btn islp-btn-outline islp-btn-sm">Ver Requisitos de ${catName} →</a>
+          <p style="margin: 0; font-size: 0.92rem; color: #1e293b; font-weight: 500; line-height: 1.45;">${toneDesc}</p>
+          <div style="margin-top: 0.35rem;">
+            <a href="${linkUrl}" class="islp-btn islp-btn-sm islp-btn-primary" style="display: inline-block;">Ver Requisitos de ${catName} →</a>
           </div>
         </div>
       `;
