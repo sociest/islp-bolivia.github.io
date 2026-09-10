@@ -1,0 +1,191 @@
+---
+// src/components/CategoryFinder.astro
+---
+
+<div class="islp-finder-box">
+  <div class="islp-finder-header">
+    <div class="islp-finder-icon">🧭</div>
+    <div>
+      <h3 class="islp-finder-title">Selector Rápido: ¿Cuál es tu Categoría?</h3>
+      <p class="islp-finder-sub">Ingresa el año de nacimiento de los estudiantes para saber su categoría y requisitos al instante.</p>
+    </div>
+  </div>
+
+  <div class="islp-finder-controls">
+    <div class="islp-finder-input-wrap">
+      <label for="islp-birth-year-astro" class="visually-hidden">Año de nacimiento</label>
+      <input
+        type="number"
+        id="islp-birth-year-astro"
+        placeholder="Ej. 2012"
+        min="1950"
+        max="2022"
+        class="islp-finder-input"
+      />
+    </div>
+    <button type="button" id="islp-finder-btn" class="islp-btn islp-btn-primary">
+      Identificar Categoría
+    </button>
+  </div>
+
+  <div id="islp-finder-result" class="islp-finder-result" aria-live="polite"></div>
+</div>
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .islp-finder-box {
+    background: var(--islp-surface);
+    border: 2px solid var(--islp-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    margin: 2.5rem 0;
+    box-shadow: var(--shadow-sm);
+    max-width: 680px;
+  }
+
+  .islp-finder-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .islp-finder-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+
+  .islp-finder-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .islp-finder-sub {
+    font-size: 0.95rem;
+    color: var(--islp-text-secondary);
+    line-height: 1.5;
+  }
+
+  .islp-finder-controls {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .islp-finder-input-wrap {
+    flex: 1;
+    min-width: 180px;
+  }
+
+  .islp-finder-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1.5px solid var(--islp-border);
+    border-radius: var(--radius-sm);
+    color: var(--islp-text-primary);
+    background: var(--islp-bg);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .islp-finder-input:focus {
+    border-color: var(--islp-blue-600);
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+  }
+
+  .islp-finder-result:empty {
+    display: none;
+  }
+
+  .islp-finder-result {
+    margin-top: 1.25rem;
+  }
+</style>
+
+<script>
+  function setupCategoryFinder() {
+    const input = document.getElementById('islp-birth-year-astro') as HTMLInputElement;
+    const btn = document.getElementById('islp-finder-btn');
+    const resultDiv = document.getElementById('islp-finder-result');
+
+    function calculate() {
+      if (!input || !resultDiv) return;
+      const year = parseInt(input.value, 10);
+      if (isNaN(year) || year < 1920 || year > 2026) {
+        resultDiv.innerHTML = `
+          <div style="padding: 0.9rem 1.2rem; border-radius: 8px; background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; font-size: 0.92rem; font-weight: 600;">
+            ⚠️ Por favor ingresa un año de nacimiento válido (ejemplo: 2012).
+          </div>
+        `;
+        return;
+      }
+
+      let catName = "";
+      let catLevel = "";
+      let toneDesc = "";
+      let accentColor = "";
+      let linkUrl = "";
+
+      if (year >= 2015 && year <= 2018) {
+        catName = "Categoría Laplace";
+        catLevel = "Primaria · 9 a 11 años";
+        toneDesc = "¡Tu enfoque es lúdico y divertido! Observa tu entorno escolar, mascotas, juegos y meriendas.";
+        accentColor = "#0369a1";
+        linkUrl = "#categorias";
+      } else if (year >= 2011 && year <= 2014) {
+        catName = "Categoría Bernoulli";
+        catLevel = "Secundaria Menor · 12 a 15 años";
+        toneDesc = "¡Pensamiento curioso! Preguntas sobre tu comunidad, deportes, redes sociales y hábitos colectivos.";
+        accentColor = "#047857";
+        linkUrl = "#categorias";
+      } else if (year >= 2008 && year <= 2010) {
+        catName = "Categoría Poisson";
+        catLevel = "Bachillerato · 16 a 18 años";
+        toneDesc = "¡Pensamiento crítico preuniversitario! Datos del Censo, medio ambiente, empleo o salud pública.";
+        accentColor = "#c2410c";
+        linkUrl = "#categorias";
+      } else {
+        catName = "Categoría Gauss";
+        catLevel = "Pregrado Universitario · Sin límite de edad";
+        toneDesc = "¡Rigor metodológico y científico! Modelos econométricos, ciencia de datos e investigación aplicada.";
+        accentColor = "#2e3193";
+        linkUrl = "#categorias";
+      }
+
+      resultDiv.innerHTML = `
+        <div style="padding: 1.2rem; border-radius: 10px; background: #f8fafc; border: 2px solid ${accentColor}; display: flex; flex-direction: column; gap: 0.5rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+            <strong style="color: ${accentColor}; font-size: 1.2rem; font-family: Outfit, sans-serif;">🎯 ${catName}</strong>
+            <span style="background: ${accentColor}; color: #ffffff; padding: 3px 10px; border-radius: 9999px; font-size: 0.78rem; font-weight: 700;">${catLevel}</span>
+          </div>
+          <p style="margin: 0; font-size: 0.95rem; color: #334155; line-height: 1.5;">${toneDesc}</p>
+          <div style="margin-top: 0.5rem;">
+            <a href="${linkUrl}" class="islp-btn islp-btn-outline islp-btn-sm">Ver Requisitos de ${catName} →</a>
+          </div>
+        </div>
+      `;
+    }
+
+    if (btn) btn.addEventListener('click', calculate);
+    if (input) {
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') calculate();
+      });
+    }
+  }
+
+  setupCategoryFinder();
+  document.addEventListener('astro:page-load', setupCategoryFinder);
+</script>

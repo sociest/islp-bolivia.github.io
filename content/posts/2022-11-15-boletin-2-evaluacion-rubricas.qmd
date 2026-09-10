@@ -1,0 +1,16 @@
+---
+title: "Boletín Nº 2 · Deliberación y Rúbricas del Jurado"
+date: "2022-11-15"
+categories: ["Boletines","Evaluación"]
+description: "Sistematización de los criterios evaluativos del jurado y análisis pedagógico de los errores más comunes en gráficos."
+---
+# Boletín Nº 2: Evaluación y Rúbricas del Jurado
+
+El Comité Evaluador comparte lecciones clave para estudiantes y docentes basadas en la revisión de más de 80 láminas recibidas en la fase clasificatoria.
+
+### Principales Recomendaciones
+* Evitar gráficos tridimensionales artificiales que distorsionen proporciones visuales.
+* Verificar siempre que los porcentajes sumen exactamente 100%.
+* Incluir títulos autoexplicativos en cada visualización.
+
+[Descargar Boletín Nº 2 (PDF 28 MB) ↗](/assets/docs/boletines/ISLP_Bolivia_B2.pdf){.islp-btn .islp-btn-primary}

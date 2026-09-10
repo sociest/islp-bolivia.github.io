@@ -1,0 +1,82 @@
+---
+title: "Contacto y Canales Oficiales"
+subtitle: "Comité Coordinador Nacional de ISLP Bolivia"
+description: "Comunícate con el equipo organizador, consulta dudas de inscripción o solicita talleres docentes."
+page-layout: full
+---
+
+# Contacto y Soporte Oficial
+
+Estamos a tu disposición para ayudarte con consultas sobre las bases, validación de equipos o asesoría técnica para profesores tutores.
+
+---
+
+## 📬 Canales de Comunicación Directa
+
+::: {.islp-contact-grid}
+
+::: {.islp-contact-card}
+### ✉️ Correo Oficial
+Para consultas académicas, recepción de pósters finales y solicitudes de talleres docentes.
+
+**islp.bolivia@gmail.com**  
+[Escribir Correo ↗](mailto:islp.bolivia@gmail.com){.islp-btn .islp-btn-sm .islp-btn-outline}
+:::
+
+::: {.islp-contact-card}
+### 🌐 Redes Sociales
+Sigue nuestras transmisiones en vivo, avisos de cierre y galerías de fotos oficiales.
+
+* **Facebook:** [facebook.com/islpBolivia ↗](https://www.facebook.com/islpBolivia/)
+* **Twitter / X:** [@IslpBolivia ↗](https://twitter.com/IslpBolivia)
+:::
+
+::: {.islp-contact-card}
+### 📝 Formulario de Inscripción
+Registro gratuito de equipos para unidades educativas y universidades de Bolivia.
+
+[Completar Formulario en Google Forms ↗](https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform){.islp-btn .islp-btn-sm .islp-btn-gold}
+:::
+
+:::
+
+---
+
+## 🏛️ Sede Institucional y Coordinación Nacional
+
+::: {.islp-institutions-grid}
+
+::: {.islp-inst-card}
+### Coordinación Nacional ISLP Bolivia
+Liderazgo del certamen nacional y enlace oficial ante el International Statistical Institute.
+
+* **Coordinador Nacional:** M.Sc. Álvaro Chirino Gutiérrez
+* **Institución:** Carrera de Estadística (UMSA) / Fundación ARU
+* **Correo oficial:** `islp.bolivia@gmail.com`
+:::
+
+::: {.islp-inst-card}
+### Fundación ARU
+Centro de investigación aplicada en políticas públicas y análisis cuantitativo de datos.
+
+* **Dirección:** Av. 20 de Octubre #2164, Edif. Concor, Piso 2, La Paz - Bolivia.
+* **Sitio web:** [aru.org.bo ↗](https://www.aru.org.bo)
+:::
+
+::: {.islp-inst-card}
+### Universidad Mayor de San Andrés (UMSA)
+Carrera de Estadística, Facultad de Ciencias Puras y Naturales.
+
+* **Dirección:** Campus Universitario de Cota Cota, Calle 27, La Paz - Bolivia.
+* **Sitio web:** [estadistica.umsa.bo ↗](https://estadistica.umsa.bo)
+:::
+
+::: {.islp-inst-card}
+### International Statistical Institute (ISI / IASE)
+International Statistical Literacy Project — Coordinación Internacional.
+
+* **Organismo mundial:** [iase-web.org/islp ↗](https://iase-web.org/islp/)
+:::
+
+:::
+

@@ -1,0 +1,53 @@
+---
+// src/components/Lightbox.astro
+---
+
+<div id="islp-lightbox" class="islp-lightbox-overlay" role="dialog" aria-modal="true" aria-label="Vista previa ampliada de póster">
+  <div class="islp-lightbox-content">
+    <button type="button" class="islp-lightbox-close" id="islp-lightbox-close" aria-label="Cerrar vista previa">&times;</button>
+    <img src="" alt="" class="islp-lightbox-img" id="islp-lightbox-img" />
+    <div class="islp-lightbox-caption" id="islp-lightbox-cap"></div>
+  </div>
+</div>
+
+<script>
+  function setupLightbox() {
+    const overlay = document.getElementById('islp-lightbox');
+    const img = document.getElementById('islp-lightbox-img') as HTMLImageElement;
+    const cap = document.getElementById('islp-lightbox-cap');
+    const closeBtn = document.getElementById('islp-lightbox-close');
+
+    function close() {
+      if (overlay) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', close);
+    if (overlay) {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) close();
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay?.classList.contains('active')) {
+        close();
+      }
+    });
+
+    (window as any).islpOpenLightbox = function(src: string, caption?: string) {
+      if (overlay && img && cap) {
+        img.src = src;
+        img.alt = caption || 'Póster ISLP Bolivia';
+        cap.textContent = caption || '';
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    };
+  }
+
+  setupLightbox();
+  document.addEventListener('astro:page-load', setupLightbox);
+</script>

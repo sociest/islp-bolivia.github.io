@@ -1,0 +1,17 @@
+---
+title: "Afiche de Convocatoria 4ª Edición Nacional"
+date: "2022-05-08"
+categories: ["Convocatorias","Difusión"]
+description: "Material gráfico conmemorativo de la 4ª versión con cronograma y pautas para pizarras escolares."
+---
+# Afiche Oficial: 4ª Edición Nacional (2022)
+
+Pieza gráfica diseñada para difusión en unidades educativas de los nueve departamentos de Bolivia.
+
+::: {.islp-callout-box}
+#### Ficha Técnica
+* **Formato:** Afiche vertical de alta resolución.
+* **Enfoque Temático:** Objetivos de Desarrollo Sostenible (ODS) y medio ambiente.
+:::
+
+[Descargar Afiche en PDF (1.1 MB) ↗](/assets/docs/afiche2022.pdf){.islp-btn .islp-btn-outline}

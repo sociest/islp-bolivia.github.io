@@ -1,0 +1,16 @@
+---
+title: "Boletín Nº 3 · Gala de Ganadores y Fase Internacional"
+date: "2022-12-10"
+categories: ["Boletines","Ganadores"]
+description: "Cuadro de honor con los equipos campeones en las categorías Bernoulli, Poisson y Gauss con pase al concurso mundial."
+---
+# Boletín Nº 3: Gala de Ganadores y Clasificación Mundial
+
+Crónica de la sesión de premiación nacional y presentación de las delegaciones bolivianas que representaron al país en el 64º Congreso Mundial de Estadística del ISI.
+
+### Trabajos Clasificados
+* **Categoría Bernoulli (Secundaria Menor):** Análisis de problemáticas comunitarias locales.
+* **Categoría Poisson (Bachillerato):** Investigación demográfica y ambiental.
+* **Categoría Gauss (Pregrado Universitario):** Modelización econométrica y series temporales desarrollada por universitarios paceños.
+
+[Descargar Boletín Nº 3 (PDF 16.5 MB) ↗](/assets/docs/boletines/ISLP_Bolivia_B3.pdf){.islp-btn .islp-btn-primary}

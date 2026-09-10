@@ -1,0 +1,15 @@
+---
+title: "Pósters Ganadores de la 3ª Versión (2020-2021)"
+date: "2020-05-04"
+categories: ["Archivo Histórico","Ganadores"]
+description: "Muestra de las investigaciones galardonadas en las categorías Bernoulli, Poisson y Gauss en certamen nacional."
+---
+# Pósters Ganadores de la 3ª Versión (2020-2021)
+
+Presentación de los trabajos sobresalientes de la 3ª versión de la competencia nacional, evaluados durante la modalidad a distancia.
+
+### Trabajos Destacados
+* **Póster P25 (Categoría Bernoulli):** Estudio sobre consumo y hábitos cotidianos en secundaria.
+  [Descargar Póster PDF ↗](/assets/docs/historico/P25_2Bernoulli.pdf){.islp-btn .islp-btn-sm .islp-btn-outline}
+* **Póster Gauss 1 (Categoría Universitaria):** Investigación analítica de series temporales de la UMSA.
+  [Descargar Póster PDF ↗](/assets/docs/historico/gauss1.pdf){.islp-btn .islp-btn-sm .islp-btn-outline}

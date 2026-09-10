@@ -1,0 +1,16 @@
+---
+title: "Memoria de Clausura y Balance Estadístico Nacional"
+date: "2023-01-15"
+categories: ["Boletines","Archivo Histórico"]
+description: "Memoria fotográfica oficial, actas de premiación, tablas de participación departamental y balance del certamen nacional."
+---
+# Memoria de Clausura y Balance Estadístico Nacional
+
+Publicación conmemorativa con el balance global del certamen, galerías de equipos participantes de los 9 departamentos de Bolivia y actas de deliberación del Comité Científico.
+
+### Contenido Destacado
+* Estadísticas de participación escolar y universitaria por departamento.
+* Acta formal de premiación firmada por las autoridades de la UMSA, Fundación ARU e ISLP.
+* Galería de láminas finalistas y retroalimentación técnica del jurado.
+
+[Descargar Memoria Final (PDF 23 MB) ↗](/assets/docs/boletines/ISLP_Bolivia_clausura.pdf){.islp-btn .islp-btn-outline}

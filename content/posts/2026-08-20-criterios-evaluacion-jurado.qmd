@@ -1,0 +1,18 @@
+---
+title: "Criterios de Evaluación y Rúbricas del Jurado"
+date: "2026-08-20"
+categories: ["Evaluación","Jurado"]
+description: "Rúbricas del Comité Científico de la UMSA y ARU: Calidad de datos (30%), Rigor analítico (30%), Comunicación (25%), Conclusiones (15%)."
+---
+# Criterios de Evaluación y Rúbricas Oficiales
+
+El Comité de Evaluación del ISLP Bolivia, conformado por docentes de la Carrera de Estadística (UMSA) e investigadores de Fundación ARU, aplica las siguientes ponderaciones:
+
+| Dimensión de Evaluación | Ponderación | Criterio Central |
+| :--- | :--- | :--- |
+| **Calidad de Datos y Fuentes** | 30% | Transparencia muestral, cita correcta de fuentes y verosimilitud de variables. |
+| **Rigor Analítico y Pertinencia** | 30% | Correcto cálculo de medidas, tasas e idoneidad de los gráficos elegidos. |
+| **Comunicación Visual y Narrativa** | 25% | Jerarquía tipográfica, legibilidad a 2 metros, uso armónico del color y síntesis. |
+| **Conclusiones y Relevancia** | 15% | Interpretación rigurosa de los hallazgos sin sesgos ni sobregeneralizaciones. |
+
+[Descargar Rúbricas Detalladas en PDF ↗](/assets/docs/historico/Criterios_a_Jusgar2022.pdf){.islp-btn .islp-btn-outline}

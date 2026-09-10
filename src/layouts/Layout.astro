@@ -1,0 +1,50 @@
+---
+// src/layouts/Layout.astro
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import Lightbox from '../components/Lightbox.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  currentPath?: string;
+}
+
+const {
+  title,
+  description = "Competencia Boliviana de Pósters Estadísticos — 5ª Versión 2026-2027. Alfabetización estadística y ciencia de datos en Bolivia.",
+  currentPath = ""
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | ISLP Bolivia</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/img/logos/cbpe-logo.png" />
+    <meta name="theme-color" content="#2e3193" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={`${title} | ISLP Bolivia`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/img/logos/cbpe-logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@IslpBolivia" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <Navbar currentPath={currentPath} />
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <Footer />
+    <Lightbox />
+  </body>
+</html>

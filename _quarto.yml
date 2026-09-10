@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: .quarto-build
+  render:
+    - "content/*.qmd"
+    - "content/posts/*.qmd"
+
+website:
+  title: "ISLP Bolivia"
+  description: "Competencia Boliviana de Pósters Estadísticos — 5ª Versión 2026-2027"
+  site-url: "https://islp-bolivia.github.io"
+  repo-url: "https://github.com/islp-bolivia/islp-bolivia.github.io"
+  favicon: img/favicon.ico
+
+  navbar:
+    background: primary
+    search: false
+    collapse-below: lg
+    left:
+      - text: "Inicio"
+        href: "/"
+      - text: "Recursos"
+        href: "/recursos"
+      - text: "Blog"
+        href: "/blog"
+      - text: "Contacto"
+        href: "/contacto"
+    right:
+      - text: "¡Inscríbete!"
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform"
+
+format:
+  html:
+    theme:
+      light: [cosmo, custom.scss]
+    css:
+      - _extensions/islp-astro/assets/islp-astro.css
+    toc: true
+    toc-depth: 3
+    toc-title: "En esta página"
+    smooth-scroll: true
+    link-external-newwindow: true
+    lang: es

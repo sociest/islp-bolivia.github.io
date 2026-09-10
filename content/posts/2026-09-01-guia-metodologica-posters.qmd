@@ -1,0 +1,17 @@
+---
+title: "Guía de Elaboración de Pósters Estadísticos"
+date: "2026-09-01"
+categories: ["Metodología","Guías"]
+description: "Manual metodológico: formulación de hipótesis, selección de datos, gráficos pertinentes y redacción de conclusiones."
+---
+# Guía Metodológica para la Elaboración de Pósters Estadísticos
+
+Guía oficial avalada por el Comité Científico para orientar el proceso de investigación escolar y universitario.
+
+### Estructura Recomendada del Póster
+* **Pregunta de Investigación:** Plantea un problema relevante de tu comunidad, entorno escolar o sociedad boliviana.
+* **Fuentes y Muestra:** Especifica con claridad cómo se recolectaron los datos o cita fuentes públicas reconocidas (INE, GeoBolivia, Banco Mundial).
+* **Análisis Gráfico:** Utiliza diagramas claros (barras, líneas, dispersión) con ejes rotulados, escalas proporcionadas y leyendas explícitas.
+* **Conclusiones y Recomendaciones:** Deducciones apoyadas en evidencia empírica directa sin extrapolar conclusiones infundadas.
+
+[Descargar Guía Metodológica en PDF ↗](/assets/docs/guia_2022_2023.pdf){.islp-btn .islp-btn-primary}

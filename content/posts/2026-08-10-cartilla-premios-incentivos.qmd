@@ -1,0 +1,19 @@
+---
+title: "Cartilla Oficial de Premios e Incentivos"
+date: "2026-08-10"
+categories: ["Premios","Oficial"]
+description: "Reconocimientos nacionales e internacionales: diplomas ISI/IASE, medallas, packs tecnológicos y pase al certamen mundial."
+---
+# Cartilla de Premios e Incentivos
+
+La Competencia Boliviana de Pósters Estadísticos premia la dedicación y el rigor de estudiantes y profesores tutores:
+
+### Premios de la Fase Nacional
+* **1º Lugar Nacional por Categoría:** Medallas doradas de honor, diplomas institucionales ISI/IASE/UMSA/ARU, kits tecnológicos escolares y clasificación oficial a la Conferencia Mundial del ISI.
+* **2º y 3º Lugar Nacional:** Medallas de plata y bronce, diplomas de excelencia y paquetes bibliográficos de investigación.
+* **Profesores Tutores:** Certificados de asesoría científica con valor curricular emitidos por la UMSA y Fundación ARU.
+
+### Fase Mundial (International Statistical Institute)
+Los campeones nacionales de Bolivia compiten con delegaciones de más de 40 países. Los premios internacionales incluyen dotaciones monetarias (hasta 2.000 € en categoría universitaria) y menciones especiales SAS/JMP.
+
+[Descargar Cartilla de Premios en PDF ↗](/assets/docs/Premios.pdf){.islp-btn .islp-btn-primary}

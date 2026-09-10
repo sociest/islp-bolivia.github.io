@@ -1,0 +1,38 @@
+---
+// src/pages/recursos.astro
+import Layout from '../layouts/Layout.astro';
+import Checklist from '../components/Checklist.astro';
+import { getQuartoPage } from '../utils/quarto';
+
+const pageData = getQuartoPage('recursos');
+
+const parts = pageData.htmlContent.split('<div id="islp-checklist-mount">');
+const hasMount = parts.length > 1;
+---
+
+<Layout title={pageData.title} description={pageData.description} currentPath="/recursos">
+  <div class="islp-quarto-container">
+    <div class="container">
+      {hasMount ? (
+        <>
+          <div class="islp-injected-part" set:html={parts[0]} />
+          <div class="islp-island-mount">
+            <Checklist />
+          </div>
+          <div class="islp-injected-part" set:html={parts[1].replace(/<\/div>/, '')} />
+        </>
+      ) : (
+        <div class="islp-injected-part" set:html={pageData.htmlContent} />
+      )}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .islp-quarto-container {
+    padding: 2rem 0 4rem;
+  }
+  .islp-island-mount {
+    margin: 2rem 0 3rem;
+  }
+</style>

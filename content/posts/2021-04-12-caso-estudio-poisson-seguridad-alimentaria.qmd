@@ -1,0 +1,34 @@
+---
+title: "Caso de Estudio Poisson: Seguridad Alimentaria y Hábitos de Consumo Familiar"
+date: "2021-04-12"
+categories: ["Casos de Estudio", "Poisson", "Ganadores"]
+description: "1º lugar nacional categoría Poisson (Secundaria Mayor, Chuquisaca). Muestreo estratificado por distritos y dispersión de gasto nutricional."
+---
+# Caso de Estudio: Seguridad Alimentaria y Hábitos de Consumo Familiar
+
+> *"Del mercado a la mesa: los números de nuestra nutrición."*
+
+Ficha técnica del proyecto galardonado con el **1.er Lugar Nacional** en la Categoría Poisson (Secundaria Mayor · 15 a 18 años) durante la 3ª Edición de la competencia nacional.
+
+::: {.callout-note}
+### Ficha de Identificación del Proyecto
+* **Categoría:** Poisson (Secundaria Mayor · 15 a 18 años)
+* **Unidad Educativa:** Colegio Bernardo Monteagudo
+* **Sede:** Sucre, Chuquisaca, Bolivia
+* **Premio:** 1.er Lugar Nacional — Medalla de Oro y Pase a Evaluación Internacional
+:::
+
+### Resumen de la Investigación
+El estudio examinó la composición nutricional del gasto en la canasta básica alimentaria de 240 familias en tres distritos urbanos y periurbanos de la ciudad de Sucre. Se evaluó la proporción del presupuesto familiar destinada a ultraprocesados frente a alimentos frescos de origen local.
+
+### Metodología Estadística Aplicada
+1. **Muestreo estratificado:** Selección probabilística balanceada considerando nivel de ingresos y zona geográfica.
+2. **Tabulación cruzada:** Gráficos de dispersión con rectas de regresión para estimar la elasticidad del consumo de proteínas y vegetales según el ingreso per cápita.
+3. **Control de sesgo:** Triangulación de listas de compras semanales con entrevistas a jefes de hogar.
+
+### ¿Por qué destacó el Jurado Científico?
+El Comité Científico resaltó la **madurez en el diseño de muestreo** y la sobriedad en la elección gráfica. Evitaron gráficos 3D redundantes y utilizaron diagramas de dispersión con intervalos de confianza y tablas limpias que comunicaron con contundencia la vulnerabilidad nutricional observada.
+
+### Enlaces y Documentos Oficiales
+* [Consultar Rúbricas de Evaluación del Jurado ↗](/posts/2026-08-20-criterios-evaluacion-jurado){.islp-btn .islp-btn-sm .islp-btn-navy}
+* [Ver Proyecto en el Repositorio Central ↗](/#galeria){.islp-btn .islp-btn-sm .islp-btn-outline}

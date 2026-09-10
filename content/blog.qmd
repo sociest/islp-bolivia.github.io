@@ -1,0 +1,117 @@
+---
+title: "Publicaciones, Convocatorias y Archivo Histórico"
+subtitle: "Repositorio Oficial de Documentos, Boletines y Memorias del ISLP Bolivia"
+description: "Consulta las publicaciones periódicas, anuncios de la 5ª edición, reglamentos oficiales y archivo histórico de la competencia clasificados por categoría."
+page-layout: full
+listing:
+  - id: convocatorias
+    contents: "posts/*convocatoria*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Convocatoria / Publicación"
+      description: "Descripción y Alcance"
+  - id: normativas
+    contents:
+      - "posts/*normas*.qmd"
+      - "posts/*guia*.qmd"
+      - "posts/*criterios*.qmd"
+      - "posts/*premios*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Normativa / Documento"
+      description: "Descripción y Alcance"
+  - id: boletines
+    contents: "posts/*boletin*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Boletín Oficial"
+      description: "Descripción y Alcance"
+  - id: historico
+    contents:
+      - "posts/*posters*.qmd"
+      - "posts/*pack*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Archivo Histórico"
+      description: "Descripción y Alcance"
+  - id: casos-estudio
+    contents: "posts/*caso-estudio*.qmd"
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      date: "Fecha"
+      title: "Caso de Estudio / Proyecto"
+      description: "Descripción y Mérito"
+---
+
+# 📚 Publicaciones y Archivo Histórico
+
+Bienvenido al repositorio central del **ISLP Bolivia** y la **Competencia Boliviana de Pósters Estadísticos**. Aquí se compilan y archivan todas las publicaciones oficiales, convocatorias, normativas, casos de estudio y memorias históricas del certamen. Cada post individual mantiene el registro documental completo y permite incorporar nuevas publicaciones periódicas fácilmente.
+
+---
+
+## 📢 1. Convocatorias y Material de Difusión
+
+Convocatorias oficiales, afiches imprimibles y anuncios de la competencia:
+
+::: {#convocatorias}
+:::
+
+---
+
+## 📋 2. Normativas y Documentos Rectores
+
+Bases reglamentarias, directrices de investigación, rúbricas de evaluación del jurado y cartilla de premios:
+
+::: {#normativas}
+:::
+
+---
+
+## 📰 3. Boletines Informativos Oficiales
+
+Publicaciones periódicas elaboradas por el Comité Coordinador Nacional con crónicas de premiaciones y deliberaciones del jurado:
+
+::: {#boletines}
+:::
+
+---
+
+## 🏛️ 4. Archivo Histórico y Memorias
+
+Compendios de pósters ganadores de versiones anteriores, actas y balances del certamen nacional:
+
+::: {#historico}
+:::
+
+---
+
+## 🏆 5. Casos de Estudio y Proyectos Ganadores
+
+Fichas técnicas y análisis metodológico de las investigaciones galardonadas con el primer lugar nacional y menciones internacionales:
+
+::: {#casos-estudio}
+:::
+
+
+---
+
+::: {.islp-cta-box}
+### ¿Deseas postular o necesitas material impreso para tu colegio?
+Contáctate directamente con la coordinación nacional de la competencia o regístrate en línea.
+
+[Formulario de Inscripción Oficial ↗](https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform){.islp-btn .islp-btn-gold}
+:::

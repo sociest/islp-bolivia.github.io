@@ -1,0 +1,26 @@
+---
+title: "Convocatoria Oficial 5ª Edición (2026-2027)"
+date: "2026-10-01"
+categories: ["Convocatorias","Oficial"]
+description: "Convocatoria nacional abierta para estudiantes de primaria, secundaria y universidad de toda Bolivia."
+---
+# Convocatoria Oficial: 5ª Versión (2026-2027)
+
+El **Comité Coordinador Nacional de ISLP Bolivia**, en conjunto con la **Carrera de Estadística de la UMSA**, la **Fundación ARU** y el **International Statistical Literacy Project (IASE / ISI)**, convoca a todos los estudiantes de unidades educativas públicas, privadas, de convenio y universidades de Bolivia a participar en la **5ª Competencia Boliviana de Pósters Estadísticos**.
+
+### Objetivos de la Convocatoria
+* Desarrollar habilidades analíticas y de pensamiento crítico en la juventud boliviana.
+* Fomentar el uso de datos abiertos confiables y la metodología científica.
+* Clasificar a las delegaciones bolivianas a la Conferencia Mundial del International Statistical Institute (ISI).
+
+::: {.islp-callout-box}
+#### 📅 Plazos Clave de la 5ª Edición
+* **Inscripciones y Talleres Docentes:** Octubre 2026 – Febrero 2027.
+* **Fecha Límite de Recepción:** 31 de Marzo de 2027.
+* **Evaluación del Jurado Científico:** Abril de 2027.
+* **Gala Nacional y Clasificación Mundial:** Mayo de 2027.
+:::
+
+### Materiales y Documentos Oficiales
+* [Descargar Afiche Oficial en PDF ↗](/assets/docs/afiche2022.pdf){.islp-btn .islp-btn-sm .islp-btn-primary}
+* [Completar Formulario de Inscripción en Google Forms ↗](https://docs.google.com/forms/d/e/1FAIpQLSc7rDxBwNfyn-kl7dL-n6cunoIeHJ2K8BwpLvJGb4jq_6uL0Q/viewform){.islp-btn .islp-btn-sm .islp-btn-gold}

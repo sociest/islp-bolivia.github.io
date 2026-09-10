@@ -1,0 +1,340 @@
+---
+// src/components/Navbar.astro
+import { getQuartoConfig } from '../utils/quarto';
+
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = "" } = Astro.props;
+const config = getQuartoConfig();
+const navLinks = config.navLinks;
+const ctaLink = config.ctaLink;
+---
+
+<header class="islp-header">
+  <div class="container islp-nav-container">
+    <a href="/" class="islp-brand" aria-label="ISLP Bolivia Inicio">
+      <img src="/img/logos/cbpe-logo.png" alt="CBPE Bolivia Logo" class="islp-brand-logo" width="38" height="38" />
+      <span class="islp-brand-text">ISLP <strong>Bolivia</strong></span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="islp-desktop-nav" aria-label="Navegación principal">
+      <ul class="islp-nav-list">
+        {navLinks.map((item) => (
+          <li class={`islp-nav-item ${item.children ? 'has-dropdown' : ''}`}>
+            {item.children ? (
+              <button type="button" class="islp-dropdown-toggle" aria-expanded="false">
+                {item.text}
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <ul class="islp-dropdown-menu">
+                {item.children.map((sub) => (
+                  <li>
+                    <a href={sub.href} class={`islp-dropdown-link ${currentPath === sub.href ? 'active' : ''}`}>
+                      {sub.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <a href={item.href} class={`islp-nav-link ${currentPath === item.href ? 'active' : ''}`}>
+                {item.text}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <!-- Header CTA -->
+    <div class="islp-header-actions">
+      <a href={ctaLink.href} target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-gold islp-btn-sm islp-nav-cta">
+        {ctaLink.text}
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button type="button" class="islp-menu-toggle" id="islp-mobile-toggle" aria-label="Abrir menú móvil" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="islp-mobile-drawer" id="islp-mobile-drawer">
+    <div class="islp-drawer-content">
+      <ul class="islp-mobile-list">
+        {navLinks.map((item) => (
+          <li class="islp-mobile-item">
+            {item.children ? (
+              <div class="islp-mobile-group">
+                <span class="islp-mobile-group-title">{item.text}</span>
+                <ul class="islp-mobile-sublist">
+                  {item.children.map((sub) => (
+                    <li>
+                      <a href={sub.href} class="islp-mobile-sublink">{sub.text}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <a href={item.href} class="islp-mobile-link">{item.text}</a>
+            )}
+          </li>
+        ))}
+      </ul>
+      <div style="padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 1rem;">
+        <a href={ctaLink.href} target="_blank" rel="noopener noreferrer" class="islp-btn islp-btn-gold" style="width: 100%;">
+          {ctaLink.text}
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .islp-header {
+    background: var(--cbpe-blue-midnight, #13154a);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 2.5px solid transparent;
+    border-image: linear-gradient(90deg, #bb0b24 0%, #fcec2a 25%, #00662f 50%, #1ecdc8 75%, #2e3193 100%) 1;
+  }
+
+  .islp-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  .islp-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: var(--font-brand);
+  }
+
+  .islp-brand-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid rgba(30, 205, 200, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .islp-brand-badge {
+    background: var(--cbpe-blue-royal);
+    color: var(--cbpe-cyan);
+    border: 1px solid var(--cbpe-cyan);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    font-family: var(--font-brand);
+  }
+
+  .islp-brand-text strong {
+    color: var(--cbpe-cyan, #1ecdc8);
+    font-weight: 800;
+  }
+
+  .islp-desktop-nav {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    .islp-desktop-nav {
+      display: block;
+    }
+  }
+
+  .islp-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    list-style: none;
+  }
+
+  .islp-nav-item {
+    position: relative;
+  }
+
+  .islp-nav-link,
+  .islp-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .islp-nav-link:hover,
+  .islp-dropdown-toggle:hover {
+    color: var(--cbpe-cyan, #1ecdc8);
+    background: rgba(30, 205, 200, 0.1);
+  }
+
+  .islp-nav-link.active {
+    color: var(--cbpe-cyan, #1ecdc8);
+    font-weight: 700;
+    background: rgba(30, 205, 200, 0.14);
+  }
+
+  .islp-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: var(--cbpe-blue-midnight, #13154a);
+    border: 1px solid rgba(30, 205, 200, 0.25);
+    border-radius: 10px;
+    padding: 0.5rem;
+    list-style: none;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .has-dropdown:hover .islp-dropdown-menu,
+  .has-dropdown:focus-within .islp-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .islp-dropdown-link {
+    display: block;
+    padding: 0.5rem 0.85rem;
+    color: #e2e8f0;
+    font-size: 0.88rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+  }
+
+  .islp-dropdown-link:hover {
+    background: var(--cbpe-blue-royal, #2e3193);
+    color: var(--cbpe-cyan, #1ecdc8);
+  }
+
+  .islp-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Mobile menu button */
+  .islp-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+  }
+
+  @media (min-width: 992px) {
+    .islp-menu-toggle {
+      display: none;
+    }
+  }
+
+  .islp-menu-toggle .bar {
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+  }
+
+  /* Mobile Drawer */
+  .islp-mobile-drawer {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(7, 15, 30, 0.98);
+    backdrop-filter: blur(12px);
+    overflow-y: auto;
+    padding: 2rem 1.5rem;
+  }
+
+  .islp-mobile-drawer.active {
+    display: block;
+  }
+
+  .islp-mobile-list {
+    list-style: none;
+  }
+
+  .islp-mobile-link {
+    display: block;
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .islp-mobile-group-title {
+    display: block;
+    color: var(--islp-blue-400);
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .islp-mobile-sublist {
+    list-style: none;
+    padding-left: 0.5rem;
+  }
+
+  .islp-mobile-sublink {
+    display: block;
+    color: #cbd5e1;
+    font-size: 1rem;
+    padding: 0.45rem 0;
+  }
+</style>
+
+<script>
+  const toggleBtn = document.getElementById('islp-mobile-toggle');
+  const drawer = document.getElementById('islp-mobile-drawer');
+
+  if (toggleBtn && drawer) {
+    toggleBtn.addEventListener('click', () => {
+      const isOpen = drawer.classList.toggle('active');
+      toggleBtn.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+  }
+</script>
